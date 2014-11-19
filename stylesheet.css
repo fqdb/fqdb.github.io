@@ -95,8 +95,7 @@ section {
 	padding: 2em;
 	font-size: 1em;
 	line-height: 1.15em;
-	font-family: OpenSans, Arial, sans-serif;
-
+	font-family: Open Sans, Roboto, Arial, sans-serif;
 }
 
 h1 {
@@ -158,6 +157,9 @@ footer {
 #twitter_widget {
 	float: right;
 	width: 450px;
+	position: absolute;
+	right: 0;
+	top: 6em;
 	margin-right: 1em;
 	}
 
@@ -171,7 +173,12 @@ footer {
 /*MEDIA QUERY*/
 @media only screen and (max-width : 1250px) {
 	#twitter_widget {
-		display: none;
+		/* display: none; */
+		float: none;
+		position: relative;
+		top: 0em;
+		width: 90%;
+		margin-left: 1em;
 		}
 }
 
