@@ -49,7 +49,7 @@ nav {
 	vertical-align: center;
 	padding-top: 1em;
 	padding-left: 15em;
-	font-family: Open Sans;
+	font-family: Open Sans, Droid Sans, Arial, sans-serif;
 }
 
 #menu-icon {
@@ -95,7 +95,7 @@ section {
 	padding: 2em;
 	font-size: 1em;
 	line-height: 1.15em;
-	font-family: Open Sans, Arial, sans-serif;
+	font-family: OpenSans, Arial, sans-serif;
 
 }
 
@@ -141,14 +141,14 @@ footer {
 	font-size: 0.85em;
 	margin-left: 0.5em;
 	float: left;
-	font-family: Arial, sans-serif;
+	font-family: Open Sans, Arial, sans-serif;
 	}
 .right_footer {
 	font-size: 0.7em;
 	margin-right: 0.5em;
 	float: right;
 	vertical-align: center;
-	font-family: Arial, sans-serif;
+	font-family: Open Sans, Arial, sans-serif;
 	}
 
 #contact img {
@@ -224,77 +224,4 @@ footer {
 	
 }
 }
-/* FONTS */
-@font-face {
-    font-family: CartoGothic;
-    src: url(res/fonts/CartoGothicStd-Book.woff);
-	}
-@font-face {
-    font-family: CartoGothic;
-    src: url(res/fonts/CartoGothicStd-Bold.woff);
-    font-weight: bold;
-}
-@font-face {
-    font-family: CartoGothic;
-    src: url(res/fonts/CartoGothicStd-Italic.woff);
-    font-style: italic;
-}
-@font-face {
-    font-family: Roboto;
-    src: url(res/fonts/Roboto-Regular.ttf);
-}
-@font-face {
-    font-family: Roboto;
-    src: url(res/fonts/Roboto-Italic.ttf);
-    font-style: italic;
-}
-@font-face {
-    font-family: Roboto;
-    src: url(res/fonts/Roboto-Bold.ttf);
-    font-weight: bold;
-}
-@font-face {
-	font-family: Roboto;
-	src: url(res/fonts/Roboto-Light.ttf);
-	font-weight: light;
-	
-/* Google fonts Old Standard TT */
-@font-face {
-  font-family: 'Old Standard TT';
-  font-style: normal;
-  font-weight: normal;
-  src: url(res/fonts/OldStandard-Regular.ttf);
-}
-@font-face {
-  font-family: 'Old Standard TT';
-  font-style: normal;
-  font-weight: bold;
-  src: url(res/fonts/OldStandard-Bold.ttf);
-}
-@font-face {
-  font-family: 'Old Standard TT';
-  font-style: italic;
-  font-weight: normal;
-  src: url(res/fonts/OldStandard-Italic.ttf);
-}
-/* Google fonts Open Sans */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: normal;
-  src: url(res/fonts/OpenSans-Regular.ttf);
-}
 
-@font-face {
-	font-family: 'Open Sans';
-	font-style: normal;
-	font-weight: bold;
-	src: url(res/fonts/OpenSans-Semibold.ttf);
-}
-
-@font-face {
-	font-family: 'Open Sans';
-	font-style: italic;
-	font-weight: bold;
-	src: url(res/fonts/OpenSans-Italic.ttf);
-}
