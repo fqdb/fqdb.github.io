@@ -177,8 +177,11 @@ footer {
 		float: none;
 		position: relative;
 		top: 0em;
-		width: 90%;
-		margin-left: 1em;
+		margin-left: 0.5em;
+		margin-right: 0.5em;
+		width: 95%;
+		align: center;
+		margin-bottom: 2em;
 		}
 }
 
