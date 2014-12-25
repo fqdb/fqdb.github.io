@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script src="jquery-2.1.1.js"></script>
+	<script src="sorttable.js"></script> <!-- Make table sortable. src: http://www.kryogenix.org/code/browser/sorttable/ -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!-- Ensure correct display of Chinese characters -->
+	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+	<link type="text/css" rel="stylesheet" href="fonts.css"/>
+	<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script language="javascript" src="email.js"></script>
+	<title>FQDB</title>
+</head>
+<body>
+	<div id="header"></div>
+	<script type="text/javascript" language="javascript">
+   $(document).ready(function() {
+		$('#header').load('header.html');
+	});
+	</script>
+	
+	<section id="main">
+	<h2>World news websites</h2>
+	<p>The table below lists my preferred news source for each country. Click the table headers to sort the entries.</p>
+	<table class="sortable">
+		<tr><th title="click the header to sort">Country</th><th title="click the header to sort">Website</th></tr>
+		<tr><td>Belgium</td><td><a href="http://www.standaard.be">De Standaard</a></td></tr>
+		<tr><td>China</td><td><a href="http://www.infzm.com">南方周末 (Southern Weekly)</a></td></tr>
+		<tr><td>Denmark</td><td><a href="http://politiken.dk">Politiken</a></td></tr>
+		<tr><td>Germany</td><td><a href="http://www.spiegel.de">Der Spiegel</a></td></tr>
+		<tr><td>Iceland</td><td><a href="http://www.ruv.is">R&Uacute;V</a></td></tr>
+		<tr><td>The Netherlands</td><td><a href="http://www.nrc.nl">NRC Handelsblad</a></td></tr>
+		<tr><td>Norway</td><td><a href="">...</a></td></tr>
+		<tr><td>Spain</td><td><a href="http://elpais.com">El Pais</a></td></tr>
+		<tr><td>Sweden</td><td><a href="http://www.svd.se/">Svenska Dagbladet</a></td></tr>
+		<tr><td>United Kingdom</td><td><a href="http://www.theguardian.com/uk">The Guardian</td></tr>
+		<tr><td>United States</td><td><a href="http://www.nytimes.com">The New York Times</td></tr>
+	</table>
+	</section>
+	<div id="footer"></div>
+	<script type="text/javascript" language="javascript">
+   $(document).ready(function() {
+		$('#footer').load('footer.html');
+	});
+	</script>
+	</body>
+</html>

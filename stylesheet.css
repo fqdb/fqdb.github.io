@@ -166,6 +166,20 @@ footer {
 	font-family: Open Sans, Arial, sans-serif;
 	}
 
+.sortable {
+	border: 1px solid grey;
+	}
+.sortable th, td {
+	text-align: left;
+	padding-right: 2em;
+	padding-left: 0.3em;
+	padding-top: 0.3em;
+	}
+.sortable th {
+	background: #4C9CF1;
+	padding-bottom: 0.3em;
+	}
+	
 #contact img {
 	margin-right: 2em;
 	}
