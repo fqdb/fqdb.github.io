@@ -23,7 +23,7 @@ a:hover {
 }
 
 img {
-	max-width: 100%
+	max-width: 100%;
 }
 
 header {
@@ -72,9 +72,7 @@ a:hover#menu-icon {
 }
 
 nav ul {
-
 	list-style: none;
-
 }
 
 nav li {
@@ -85,7 +83,7 @@ nav li {
 }
 
 nav a {
-		color: #000000
+	color: #000000
 }
 
 nav a:hover {
@@ -201,13 +199,13 @@ footer {
 	}
 	
 /*MEDIA QUERY*/
-@media only screen and (max-width : 1250px) {
+@media only screen and (max-width : 1215px) {
 	#twitter_widget {
 		/* display: none; */
 		float: none;
 		position: relative;
 		top: 0em;
-		margin-left: 0.5em;
+		margin-left: 1em;
 		margin-right: 0.5em;
 		width: 95%;
 		align: center;
@@ -261,7 +259,9 @@ footer {
 		margin-right: 0.5em;
 		padding: 0.5em
 	}
-	
+	#twitter_widget {
+		margin-left: 0.5em;
+	}
 }
 }
 
