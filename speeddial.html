@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script src="jquery-2.1.1.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!-- Ensure correct display of Chinese characters -->
+	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+	<link type="text/css" rel="stylesheet" href="fonts.css"/>
+	<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script language="javascript" src="email.js"></script>
+	<title>New tab</title>
+</head>
+<body>
+<a href="https://tweetdeck.twitter.com/">TweetDeck</a>
+<a href="https://calendar.google.com/">Calendar</a>
+<a href="https://forum.xda-developers.com/login.php?do=login">XDA Developers</a>
+<a href="https://www.youtube.com/feed/subscriptions">YouTube</a>
+<a href="http://outlook.com/">E-mail</a>
+<a href="http://theoldreader.com/">RSS reader</a>
+<a href="http://blackboard.tudelft.nl/">TU Delft Blackboard</a>
+
+<div id="footer"></div>
+<script type="text/javascript" language="javascript">
+   $(document).ready(function() {
+		$('#footer').load('footer.html');
+	});
+</script>
+</body>
