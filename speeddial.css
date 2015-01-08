@@ -1,0 +1,157 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+
+/*MAIN*/
+body { 
+	background-image: url(res/speeddial.jpg);
+	background-repeat: none;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #00000;
+}
+
+a {
+	color: #4C9CF1;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: white;
+}
+
+nav {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	font-size: 4em; font-size: 5vw;
+	line-height: 1.15em;
+	font-family: Old Standard TT, Cambria, Times, serif;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	}
+
+#tiles {
+	background-color: none;
+	}
+#tiles img {
+	max-width: 95%;
+	}
+#tiles img:hover {
+	opacity: 0.8;
+	}
+
+.tile {
+  display: inline-block;
+  width: 16em;
+  height: 9em;
+  margin: 0.5em;
+  margin-bottom: 3em;
+}
+	
+section {
+	margin-top: 1em;
+	margin-bottom: 3em;
+	max-width: 90%;
+	padding: 2em;
+	font-size: 1em;
+	line-height: 1.15em;
+	font-family: Open Sans, Roboto, Arial, sans-serif;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2em;
+	color: #2262AD;
+	line-height: 1.15em;
+	margin: 20px 0 ;
+}
+
+h2 {
+	font-size: 1.6em;
+	color: grey;
+	font-family: Old Standard TT;
+	}
+	
+h3 {
+font-size: 1.2em;
+	color: #444;
+	font-family: Open Sans;
+	margin-left: 0.5em;
+	margin-top: 0.6em;
+	}
+
+p {
+	line-height: 1.45em;
+	margin-bottom: 0.15em;
+}
+
+.small_description {
+	font-size: 0.8em;
+	margin-left: 1em;
+	}
+
+footer {
+	background: url(res/opacity_bg_70.png) repeat;
+	padding-top: 1em;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 1.5em;
+	}
+.left_footer {
+	font-size: 0.85em;
+	margin-left: 0.5em;
+	float: left;
+	font-family: Open Sans, Arial, sans-serif;
+	color: #444;
+	}
+
+.right_footer {
+	font-size: 0.7em;
+	margin-right: 0.5em;
+	float: right;
+	vertical-align: center;
+	font-family: Open Sans, Arial, sans-serif;
+	}
+
+.sortable {
+	border: 1px solid grey;
+	}
+.sortable th, td {
+	text-align: left;
+	padding-right: 2em;
+	padding-left: 0.3em;
+	padding-top: 0.3em;
+	}
+.sortable th {
+	background: #4C9CF1;
+	padding-bottom: 0.3em;
+	}
+	
+#contact img {
+	margin-right: 2em;
+	}
+
+#twitter_widget {
+	float: right;
+	width: 450px;
+	position: absolute;
+	right: 0;
+	top: 6em;
+	margin-right: 1em;
+	margin-bottom: 4em;
+	}
+
+#credits_ref {
+	list-style-type: square;
+	margin-left: 1em;
+	line-height: 1.2em;
+	margin-top: 0.9em;
+	}
+
+@media only screen and (max-width : 750px) {
+
+	}
+
