@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script src="jquery-2.1.1.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!-- Ensure correct display of Chinese characters -->
+	<link type="text/css" rel="stylesheet" href="speeddial.css"/>
+	<link type="text/css" rel="stylesheet" href="fonts.css"/>
+	<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script language="javascript" src="email.js"></script>
+	<title>New tab</title>
+</head>
+<body>
+<!-- to do: weather data openweathermap.org/api (XML) -->
+<nav>
+Speeddial
+<br />
+</nav>
+<!-- <script type="text/javascript" language="javascript">
+$(document).ready(function() {
+	$('#weer').load('http://nos.nl/weer/ #wthr-day-wrap space-bottom');
+});
+</script> -->
+<section id="tiles">
+<a href="https://tweetdeck.twitter.com/"><div class="tile"><img src="res/speeddial/tweetdeck.jpg"/><br/>TweetDeck</div></a>
+<a href="https://calendar.google.com/"><div class="tile"><img src="res/speeddial/calendar.jpg"/><br/>Calendar</div></a>
+<a href="https://forum.xda-developers.com/login.php?do=login"><div class="tile"><img src="res/speeddial/xdadev.jpg"/>XDA Developers</div></a>
+<a href="https://www.youtube.com/feed/subscriptions"><div class="tile"><img src="res/speeddial/youtube.jpg"/>YouTube</a></div>
+<a href="http://outlook.com/"><div class="tile"><img src="res/speeddial/email.jpg"/>E-mail</a></div>
+<a href="http://theoldreader.com/"><div class="tile"><img src="res/speeddial/rssreader.jpg"/>RSS reader</a></div>
+<a href="http://blackboard.tudelft.nl/"><div class="tile"><img src="res/speeddial/blackboard.jpg"/>TU Delft Blackboard</a></div>
+<a href="http://www.tweakers.net"><div class="tile"><img src="res/speeddial/tweakers.jpg"/>Tweakers</a></div>
+</section>
+<div id="footer"></div>
+<script type="text/javascript" language="javascript">
+   $(document).ready(function() {
+		$('#footer').load('footer.html');
+	});
+</script>
+</body>

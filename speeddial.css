@@ -29,10 +29,13 @@ nav {
 	font-weight: bold;
 	color: white;
 	text-align: center;
+	position: relative;
 	}
+
 
 #tiles {
 	background-color: none;
+	position: relative;
 	}
 #tiles img {
 	max-width: 95%;
