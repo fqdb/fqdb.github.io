@@ -3,9 +3,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /*MAIN*/
 body { 
-	background-image: url(res/bg_test.png);
-	background-repeat: repeat;
-	color: #00000;
+	background-color: #EBECED;
 }
 
 a {
