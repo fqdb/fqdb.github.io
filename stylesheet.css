@@ -134,6 +134,14 @@ p {
 	margin-bottom: 0.15em;
 }
 
+table, th, td {
+	border: 1px dotted grey;
+	margin: 0.3em;
+	}
+th {
+	background-color: #4C9CF1;
+	}
+
 .small_description {
 	font-size: 0.8em;
 	margin-left: 1em;
