@@ -2,6 +2,15 @@
 <html>
 <head>
 	<script src="jquery-2.1.1.js"></script>
+	<!-- MathJax inline config: -->
+	<script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({
+		tex2jax: {
+		  inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+		  processEscapes: true
+		}
+	  });
+	</script>
 	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 	<link type="text/css" rel="stylesheet" href="fonts.css"/>
@@ -18,10 +27,9 @@
 	</script>
 	
 	<section id="main">
-	The Astley equation:
-	$$N\epsilon\nu\varepsilon r \! g_0 n\bullet n \alpha \! gi\nu \varepsilon \! u \!\uparrow$$
-	When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
-	$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+	<h2>MathJax playground and test page<h2>
+	<h3>Time-dependent Schrödinger equation</h3>
+	$$ i\hbar \frac{\partial}{\partial t} \Psi = \hat H \Psi \label{ref1} $$
 	</section>
 	
 	<div id="footer"></div>
