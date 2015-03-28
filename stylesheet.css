@@ -22,6 +22,18 @@ a:hover {
 
 img {
 	max-width: 100%;
+	padding-left: auto;
+	padding-right: auto;
+}
+
+ul {
+	padding-left: 1em;
+	margin-top: 0.5em;
+	list-style-type: square;
+}
+
+ul li {
+	margin-bottom: 0.3em;
 }
 
 header {
@@ -117,6 +129,7 @@ h2 {
 	font-size: 1.6em;
 	color: grey;
 	font-family: Old Standard TT;
+	margin-top: 0.5em;
 	}
 	
 h3 {
