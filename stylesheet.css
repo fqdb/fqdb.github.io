@@ -81,6 +81,10 @@ a:hover#menu-icon {
 
 }
 
+nav {
+	margin-top: -0.75em;
+}
+
 nav ul {
 	list-style: none;
 }
@@ -219,7 +223,7 @@ footer {
 	}
 	
 /*MEDIA QUERY*/
-@media only screen and (min-width : 1400px) {
+@media only screen and (min-width : 1280px) {
 	section {
 	margin-left: 5em;
 	}
@@ -229,7 +233,7 @@ footer {
 	}
 	
 	nav {
-	margin-left: 4em;
+	margin-left: 2em;
 	}
 
 @media only screen and (max-width : 1215px) {
