@@ -1,8 +1,0 @@
-{
-    "MultiSites": {
-        "Evolution": "Utveckling",
-        "LoadingWebsites": "Laddar webbplatser",
-        "Pagination": "%s - %s av %s",
-        "TopLinkTooltip": "Jämför statistik för alla dina webbplatser."
-    }
-}
