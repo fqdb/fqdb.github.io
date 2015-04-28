@@ -81,6 +81,10 @@ a:hover#menu-icon {
 
 }
 
+nav {
+	margin-top: -0.75em;
+}
+
 nav ul {
 	list-style: none;
 }
@@ -219,19 +223,6 @@ footer {
 	}
 	
 /*MEDIA QUERY*/
-@media only screen and (min-width : 1400px) {
-	section {
-	margin-left: 5em;
-	}
-	
-	#logo {
-	margin-left: 2em;
-	}
-	
-	nav {
-	margin-left: 4em;
-	}
-
 @media only screen and (max-width : 1215px) {
 	#twitter_widget {
 		/* display: none; */
@@ -296,5 +287,18 @@ footer {
 		margin-left: 0.5em;
 	}
 }
-}
+
+@media only screen and (min-width : 1280px) {
+	section {
+	margin-left: 5em;
+	}
+	
+	#logo {
+	margin-left: 2em;
+	}
+	
+	nav {
+	margin-left: 2em;
+	}
+	}
 
