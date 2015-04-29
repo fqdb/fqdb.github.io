@@ -51,6 +51,7 @@ header {
 #logo{
 	margin-left: 1em;
 	margin-top: 0.2em;
+	margin-right:1em;
 	float: left;
 	font-size: 3.4em;
 	font-family: CartoGothic, Arial, sans-serif;
@@ -61,28 +62,26 @@ header {
 
 nav {
 	vertical-align: center;
-	padding-top: 0.5em;
-	padding-left: 15em;
+	text-align: right;
+	padding-right: 2em;
+	margin-top: -0.25em;
 	font-family: Open Sans, Droid Sans, Arial, sans-serif;
 }
 
 #menu-icon {
 	display: hidden;
-	width: 3em;
-	height: 3em;
-	background: #4C8FEC url(res/ic_menu_white_36dp.png) center;
+	width: 3.5em;
+	height: 3.5em;
+	background: url(res/expand_icon.svg) center;
 	background-size: 3em 3em;
 	border-radius: 3px;
+	margin-top: 1em;
+	text-align: right;
 }
 
 a:hover#menu-icon {
 
-	background-color: #444;
-
-}
-
-nav {
-	margin-top: -0.75em;
+	background: url(res/expand_icon_hover.svg) center;
 }
 
 nav ul {
@@ -97,7 +96,7 @@ nav li {
 }
 
 nav a {
-	color: #000000
+	color: #2262AD
 }
 
 nav a:hover {
@@ -237,7 +236,7 @@ footer {
 		}
 }
 
-@media only screen and (max-width : 750px) {
+@media only screen and (max-width : 600px) {
 	header {
 
 		position: absolute;
@@ -245,9 +244,7 @@ footer {
 	}
 
 	#menu-icon {
-
 		display:inline-block;
-
 	}
 
 	nav ul, nav:active ul { 
