@@ -8,7 +8,7 @@
 		tex2jax: {
 		  inlineMath: [ ['$','$'], ["\\(","\\)"] ],
 		  processEscapes: true
-		}
+		}	
 	  });
 	</script>
 	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -27,14 +27,21 @@
 	</script>
 	
 	<section id="main">
-	<h2>MathJax playground and test page<h2>
-	<h3>Time-dependent Schrödinger equation</h3>
+	<h1>MathJax test page</h1>
+	<a href="https://www.mathjax.org/">MathJax</a> is a Javascript framework to typeset mathematical formulas using LaTeX compatible code.
+	<h2>Quantum mechanics</h3>
+	<p>
+	Time dependant Schrödinger equation:
 	$$ i\hbar \frac{\partial}{\partial t} \Psi = \hat H \Psi \label{ref1} $$
+	$ S_{\pm} $ operator:
+	$$S_{\pm} |s,m\rangle = \hbar \sqrt{s(s+1)-m(m\pm 1)} |s,m\pm 1\rangle $$
+	</p>
+	
 	</section>
 	
 	<div id="footer"></div>
 	<script type="text/javascript" language="javascript">
-   $(document).ready(function() {
+	$(document).ready(function() {
 		$('#footer').load('footer.html');
 	});
 	</script>
