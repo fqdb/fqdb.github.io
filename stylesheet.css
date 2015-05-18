@@ -38,7 +38,6 @@ header {
 	height: 79px;
 	position: fixed;
 	top: 0;
-	left: 0;
 	border-bottom: 2px solid #4C9CF1;
 	z-index: 100;
 }
@@ -57,8 +56,7 @@ header {
 
 nav {
 	vertical-align: center;
-	text-align: right;
-	padding-right: 2em;
+	text-align: center;
 	margin-top: -0.25em;
 	font-family: Open Sans, Droid Sans, Arial, sans-serif;
 }
@@ -105,9 +103,9 @@ nav a:hover {
 section {
 	background-color: white;
 	margin-top: 6em;
-	margin-left: 1em;
 	margin-right: 1em;
 	margin-bottom: 3em;
+	margin-left: 15%;
 	max-width: 40em;
 	position: relative;
 	padding: 2em;
@@ -221,13 +219,21 @@ a:hover#hidden_menu {
 	display: none;
 }
 
+#twitter_widget {
+	float: right;
+	position: absolute;
+	right:15%;
+	top: 6em;
+	margin-bottom: 4em;
+	width: 28em;
+	}
+	
+
 
 /*MEDIA QUERY*/
 @media only screen and (max-width : 685px) {
 	header {
-
 		position: absolute;
-
 	}
 
 	#menu-icon {
@@ -269,17 +275,72 @@ a:hover#hidden_menu {
 	}
 }
 
-@media only screen and (min-width : 850px) {
-	section {
-	margin-left: 5em;
+@media only screen and (max-width: 1700px) {
+	#twitter_widget {
+	float: right;
+	position: absolute;
+	right:5%;
+	top: 6em;
+	margin-bottom: 4em;
+	width: 28em;
 	}
 	
+	section {
+	margin-left: 5%;
+	}
+
+}
+
+@media only screen and (max-width: 1330px) {
+	#twitter_widget {
+	float: left;
+	position: relative;
+	left: 15%;
+	top: 0;
+	}
+	
+	section {
+	margin-left: 15%;
+	}
+
+}
+
+@media only screen and (max-width: 1024) {
+	#twitter_widget {
+	margin-left: 1em;
+	margin-right: 1em;
+	}
+	
+	section {
+	margin-left: 1em;
+	margin-right: 1em;
+	}
+
+}
+
+@media only screen and (max-width : 850px) {
+
 	#logo {
-	margin-left: 2em;
+	margin-left: 0.5em;
 	}
 	
 	nav {
 	margin-left: 2em;
+	vertical-align: center;
+	text-align: right;
+	padding-right: 2em;
 	}
+	
+	section {
+	margin-left: 0em;
+	margin-right: 0em;
+	padding-left: 1.5em;
+	padding-right: 1em;
+	}
+	
+	#twitter_widget {
+	margin-left: 0;
+	}
+	
 	}
 
