@@ -48,6 +48,9 @@ header {
 .nav-up {
   top: -79px; /*same as header height*/
 }
+.nav-up-footer {
+  top: -1.5em; /*same as header height*/
+}
 
 #logo{
 	margin-left: 1em;
@@ -160,6 +163,8 @@ th {
 	font-size: 0.8em;
 	text-align: center;
 	font-weight: bold;
+	display: block;
+		top: -1em;
 	}
 
 footer {
@@ -243,6 +248,9 @@ a:hover#hidden_menu {
 	}
 .teaser_text {
 	font-size: 0.8em;
+	}
+.teaser_tile a{
+	color: #2262AD;
 	}
 
 /*MEDIA QUERY*/

@@ -1,5 +1,5 @@
 	<header>
-	<span id="logo"><a style="color: #000000"; href="https://fqdb.github.io">FQDB</a></span>
+	<span id="logo"><a style="color: #000000"; href="/index.html">FQDB</a></span>
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
@@ -63,10 +63,12 @@
 		if (st > lastScrollTop && st > navbarHeight){
 			// Scroll Down
 			$('header').removeClass('nav-down').addClass('nav-up');
+			$('footer').removeClass('nav-down').addClass('nav-up-footer');
 		} else {
 			// Scroll Up
 			if(st + $(window).height() < $(document).height()) {
-				$('header').removeClass('nav-up').addClass('nav-down');
+				$('header').removeClass('nav-up').removeClass('nav-up-footer').addClass('nav-down');
+				$('footer').removeClass('nav-up-footer').addClass('nav-down');
 			}
 		}
 		
