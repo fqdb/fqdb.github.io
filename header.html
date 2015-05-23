@@ -1,5 +1,5 @@
 	<header>
-	<span id="logo"><a style="color: #000000"; href="index.html">FQDB</a></span>
+	<span id="logo"><a style="color: #000000"; href="https://fqdb.github.io">FQDB</a></span>
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
@@ -35,4 +35,44 @@
 			<li><a href="page/worldnews.html">Worldnews</a></li>
 		</ul>
 	</nav>
+	<script>
+		// Hide Header on on scroll down
+	var didScroll;
+	var lastScrollTop = 0;
+	var delta = 5;
+	var navbarHeight = $('header').outerHeight();
+
+	$(window).scroll(function(event){
+		didScroll = true;
+	});
+
+	setInterval(function() {
+		if (didScroll) {
+			hasScrolled();
+			didScroll = false;
+		}
+	}, 250);
+
+	function hasScrolled() {
+		var st = $(this).scrollTop();
+		
+		// Make sure they scroll more than delta
+		if(Math.abs(lastScrollTop - st) <= delta)
+			return;
+		
+		// If they scrolled down and are past the navbar, add class .nav-up.
+		// This is necessary so you never see what is "behind" the navbar.
+		if (st > lastScrollTop && st > navbarHeight){
+			// Scroll Down
+			$('header').removeClass('nav-down').addClass('nav-up');
+		} else {
+			// Scroll Up
+			if(st + $(window).height() < $(document).height()) {
+				$('header').removeClass('nav-up').addClass('nav-down');
+			}
+		}
+		
+		lastScrollTop = st;
+	}
+	</script>
 	</header>
