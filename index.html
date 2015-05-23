@@ -2,6 +2,8 @@
 <html>
 <head>
 	<script src="jquery-2.1.1.js"></script>
+		<!-- For slideshow -->	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
+							<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
 	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 	<link type="text/css" rel="stylesheet" href="fonts.css"/>
 	<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
@@ -23,7 +25,30 @@
 	<p>
 	My name is Felix. I am planning to graduate with my bachelor's degree in Applied Physics at <span title="Delft University of Technology"><a href="http://www.tudelft.nl">TU Delft</a><span> this year. Besides natural science, in my spare time I also work with electronics and practice programming.
 	</p>
-	<h2>Projects</h2>
+	<h2>Featured posts</h2>
+	<div class="teaser" style="padding-top:1em;">
+	<div class="teaser_tile"><span style="font-weight:bold"><a href="page/emui_3.0_vs_miui_v6.html">EMUI 3.0 vs. MIUI V6</a></span><br><span class="teaser_text">
+	A short history of Huawei's way of skinning Android and a gallery full of comparison screenshots with Xiaomi's MIUI.</span>
+	</div>
+	<div class="teaser_tile"><span style="font-weight:bold"><a href="page/mathjax_test.html">Trying out MathJax</a></span><br><span class="teaser_text">
+	LaTeX formula syntax rendered in your browser - exploring the possibilities of the MathJax framework.</span>
+	</div>
+	</div>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+      $('.teaser').slick({
+        arrows:true,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		adaptiveHeight: true,
+		speed: 100,
+		dots: true
+      });
+    });
+	</script>
+	
+	<h2>Current projects</h2>
 	<p>
 	<ul>
 	<li>Determining doping type of silicon wafer using Schottky barrier properties</li>
@@ -32,9 +57,8 @@
 	</ul>
 	</p>
 	<p>
-	<img src="res/photo/TNW_flickr.jpg" style="margin-top: 1em" /><br/>
+	<img src="res/photo/TNW_flickr.jpg" style="margin-top: 1em" /></p>
 	<span class="small_description"><i>Applied Sciences building in Delft</i>. Photo by ADD Photography. <a href="https://www.flickr.com/photos/jvanroyen/3272813720/in/photolist-aYGa7-hh2DWv-5Zd2uL-6ykA6R-hegtA1-hegwoL">Flickr</a>/<a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</a></span>
-	</p>
 	</section>
 			
 	<div id="twitter_widget"></div>
