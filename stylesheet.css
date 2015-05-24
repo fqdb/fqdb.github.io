@@ -23,6 +23,9 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 }
+.hoverzoom:hover {
+	max-width: none;
+	}
 
 ul {
 	padding-left: 1em;
@@ -49,7 +52,7 @@ header {
   top: -79px; /*same as header height*/
 }
 .nav-up-footer {
-  top: -1.5em; /*same as header height*/
+  top: -5em;
 }
 
 #logo{
