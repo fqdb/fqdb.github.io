@@ -238,10 +238,10 @@ a:hover#hidden_menu {
 #twitter_widget {
 	float: right;
 	position: absolute;
-	right:15%;
+	right:10%;
 	top: 6em;
 	margin-bottom: 4em;
-	width: auto;
+	width: 25em;
 	}
 
 .teaser_tile {
@@ -307,15 +307,6 @@ a:hover#hidden_menu {
 }
 
 @media only screen and (max-width: 1700px) {
-	#twitter_widget {
-	float: right;
-	position: absolute;
-	right:5%;
-	top: 6em;
-	margin-bottom: 4em;
-	width: 28em;
-	}
-	
 	section {
 	margin-left: 5%;
 	}
