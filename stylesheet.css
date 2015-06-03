@@ -76,13 +76,13 @@ nav {
 
 #menu-icon {
 	display: hidden;
-	width: 3.5em;
-	height: 3.5em;
+	width: 4em;
+	height: 1.9em;
 	background: url(res/expand_icon.png) center;
 	background-repeat:no-repeat;
 	background-size: 3em 3em;
 	border-radius: 3px;
-	margin-top: 1em;
+	margin-top: 2em;
 	text-align: right;
 }
 
@@ -99,7 +99,7 @@ nav li {
 	display: inline-block;
 	float: left;
 	padding: 1em;
-	font-size: 1.5em;
+	font-size: 1.5em;	
 }
 
 nav a {
