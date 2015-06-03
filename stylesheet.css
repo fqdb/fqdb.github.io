@@ -78,7 +78,7 @@ nav {
 	display: hidden;
 	width: 3.5em;
 	height: 3.5em;
-	background: url(res/expand_icon.svg) center;
+	background: url(res/expand_icon.png) center;
 	background-size: 3em 3em;
 	border-radius: 3px;
 	margin-top: 1em;
@@ -87,7 +87,7 @@ nav {
 
 a:hover#menu-icon {
 
-	background: url(res/expand_icon_hover.svg) center;
+	background: url(res/expand_icon_hover.png) center;
 }
 
 nav ul {
