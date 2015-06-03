@@ -79,6 +79,7 @@ nav {
 	width: 3.5em;
 	height: 3.5em;
 	background: url(res/expand_icon.png) center;
+	background-repeat:no-repeat;
 	background-size: 3em 3em;
 	border-radius: 3px;
 	margin-top: 1em;
