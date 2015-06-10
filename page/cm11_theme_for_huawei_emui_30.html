@@ -25,8 +25,22 @@
 		$('#share_to').load('../share_to.html');
 	});
 	</script></h1>
-	<p>
-	Sources on Github <a href="https://github.com/fqdb/CM11_theme">here</a>.
+
+	<h2>About</h2>
+	<p>This project is about making EMUI 3.0 look like Cyanogenmod 11 (CM11) within all the limitations that Huawei has restricted EMUI to. In other words, a CM11 theme for EMUI 3.0. The device I use is a Huawei Ascend P7, so all resources are xxhdpi/1080p</p>
+	<p>Source is available on <a href="https://github.com/fqdb/CM11_theme">Github</a>. Please note that this theme is distributed under the <a href="https://github.com/fqdb/CM11_theme/blob/master/LICENSE.md">Apache licence</a> complying with the Cyanogenmod licence. Any work derived from this will have to be distributed under the same licence.
+	</p>
+	<h2>Features</h2>
+	<p><ul>
+	<li>Replaced stock status bar icons with CM11 ones</li>
+	<li>Holo Dark settings background</li>
+	<li>Dark status bar theme</li>
+	<li>CM11 quick settings icons</li>
+	<li>CM11/Holo style text fields, radio buttons, check boxes, sliders</li>
+	<li>Hidden NFC icon</li>
+	<li>CM11/AOSP nav bar button style</li>
+	</ul>
+	more to be added later
 	</p>
 	
 	<h2>Releases</h2>
@@ -34,8 +48,18 @@
 		All releases can be found on <a href="https://github.com/fqdb/CM11_theme/tree/master/Releases">Github</a>. Note that the alpha versions may contain bugs rendering things hard to read.
 	<div style="float:right" style="background-color: #ffffff" ><a href="../res/photo/emui_theming/Screenshot_2015-06-09-08-43-17.jpeg"><img style="max-width:230px; padding-left:1em;" src="../res/photo/emui_theming/Screenshot_2015-06-09-08-43-17.jpeg"></a><br>
 	<span class="small_description">Screenshot of version 0.12.5 Beta</span><br></div>
-	<h3>Alpha</h3>
-	<ul>
+	<script>
+	$(document).ready(function(){
+		$("#unhide_alpha").click(function(){
+		$("#hidden_ul").toggle();
+		$("#hidden_ul_help").hide();
+		e.preventDefault();
+		});
+	});
+	</script>
+	<h3><a id="unhide_alpha" href="javascript:void(0);" style="color:#444;">Alpha</a></h3><span class=small_description" id="hidden_ul_help"><i> click to expand</i></span>
+	<p>
+	<ul id="hidden_ul" style="display:none">
 	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Alpha/CM11_0.1.hwt?raw=true">0.1</a></li>
 	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Alpha/CM11_0.2.hwt?raw=true">0.2</a></li>
 	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Alpha/CM11_0.4.hwt?raw=true">0.4</a></li>
@@ -45,11 +69,11 @@
 	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Alpha/CM11_0.9.hwt?raw=true">0.9</a></li>
 	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Alpha/CM11_0.10.hwt?raw=true">0.10</a></li>
 	</ul>
+	</p>
 	<h3>Beta</h3>
-		<ul>
-	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Beta/CM11_0.11.hwt?raw=true"> 0.11</a>; Most parts of settings and status bar themed.</li>
-	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Beta/CM11_0.11.1.hwt?raw=true"> 0.11</a>; Finished all icons in Settings</li>
-	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Beta/CM11_0.12.5.hwt?raw=true"> 0.12.5</a>; Bug fixes, hidden NFC icon</li>
+	<ul>
+	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Beta/CM11_0.11.8.hwt?raw=true"> 0.11.1</a>; Settings and status bar themed</li>
+	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Beta/CM11_12.5.hwt?raw=true"> 0.12.5</a>; Bug fixes, hidden NFC icon</li>
 	</ul>
 	</p>
 	
