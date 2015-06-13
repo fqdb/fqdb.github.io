@@ -48,10 +48,28 @@
   font-weight: normal;
   src: url(res/fonts/OldStandard-Italic.ttf);
 }
-/* Google fonts Open Sans */
+/* Google fonts Asap */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: Asap;
   font-style: normal;
   font-weight: normal;
-  src: url('res/fonts/OpenSans-Regular.ttf');
+  src: url('res/fonts/Asap-Regular.ttf');
+}
+@font-face {
+  font-family: Asap;
+  font-style: normal;
+  font-weight: bold;
+  src: url('res/fonts/Asap-Bold.ttf');
+}
+@font-face {
+  font-family: Asap;
+  font-style: italic;
+  font-weight: normal;
+  src: url('res/fonts/Asap-Italic.ttf');
+}
+@font-face {
+  font-family: Asap;
+  font-style: italic;
+  font-weight: bold;
+  src: url('res/fonts/Asap-BoldItalic.ttf');
 }
