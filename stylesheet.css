@@ -56,7 +56,7 @@ header {
 }
 
 #logo{
-	margin-left: 1em;
+	margin-left: calc(15% + 0.5em);
 	margin-top: 0.2em;
 	margin-right:1em;
 	float: left;
