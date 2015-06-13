@@ -250,6 +250,9 @@ a:hover#hidden_menu {
 	margin-right: 1em;
 	padding: 0.3em;
 	}
+#teaser_tile_last {
+	margin-right: 0em;
+	}
 .teaser_text {
 	font-size: 0.8em;
 	}
