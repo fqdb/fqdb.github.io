@@ -23,9 +23,6 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 }
-.hoverzoom:hover {
-	max-width: none;
-	}
 
 ul {
 	padding-left: 1em;
@@ -335,6 +332,31 @@ a:hover#hidden_menu {
 	margin-right: 0em;
 	margin-bottom: 1em;
 	}
+	
+	.wide_table table, thead, tbody, th, td, tr  {
+		display: block; 
+		border:none;
+		margin: 0em;
+		}
+	.wide_table th {
+		display:none;
+		border: none;
+		}
+	.wide_table td { 
+		/* Behave  like a "row" */
+		position: relative;
+		}
+	.wide_table tr { 
+		margin-top:0.5em; 
+		border: 1px dotted grey;
+		}
+	.wide_table tr:first-child {
+		border: none;
+		}
+	.wide_table td:first-child {
+		font-weight: bold;
+		margin-left: 0.5em;
+		}
 }
 
 @media only screen and (max-width: 1700px) {
