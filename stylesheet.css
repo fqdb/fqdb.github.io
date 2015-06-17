@@ -13,6 +13,7 @@ section {
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-top: 1em;
+	padding-bottom: 1em;
 	font-size: 1em;
 	line-height: 1.15em;
 	font-family: Asap, Roboto, Arial, sans-serif;
@@ -82,7 +83,8 @@ th {
 	text-align: center;
 	font-weight: bold;
 	display: block;
-		top: -1em;
+	top: -1em;
+	bottom: 1em;
 	}
 
 /* HEADER & FOOTER */
@@ -167,6 +169,7 @@ footer {
 	left: 0;
 	right: 0;
 	height: 1.5em;
+	transition: top 0.5s ease-in-out;
 	}
 .left_footer {
 	font-size: 0.85em;
@@ -232,9 +235,7 @@ sub {
 	padding-bottom: 1em;
 	margin-bottom: 1em;
 	}
-#teasers img {
-	visibility: hidden;
-	}
+
 #teasers h2 {
 	color: black;
 	text-align: center;
@@ -244,7 +245,12 @@ sub {
 	padding: 0.3em;
 	margin-bottom: 1em;
 	height: 4em;
+	transition: height 0.5s; /* Animation time */
 	}
+.teaser_tile img {
+	display: none;
+	}
+
 #teaser_tile_last {
 	margin-right: 0em;
 	}
@@ -254,16 +260,19 @@ sub {
 .teaser_tile a{
 	color: #2262AD;
 	}
-/* .teaser_tile:hover img{
-	display: inline;
-	visibility: initial;
+.teaser_tile:hover img{
+	margin-top: 1em;
+	display: block;
+	max-width: 90%;
+	transition-delay: 0.1s;
 }
 .teaser_tile:hover {
-	height: auto;
+	height: 23em;
 	}
-.active_tile img{
-	visibility: initial;
-	} */
+
+
+
+
 
 
 /* SHARE BUTTONS */
@@ -309,6 +318,7 @@ sub {
 	/* TEASER TILES */
 	#teasers {
 	padding: 0em;
+	padding-top: 0.1em;
 	}
 	.teaser_tile {
 	height: auto;
