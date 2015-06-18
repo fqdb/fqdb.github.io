@@ -87,44 +87,59 @@ th {
 	bottom: 1em;
 	}
 
-/* HEADER & FOOTER */
+/* HEADER*/
 header {
 	background-color: #ffffff;
 	width: 100%;
 	height: 79px;
 	position: fixed;
 	top: 0;
+	left: 0;
+	right: 0;
 	border-bottom: 2px solid #4C9CF1;
 	z-index: 100;
 	transition: top 0.5s ease-in-out;
 }
-/* To hide header */
-.nav-up {
-  top: -79px; /*same as header height*/
-}
-/* ditto for footer */
-.nav-up-footer {
-  top: -5em;
-}
-
 nav {
-	vertical-align: center;
-	text-align: center;
-	margin-top: -0.25em;
 	font-family: 'Asap', Droid Sans, Arial, sans-serif;
+	width: 40em;
+	text-align: center;
 }
-
 #logo{
-	margin-left: 31%;
-	margin-top: 0.2em;
-	margin-right: 1em;
-	float: left;
 	font-size: 3.4em;
-	font-family: CartoGothic, Arial, sans-serif;
+	font-family: CartoGothic, 'Asap', Arial, sans-serif;
+	float: left;
+	margin-top: -0.2em;
+	margin-left: 2em;
 }
 #logo:hover {
 	text-decoration: underline;
 	}
+/* To hide header */
+.nav-up {
+  top: -79px; /*same as header height*/
+}
+
+	/* MENU */
+nav ul {
+	list-style: none;
+}
+nav li {
+	display: inline;
+	margin-left: 2em;
+	font-size: 1.5em;
+	float: left;
+	margin-top: 0.5em;
+	}
+nav a {
+	color: #2262AD
+}
+nav a:hover {
+	text-decoration: underline;
+}
+.current {
+	color: #2262AD;
+}
 #menu-icon {
 	display: hidden;
 	width: 4em;
@@ -137,43 +152,26 @@ nav {
 	text-align: right;
 }
 a:hover#menu-icon {
-
 	background: url(res/expand_icon_hover.png) center;
-}
-/* MOBILE MENU */
-nav ul {
-	list-style: none;
-}
-nav li {
-	display: inline-block;
-	float: left;
-	padding: 1em;
-	font-size: 1.5em;	
-}
-nav a {
-	color: #2262AD
-}
-nav a:hover {
-	text-decoration: underline;
-}
-.current {
-	color: #2262AD;
 }
 
 /* FOOTER */
 footer {
-	background: url(res/opacity_bg_70.png) repeat;
+	/* background: url(res/opacity_bg_70.png) repeat; */
+	background: white;
+	opacity: 70;
 	padding-top: 1em;
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 1.5em;
+	height: 0.7em;
 	transition: top 0.5s ease-in-out;
 	}
 .left_footer {
 	font-size: 0.85em;
 	margin-left: 0.5em;
+	margin-top: -.7em;
 	float: left;
 	font-family: Asap, Arial, sans-serif;
 	color: #444;
@@ -181,10 +179,15 @@ footer {
 .right_footer {
 	font-size: 0.7em;
 	margin-right: 0.5em;
+	margin-top: -0.7em;
 	float: right;
 	vertical-align: center;
 	font-family: Asap, Arial, sans-serif;
 	}
+/* to hide footer */
+.nav-up-footer {
+  top: -5em;
+}
 
 /* Fix sub and sup */
 sub, sup {
@@ -235,7 +238,6 @@ sub {
 	padding-bottom: 1em;
 	margin-bottom: 1em;
 	}
-
 #teasers h2 {
 	color: black;
 	text-align: center;
@@ -250,15 +252,23 @@ sub {
 .teaser_tile img {
 	display: none;
 	}
-
 #teaser_tile_last {
 	margin-right: 0em;
+	}
+.teaser_title {
+	font-weight: bold;
+	color: #0C72DC;
 	}
 .teaser_text {
 	font-size: 0.9em;
 	}
-.teaser_tile a{
-	color: #2262AD;
+#teasers a {
+	font-weight: normal;
+	color: black;
+	}
+.teaser_tile a:hover {
+	font-weight: normal;
+	color: black;
 	}
 .teaser_tile:hover img{
 	margin-top: 1em;
@@ -269,11 +279,6 @@ sub {
 .teaser_tile:hover {
 	height: 23em;
 	}
-
-
-
-
-
 
 /* SHARE BUTTONS */
 #share_to {
@@ -290,9 +295,12 @@ sub {
 	#logo{
 		margin-left: 5%;
 		margin-right: 0.5em;
+		margin-top: 0.1em;
 		}
 	#menu-icon {
 		display:inline-block;
+		float: right;
+		margin-right: 8em;
 	}
 	nav ul, nav:active ul { 
 		display: none;
@@ -313,6 +321,11 @@ sub {
 	}
 	nav:hover ul {
 		display: block;
+	}
+	
+	/* FOOTER */
+	.hosted_by {
+		display: none;
 	}
 	
 	/* TEASER TILES */
