@@ -30,6 +30,8 @@ h2 {
 	color: #0c4f97;
 	font-family: Asap;
 	margin-top: 0.8em;
+	line-height: 1.1em;
+	margin-bottom: -0.4em;
 	}
 	
 h3 {
@@ -41,7 +43,7 @@ font-size: 1.2em;
 	}
 
 p {
-	line-height: 1.5em;
+	line-height: 1.4em;
 	margin-bottom: 0.2em;
 }
 
@@ -325,6 +327,16 @@ sub {
 	}
 	.teaser_tile {
 	height: auto;
+	}
+	.teaser_tile:hover {
+	height: auto;
+	}
+	.teaser_tile img {
+	display: block;
+	}
+	.teaser_tile:hover img {
+	max-width: 100%;
+	margin-top: 0em;
 	}
 	
 	/* WIDE TABLES */
