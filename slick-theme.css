@@ -53,7 +53,7 @@
 .slick-next:hover:before,
 .slick-next:focus:before
 {
-    opacity: 1;
+    opacity: 0.8;
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
@@ -68,7 +68,7 @@
     font-size: 30px;
     line-height: 1;
 
-    opacity: .75;
+    opacity: 1;
     color: black;
 
     -webkit-font-smoothing: antialiased;
@@ -185,8 +185,9 @@
     width: 1em;
     height: 1em;
 
-    content: '■';
+    content: '•';
     text-align: center;
+	padding-top: 0.5em;
 
     opacity: 0.5;
     color: black;
@@ -197,5 +198,5 @@
 .slick-dots li.slick-active button:before
 {
     opacity: 1;
-    color: #4C9CF1;
+    color: black;
 }
