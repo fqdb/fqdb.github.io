@@ -17,7 +17,7 @@ section {
 	padding-bottom: 1em;
 	font-size: 1em;
 	line-height: 1.15em;
-	font-family: sans-serif, Roboto, Arial, sans-serif;
+	font-family: Asap, Roboto, Arial, sans-serif;
 }
 
 h1 {
@@ -29,7 +29,7 @@ h1 {
 h2 {
 	font-size: 1.6em;
 	color: #0c4f97;
-	font-family: sans-serif;
+	font-family: Asap, Roboto, Arial, sans-serif;
 	margin-top: 0.8em;
 	line-height: 1.1em;
 	margin-bottom: -0.4em;
@@ -38,7 +38,7 @@ h2 {
 h3 {
 font-size: 1.2em;
 	color: #444;
-	font-family: sans-serif;
+	font-family: Asap, Roboto, Arial, sans-serif;
 	margin-left: 0.5em;
 	margin-top: 0.6em;
 	}
@@ -109,12 +109,12 @@ header {
 	transition: top 0.5s ease-in-out;
 }
 nav {
-	font-family: 'Asap', Droid Sans, Arial, sans-serif;
+	font-family: Asap, Roboto, Arial, sans-serif;
 	text-align: center;
 }
 #logo{
 	font-size: 3.4em;
-	font-family: CartoGothic, 'Asap', Arial, sans-serif;
+	font-family: CartoGothic, Asap, Roboto, Arial, sans-serif;
 	float: left;
 	margin-top: -0.2em;
 	margin-left: 2em;
@@ -173,7 +173,7 @@ footer {
 	margin-left: 0.5em;
 	margin-top: -.7em;
 	float: left;
-	font-family: Asap, Arial, sans-serif;
+	font-family: Asap, Roboto, Arial, sans-serif;
 	color: #444;
 	}
 .right_footer {
@@ -182,7 +182,7 @@ footer {
 	margin-top: -0.7em;
 	float: right;
 	vertical-align: center;
-	font-family: Asap, Arial, sans-serif;
+	font-family: Asap, Roboto, Arial, sans-serif;
 	}
 /* to hide footer */
 .nav-up-footer {
@@ -250,11 +250,10 @@ sub {
 	transition: height 0.5s; /* Animation time */
 	}
 .teaser_tile img {
-	display: none;
+	height: 0px;
+	max-width: 90%;
 	transition: height 0.5s;
-	transition-delay: 0.1s;
 	}
-
 .teaser_title {
 	font-weight: bold;
 	color: #0C72DC;
@@ -273,8 +272,7 @@ sub {
 	}
 .teaser_tile:hover > img{
 	margin-top: 1em;
-	display: block;
-	max-width: 90%;
+	height: 270px;
 	}
 .teaser_tile:hover {
 	height: 23em;
@@ -339,10 +337,11 @@ sub {
 	}
 	.teaser_tile img {
 	display: block;
+	height: auto;
+	max-width: 100%;
 	}
 	.teaser_tile:hover img {
 	max-width: 100%;
-	margin-top: 0em;
 	}
 	
 	/* WIDE TABLES */

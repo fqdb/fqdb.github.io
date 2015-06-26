@@ -28,26 +28,7 @@
     src: url(res/fonts/Roboto-Bold.ttf);
     font-weight: bold;
 }
-	
-/* Old Standard TT */
-@font-face {
-  font-family: Old Standard TT;
-  font-style: normal;
-  font-weight: normal;
-  src: url(res/fonts/OldStandard-Regular.ttf);
-}
-@font-face {
-  font-family: Old Standard TT;
-  font-style: normal;
-  font-weight: bold;
-  src: url(res/fonts/OldStandard-Bold.ttf);
-}
-@font-face {
-  font-family: Old Standard TT;
-  font-style: italic;
-  font-weight: normal;
-  src: url(res/fonts/OldStandard-Italic.ttf);
-}
+
 /* Google fonts Asap */
 @font-face {
   font-family: Asap;
