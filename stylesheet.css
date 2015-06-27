@@ -334,16 +334,18 @@ sub {
 	.teaser_tile {
 	height: auto;
 	}
+	.teaser_tile .img_wrapper{
+	height: auto;
+	width: 100%;
+	overflow: visible;
+	margin-bottom: 1em;
+	}
 	.teaser_tile:hover {
 	height: auto;
 	}
-	.teaser_tile img {
-	display: block;
+
+	.teaser_tile:hover > .img_wrapper {
 	height: auto;
-	max-width: 100%;
-	}
-	.teaser_tile:hover img {
-	max-width: 100%;
 	}
 	
 	/* WIDE TABLES */
