@@ -249,10 +249,13 @@ sub {
 	height: 4em;
 	transition: height 0.5s; /* Animation time */
 	}
-.teaser_tile img {
+.teaser_tile .img_wrapper {
 	height: 0px;
-	max-width: 90%;
+	width: 90%;
 	transition: height 0.5s;
+	overflow: hidden;
+	margin: auto;
+	padding-top: 1em;
 	}
 .teaser_title {
 	font-weight: bold;
@@ -270,8 +273,7 @@ sub {
 	font-weight: normal;
 	color: black;
 	}
-.teaser_tile:hover > img{
-	margin-top: 1em;
+.teaser_tile:hover > .img_wrapper{
 	height: 270px;
 	}
 .teaser_tile:hover {
