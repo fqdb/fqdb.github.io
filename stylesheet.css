@@ -111,13 +111,14 @@ header {
 nav {
 	font-family: Asap, Roboto, Arial, sans-serif;
 	text-align: center;
-}
+	width: 40em;
+	margin: auto;
+	}
 #logo{
 	font-size: 3.4em;
 	font-family: CartoGothic, Asap, Roboto, Arial, sans-serif;
 	float: left;
 	margin-top: -0.2em;
-	margin-left: 2em;
 }
 #logo:hover {
 	text-decoration: underline;
@@ -300,6 +301,9 @@ sub {
 		display:block;
 		float: right;
 		}
+	nav {
+	width: auto;
+	}
 	nav ul, nav:active ul { 
 		display: none;
 		position: absolute;
@@ -309,13 +313,14 @@ sub {
 		box-shadow: 5px 5px 5px 3px #bebebe;
 		right: 20px;
 		top: 60px;
-		width: 50%;
+		width: 10em;
 		}
 	nav li {
-		text-align: right;
+		text-align: left;
 		padding: 1em;
 		margin-top: -0.5em;
 		margin-bottom: -0.5em;
+		margin-left: -1em;
 	}
 	nav:hover ul {
 		display: block;

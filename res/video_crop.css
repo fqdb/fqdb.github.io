@@ -1,0 +1,23 @@
+#CM11_theme_video_wrapper {
+	max-width: 281px;
+	max-height: 500px;
+	height: auto;
+	overflow:hidden;
+	display: block;
+	margin:auto;
+	}
+
+#CM11_theme_video {
+	margin-left: -297px;
+	max-height: 500px;
+	max-width: 875px;
+	}
+	
+@media only screen and (max-width : 335px) {
+#CM11_theme_video_wrapper {
+
+	}
+
+#CM11_theme_video {
+
+	}
