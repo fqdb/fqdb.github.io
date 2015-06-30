@@ -8,7 +8,7 @@
 	<link type="text/css" rel="stylesheet" href="../stylesheet.css"/>
 	<link type="text/css" rel="stylesheet" href="../fonts.css"/>
 	
-	<link type="text/css" rel="stylesheet" href="../res/video_crop.css"/>
+	<link type="text/css" rel="stylesheet" href="../res/cm11_theme.css"/>
 	
 	<link rel="shortcut icon" type="image/ico" href="../favicon.ico" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,45 +50,60 @@
 	<h2>Video and screenshots</h2>
 	<p>
 	<a href="../res/video/CM11_theme.mp4"><div id="CM11_theme_video_wrapper"><video id="CM11_theme_video" src="../res/video/CM11_theme.mp4" controls></video></div></a>
-	<span class="small_description">Video not working? Just tap on it or <a href="https://www.youtube.com/embed/EAyiLLdOyT8">watch on YouTube</a></span>
+	<span class="small_description">Video not working? Tap/click the video to download or stream directly.</span>
 	</p>
-	<p><div style="width:100%; text-align:center;"><a href="../res/photo/emui_theming/Screenshot_2015-06-09-08-43-17.jpeg"><img style="max-width:45%; max-height: 25em; display:inline;" src="../res/photo/emui_theming/Screenshot_2015-06-09-08-43-17.jpeg"></a> <a href="../res/photo/emui_theming/preview_systemui_4.jpg"><img style="max-width:45%; max-height: 25em; display:inline;" src="../res/photo/emui_theming/preview_systemui_4.jpg"></a><br>
-	<span class="small_description">Screenshots of version 0.12.5 Beta</span></div>
+	<p>
+	<div id="CM11_slideshow" style="width: 100%;">
+	<!-- Slideshow by http://kenwheeler.github.io/slick/  under MIT licence-->
+	<div>
+	<img src="../res/photo/emui_theming/Screenshot_2015-06-09-08-43-17.jpeg">
+	</div>
+	<div>
+	<img  src="../res/photo/emui_theming/contacts.jpeg">
+	</div>
+	<div>
+	<img  data-lazy="../res/photo/emui_theming/notification_panel.jpeg">
+	</div>
+	<div>
+	<img  data-lazy="../res/photo/emui_theming/quicksettings.jpeg">
+	</div>
+	</div>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+		$('#CM11_slideshow').slick({
+		  dots: false,
+		  infinite: false,
+		  speed: 100,
+		  slidesToShow: 2,
+		  slidesToScroll: 2,
+		  responsive: [
+			{
+			  breakpoint: 656,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				infinite: true,
+				dots: false
+			  }
+			}			
+			
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		  ]
+		});
+    });
+	</script>
 	</p>
+
 	<h2>Releases</h2>
 	<p>
-		All releases can also be found on <a href="https://github.com/fqdb/CM11_theme/tree/master/Releases">Github</a>.
+	All releases can be found on <a href="https://github.com/fqdb/CM11_theme/tree/master/Releases">Github</a>. Download the files by clicking 'View Raw'.
 	</p>
 	<p>
-	<script>
-	$(document).ready(function(){
-		$("#unhide_alpha").click(function(){
-		$("#hidden_ul").toggle();
-		$("#hidden_ul_help").hide();
-		e.preventDefault();
-		});
-	});
-	</script>
-	<h3><a id="unhide_alpha" href="javascript:void(0);" style="color:#444;">Alpha <span class=small_description" id="hidden_ul_help">(click to expand)</span></a></h3>
-	<p>
-	<ul id="hidden_ul" style="display:none">
-	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Alpha/CM11_0.1.hwt?raw=true">0.1</a></li>
-	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Alpha/CM11_0.2.hwt?raw=true">0.2</a></li>
-	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Alpha/CM11_0.4.hwt?raw=true">0.4</a></li>
-	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Alpha/CM11_0.6.hwt?raw=true">0.6</a></li>
-	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Alpha/CM11_0.7.hwt?raw=true">0.7</a></li>
-	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Alpha/CM11_0.8.1.hwt?raw=true">0.8</a></li>
-	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Alpha/CM11_0.9.hwt?raw=true">0.9</a></li>
-	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Alpha/CM11_0.10.hwt?raw=true">0.10</a></li>
-	</ul>
-	</p>
-	<h3>Beta</h3>
-	<ul>
-	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Beta/CM11_0.11.8.hwt?raw=true"> 0.11.1</a>; Settings and status bar themed</li>
-	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Beta/CM11_0.12.5.hwt?raw=true"> 0.12.5</a>; Bug fixes, hidden NFC icon</li>
-	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Beta/CM11_0.12.6.hwt?raw=true"> 0.12.6</a>; Bug fixes, hidden headphones icon, themed a few more icons</li>
-	<li><a href="https://github.com/fqdb/CM11_theme/blob/master/Releases/Beta/CM11_0.14.hwt?raw=true"> 0.14</a>; All major bugs fixed, no readability issues anymore</li>
-	</ul>
+	<div style="background: #dddddd; width: auto; padding: 0.5em; font-weight: bold;">The latest (Beta) release can be downloaded <a href="">here</a>.</div>
+	<br>	
 	<div style="background: #dddddd; width: auto; padding: 0.5em;"><a href="https://github.com/fqdb/CM11_theme/blob/master/todo.md">List of bugs</a> (for the latest version)</div>
 	</p>
 	<p>
