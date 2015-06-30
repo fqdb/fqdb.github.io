@@ -20,8 +20,19 @@
 	<section id="main">
 	<h1>How to make an EMUI 3.0 theme</h1>
 	<p>
-	EMUI themes are distributed in the <span style="font-family:monospace">.hwt</span> format. This format is nothing else than a ZIP file with a different extension. Within an extracted EMUI theme file are multiple folders and multiple files. You can omit any of these if you don't want to theme an element.
+	EMUI themes are distributed in the <span style="font-family:monospace">.hwt</span> format. This format is nothing else than a ZIP file with a different extension. It's best to take a ready made .hwt theme and unzip it to see the structure. If you can't find one, download a sample theme <a href="https://github.com/fqdb/CM11_theme/raw/master/Releases/Beta/CM11_0.14.hwt">here</a> or download a theme using the Themes app on your Huawei/Honor device and find the .hwt file in /SDCard/HWThemes.</p>
+	<h2>Unzipping a .hwt file</h2>
+	<p>To unzip the .hwt file, you can either rename the extension to .zip, or use a <a href="http://7-zip.org/" title="7-zip is recommended">file archiver</a> that can unzip it directly. You will get this:
+	<p>
+	<img src="../res/photo/theme_guide/Folder_2.png">
+	<span class="small_description">This is the content of an unzipped .hwt file.</span>
 	</p>
+	<p>Now you will see a lot of files without any extension (<span style="font-family:monospace">com.android.contacts</span> etc.). These are also just zip files. Extract each of them to their own folder. In Windows you can't name a folder the same a a file, so it's best to move or delete the zipped files and then rename the folder to the original file names. You should end up with something like this.
+	<p>
+	<img src="../res/photo/theme_guide/Folder.png">
+	<span class="small_description">Example of 'build-folder' or source for a theme, this is what you get when you unzip every file in the .hwt archive. The selected folder weren't be zipped, as well as <span style="font-family:monospace">description.xml</span>. The other folders were zipped and renamed without extension.</span>
+	</p>
+	<p>For quick reference, see the Table 1 below:</p>
 	<p>
 	<table class="wide_table" style="width:97%">
 	<tr><th>Name</th><th>Type</th><th>Description</th></tr>
@@ -32,15 +43,40 @@
 	<tr><td>wallpaper</td><td>Folder</td><td>Contains homescreen and lockscreen wallpapers</td></tr>
 	<tr><td>com.android.systemui</td><td>File</td><td>Archive of theming data for status bar and system popups</td></tr>
 	<tr><td><span style="font-family:monospace">description.xml</span></td><td>File</td><td>XML file containing information about the theme as displayed in the Themes app</td></tr>
-	<tr><td><span style="font-family:monospace">theme.xml</span></td><td>File</td><td></td></tr>
-	<tr><td>framework-res</td><td>File</td><td>Contains xml for colour status bar notification texts</td></tr>
+	<tr><td>framework-res</td><td>File</td><td>Contains xml for colour status bar notification texts and a few status bar icons</td></tr>
 	<tr><td>icons</td><td>File</td><td>Archive containing icons and icon masks</td></tr>
 	<tr><td></td><td></td><td></td></tr>
 	</table>
-	<span class="small_description">Table 1. Summary of all files within a .hwt archive</span>
+	<span class="small_description">Table 1. Summary of all files within a typical .hwt theme</span>
 	</p>
+	<h2>How to theme an app</h2>
+	<p>Every individual app is in principle themed the same way. If you want to theme theme the status bar, most of it is in com.android.systemui. I will here use the settings app as an example.</p>
+	<p>Within the zip file/folder com.android.settings, you have two folders and one xml file.<p>
+	<div style="background:#bebebe; padding: 0.5em;">
+	framework-res<br>
+		<span style="margin-left: 2em; background-color: white;">res</span><br>
+		<span style="margin-left: 4em; background-color: #e3e2e2;">drawable-xxhdpi</span><br>
+		<span style="margin-left: 4em; background-color: #e3e2e2;">drawable-xhdpi</span><br>
+		<span style="margin-left: 4em; background-color: #e3e2e2;">...</span><br>
+		<span style="margin-left: 2em; background-color: white;">theme.xml</span><br>
+	res<br>
+		<span style="margin-left: 2em; background-color: #e3e2e2;">drawable-xxhdpi</span><br>
+		<span style="margin-left: 2em; background-color: #e3e2e2;">drawable-xhdpi</span><br>
+		<span style="margin-left: 2em; background-color: #e3e2e2;">...</span><br>
+	theme.xml
+	</div>
+	<p>
+	If you have ever decompiled or written Android apps, this will be familiar to you. The <code>res</code> folders contain image resources for the app such as buttons, backgrounds and icons. To theme this, simply replace the default image files with your own image files, but make sure they are the same dimensions, or will scale correctly. The <code>drawable-xxhdpi</code> folder is for full HD (1080x1920) devices for example, although strictly speaking the software screen density of the device determines what icon size is needed. For reference, see <a href="http://developer.android.com/guide/practices/screens_support.html">Android developer documentation</a>.<p>
+	<p>The <code>theme.xml</code> file contains colour values for text labels mostly. Since there is no (English) documentation on this, figuring out the identifiers for each label from scratch is impossible, so use an existing theme that themes all labels. I used the 'Moral' theme, which you find in the Themes app or download directly <a href="https://www.androidfilehost.com/?fid=24052804347766943">here</a>.
+	</p>
+	<p>
+	<div style="background: #bebebe; padding: 0.5em; size: 2em; text-align: center;"><code><span style="color: blue">&lt;color</span> <span style="color:red">name</span>=<span style="color:purple">"emui_secondary_text_dark"</span><span style="color: blue">&gt;</span><b>#a5ffffff</b><span style="color: blue">&lt;/color&gt;</span></code></div>
+	<span class="small_description">Sample line from <code>theme.xml</code></span>
+	</p>
+	<p>Later on I will try to make a list of identifiers and where they appear in the UI.</p>
 	<h2>Documentation</h2>
-	<p>The first video explains which resource image will appear where in the UI, and also covers the basics of compiling the theme.
+	<p>Here are two videos I found on Baidu. Both are for older EMUI versions (pre 3.0), but it will give you an idea on what to do. The first video explains which resource image will appear where in the UI, and also covers the basics of compiling the theme. The second video also discusses on how to change the lockscreen layout.</p>
+	<p>
 	<iframe style="max-width: 100%" width="560" height="315" src="https://www.youtube.com/embed/7acFsA4c0vo" frameborder="0" allowfullscreen></iframe>
 	<span class="small_description">Instructional video I found on Baidu, which shows which image resource element fits where in the UI.</span>
 	Some stills from the video:
@@ -49,7 +85,7 @@
 	<a href="../res/photo/emui_theming/Picture05.png"><img src="../res/photo/emui_theming/Picture05.png"></a>
 	</p>
 	
-	<iframe style="max-width: 100%" width="560" height="315" src="https://www.youtube.com/embed/Z6oviUqPfW0" frameborder="0" allowfullscreen></iframe>
+	<iframe style="max-width: 100%;" width="560" height="315" src="https://www.youtube.com/embed/Z6oviUqPfW0" frameborder="0" allowfullscreen></iframe>
 	
 	<h2 id="Comments">Comments</h2>
 	<br>
