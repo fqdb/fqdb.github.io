@@ -66,14 +66,19 @@
 	theme.xml
 	</div>
 	<p>
-	If you have ever decompiled or written Android apps, this will be familiar to you. The <code>res</code> folders contain image resources for the app such as buttons, backgrounds and icons. To theme this, simply replace the default image files with your own image files, but make sure they are the same dimensions, or will scale correctly. The <code>drawable-xxhdpi</code> folder is for full HD (1080x1920) devices for example, although strictly speaking the software screen density of the device determines what icon size is needed. For reference, see <a href="http://developer.android.com/guide/practices/screens_support.html">Android developer documentation</a>.<p>
-	<p>The <code>theme.xml</code> file contains colour values for text labels mostly. Since there is no (English) documentation on this, figuring out the identifiers for each label from scratch is impossible, so use an existing theme that themes all labels. I used the 'Moral' theme, which you find in the Themes app or download directly <a href="https://www.androidfilehost.com/?fid=24052804347766943">here</a>.
-	</p>
+	If you have ever decompiled or written Android apps, this will be familiar to you. The <code>res</code> folders contain image resources for the app such as buttons, backgrounds and icons. To theme this, simply replace the default image files with your own image files, but make sure they are the same dimensions, or will scale correctly. The <code>drawable-xxhdpi</code> folder is for full HD (1080x1920) devices for example, although strictly speaking the software screen density of the device determines what icon size is needed. For reference, see <a href="http://developer.android.com/guide/practices/screens_support.html">Android developer documentation</a>.</p>
+	<h3>Text colours</h3>
+	<p>The font colours for various text labels are defined by the <code>theme.xml</code> files. Below is a sample line from a <code>theme.xml</code> file:</p>
 	<p>
 	<div style="background: #bebebe; padding: 0.5em; size: 2em; text-align: center;"><code><span style="color: blue">&lt;color</span> <span style="color:red">name</span>=<span style="color:purple">"emui_secondary_text_dark"</span><span style="color: blue">&gt;</span><b>#a5ffffff</b><span style="color: blue">&lt;/color&gt;</span></code></div>
 	<span class="small_description">Sample line from <code>theme.xml</code></span>
 	</p>
-	<p>Later on I will try to make a list of identifiers and where they appear in the UI.</p>
+	<p>For adjusting the text colour in apps, all tags are of the type <code>color</code>. Next we have <code>name</code> after which a label is given. This label will be used by the theme engine to set the appropriate text in the UI to the colour enclosed in the XML tag. The color is given as a <a href="https://en.wikipedia.org/wiki/Web_colors">HEX value</a>. Normally HEX colours will be six letters long (e.g. <code>#123abc</code>), but you see that the example is eight characters long (excluding the <code>#</code>). The first two characters are to define the alpha value (opacity) on a scale of <code>00</code> (0%) to <code>ff</code> (100%). You may omit these characters and use standard 6 character colour codes, the theme engine will interpret this as 100% opacity. So <code>#000000</code> is equivalent to <code>#ff000000</code>.
+	<p>
+	<p>The other variable in the XML tags is the <code>name</code>. Unfortunately there is no good documentation on this (let alone documentation in English) and Huawei's software guys did not use logical naming, and some names even contain spelling errors. Therefore I can only recommend to use an existing theme that themes all labels. I used the 'Moral' theme, which you find in the Themes app or download directly <a href="https://www.androidfilehost.com/?fid=24052804347766943">here</a>.
+	</p>
+	<!-- <h3>List of name label identifiers</h3> -->
+
 	<h2>Documentation</h2>
 	<p>Here are two videos I found on Baidu. Both are for older EMUI versions (pre 3.0), but it will give you an idea on what to do. The first video explains which resource image will appear where in the UI, and also covers the basics of compiling the theme. The second video also discusses on how to change the lockscreen layout.</p>
 	<p>
