@@ -30,41 +30,47 @@
 	<p>Now you will see a lot of files without any extension (<span style="font-family:monospace">com.android.contacts</span> etc.). These are also just zip files. Extract each of them to their own folder. In Windows you can't name a folder the same a a file, so it's best to move or delete the zipped files and then rename the folder to the original file names. You should end up with something like this.
 	<p>
 	<img src="../res/photo/theme_guide/Folder.png">
-	<span class="small_description">Example of 'build-folder' or source for a theme, this is what you get when you unzip every file in the .hwt archive. The selected folder weren't be zipped, as well as <span style="font-family:monospace">description.xml</span>. The other folders were zipped and renamed without extension.</span>
+	<span class="small_description">Example of 'build-folder' or source for a theme, this is what you get when you unzip every file in the .hwt archive. The selected folder aren not meant to be zipped, as well as <span style="font-family:monospace">description.xml</span>. The other folders were zipped and renamed without extension.</span>
 	</p>
-	<p>For quick reference, see the Table 1 below:</p>
+	<p>For quick reference, see table 1 below:</p>
 	<p>
 	<table class="wide_table" style="width:97%">
 	<tr><th>Name</th><th>Type</th><th>Description</th></tr>
 	<tr><td>com.android.contacts</td><td>File</td><td>Archive of contacts app theming data</td></tr>
-	<tr><td>preview</td><td>Folder</td><td>Contains preview images (as displayed in Themes app)</td></tr>
+	<tr><td>com.android.incallui</td><td>File</td><td>Archive of dialer in call interface data</td></tr>
+	<tr><td>com.android.systemui</td><td>File</td><td>Archive of theming data for status bar and system popups</td></tr>
 	<tr><td>com.android.settings</td><td>File</td><td>Archive of settings app theming data</td></tr>
 	<tr><td>com.huawei.android.thememanager</td><td>File</td><td>Archive of Themes app theming data</td></tr>
-	<tr><td>wallpaper</td><td>Folder</td><td>Contains homescreen and lockscreen wallpapers</td></tr>
-	<tr><td>com.android.systemui</td><td>File</td><td>Archive of theming data for status bar and system popups</td></tr>
-	<tr><td><span style="font-family:monospace">description.xml</span></td><td>File</td><td>XML file containing information about the theme as displayed in the Themes app</td></tr>
 	<tr><td>framework-res</td><td>File</td><td>Contains xml for colour status bar notification texts and a few status bar icons</td></tr>
+	<tr><td>framework-res-hwext</td><td>File</td><td>Contains theming data for Huawei themed generic style: checkboxes, buttons, etc. and font colours</td></tr>
 	<tr><td>icons</td><td>File</td><td>Archive containing icons and icon masks</td></tr>
-	<tr><td></td><td></td><td></td></tr>
+	<tr><td><span style="font-family:monospace">description.xml</span></td><td>File</td><td>XML file containing information about the theme as displayed in the Themes app</td></tr>
+	<tr><td>preview</td><td>Folder</td><td>Contains preview images (as displayed in Themes app)</td></tr>
+	<tr><td>wallpaper</td><td>Folder</td><td>Contains homescreen and lockscreen wallpapers</td></tr>
+	<!-- <tr><td></td><td></td><td></td></tr> -->
 	</table>
-	<span class="small_description">Table 1. Summary of all files within a typical .hwt theme</span>
+	<span class="small_description">Table 1. Files you will find in a typical <code>.hwt</code> theme</span>
 	</p>
 	<h2>How to theme an app</h2>
 	<p>Every individual app is in principle themed the same way. If you want to theme theme the status bar, most of it is in com.android.systemui. I will here use the settings app as an example.</p>
 	<p>Within the zip file/folder com.android.settings, you have two folders and one xml file.<p>
-	<div style="background:#bebebe; padding: 0.5em;">
-	framework-res<br>
-		<span style="margin-left: 2em; background-color: white;">res</span><br>
-		<span style="margin-left: 4em; background-color: #e3e2e2;">drawable-xxhdpi</span><br>
-		<span style="margin-left: 4em; background-color: #e3e2e2;">drawable-xhdpi</span><br>
-		<span style="margin-left: 4em; background-color: #e3e2e2;">...</span><br>
-		<span style="margin-left: 2em; background-color: white;">theme.xml</span><br>
-	res<br>
-		<span style="margin-left: 2em; background-color: #e3e2e2;">drawable-xxhdpi</span><br>
-		<span style="margin-left: 2em; background-color: #e3e2e2;">drawable-xhdpi</span><br>
+	<div style="border: solid grey 2px; padding: 0.5em; max-width: 18em; margin: auto;">
+	/framework-res<br>
+		<span style="margin-left: 2em; background-color: #4C9CF1; padding: 0.1em;">/res</span><br>
+		<span style="margin-left: 4em; background-color: #e3e2e2;">/drawable-xxhdpi</span><br>
+		<span style="margin-left: 6em;">/<code>button_checked_focused.png</code></span><br>
+		<span style="margin-left: 6em;">/<code>...</code></span><br>
+		<span style="margin-left: 4em; background-color: #e3e2e2;">/drawable-xhdpi</span><br>
+		<span style="margin-left: 4em; background-color: #e3e2e2;">/...</span><br>
+		<span style="margin-left: 2em; background-color: #4C9CF1; padding: 0.1em;">/<code>theme.xml</code></span><br>
+	/res<br>
+		<span style="margin-left: 2em; background-color: #e3e2e2;">/drawable-xxhdpi</span><br>
+		<span style="margin-left: 4em;">/<code>background_emui.png</code></span><br>
+		<span style="margin-left: 2em; background-color: #e3e2e2;">/drawable-xhdpi</span><br>
 		<span style="margin-left: 2em; background-color: #e3e2e2;">...</span><br>
-	theme.xml
+	/<code>theme.xml</code>
 	</div>
+	<span class="small_description">Structure within for example the <code>com.android.systemui</code> archive.</span>
 	<p>
 	If you have ever decompiled or written Android apps, this will be familiar to you. The <code>res</code> folders contain image resources for the app such as buttons, backgrounds and icons. To theme this, simply replace the default image files with your own image files, but make sure they are the same dimensions, or will scale correctly. The <code>drawable-xxhdpi</code> folder is for full HD (1080x1920) devices for example, although strictly speaking the software screen density of the device determines what icon size is needed. For reference, see <a href="http://developer.android.com/guide/practices/screens_support.html">Android developer documentation</a>.</p>
 	<h3>Text colours</h3>
