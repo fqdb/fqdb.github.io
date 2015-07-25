@@ -152,8 +152,9 @@ nav a:hover {
 }
 #menu-icon {
 	display: none;
+	max-width: 2.6em;
 	font-size: 1.5em;
-	margin-top: 1em;
+	margin-top: 0.5em;
 	margin-right: 5%;
 	text-align: right;
 }
@@ -182,10 +183,13 @@ footer {
 .right_footer {
 	font-size: 0.85em;
 	margin-right: 0.5em;
-	margin-top: -0.7em;
+	margin-top: -1em;
 	float: right;
 	vertical-align: center;
 	font-family: Asap, Roboto, Arial, sans-serif;
+	}
+.right_footer:hover {
+	opacity: 0.7;
 	}
 /* to hide footer */
 .nav-up-footer {
@@ -302,6 +306,9 @@ sub {
 	#menu-icon {
 		display:block;
 		float: right;
+		}
+	#menu-icon:hover {
+		opacity: 0.5;
 		}
 	nav {
 	width: auto;
