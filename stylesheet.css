@@ -113,7 +113,7 @@ header {
 nav {
 	font-family: Asap, Roboto, Arial, sans-serif;
 	text-align: center;
-	width: 40em;
+	width: 45em;
 	margin: auto;
 	}
 #logo{
@@ -236,25 +236,17 @@ sub {
 	
 /* TEASER on INDEX */
 #teasers {
-	background-color: #b4d5f9;
-	max-width: 110%;
 	margin-top: 1em;
-	padding-left: 3em;
-	padding-right: 3em;
 	padding-top: 1em;
-	padding-bottom: 1em;
-	margin-bottom: 1em;
 	}
-#teasers h2 {
-	color: black;
-	text-align: center;
-	}
+
 .teaser_tile {
 	background-color: #EBECED;
-	padding: 0.3em;
+	padding: 0.7em;
 	margin-bottom: 1em;
 	height: 4em;
 	transition: height 0.5s; /* Animation time */
+	width: 80%;
 	}
 .teaser_tile .img_wrapper {
 	height: 0px;
@@ -297,7 +289,7 @@ sub {
 	
 /* RESPONSIVE */
 	/* PHONES */
-@media only screen and (max-width : 41em) {
+@media only screen and (max-width : 43em) {
 	/* NAV */
 	#logo{
 		margin-left: 5%;
@@ -347,6 +339,7 @@ sub {
 	}
 	.teaser_tile {
 	height: auto;
+	width: 100%;
 	}
 	.teaser_tile .img_wrapper{
 	height: auto;
