@@ -50,6 +50,21 @@ p {
 	margin-bottom: 0.2em;
 }
 
+.date_posted{
+	font-size: 0.8em;
+}
+
+.quote {
+	font-family: Georgia, serif;
+	padding: 2em;
+}
+
+.author {
+	text-align: right;
+	margin-top: -1em;
+	margin-right: 3em;
+}
+
 a {
 	color: #4C9CF1;
 	text-decoration: none;
