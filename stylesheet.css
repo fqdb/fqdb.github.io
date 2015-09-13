@@ -258,10 +258,11 @@ sub {
 .teaser_tile {
 	background-color: #EBECED;
 	padding: 0.7em;
+	margin: auto;
 	margin-bottom: 1em;
 	height: 4em;
 	transition: height 0.5s; /* Animation time */
-	width: 80%;
+	max-width: 80%;
 	}
 .teaser_tile .img_wrapper {
 	height: 0px;
@@ -272,13 +273,13 @@ sub {
 	padding-top: 1em;
 	}
 .teaser_title {
+	text-align: center;
 	font-weight: bold;
+	font-size: 1.1em;
 	color: #0C72DC;
 	font-family: Asap, Roboto, Arial, sans-serif;
 	}
-.teaser_text {
-	font-size: 0.9em;
-	}
+
 #teasers a {
 	font-weight: normal;
 	color: black;
@@ -358,7 +359,8 @@ sub {
 	}
 	.teaser_tile .img_wrapper{
 	height: auto;
-	width: 100%;
+	max-width: 100%;
+	padding: 0.2em;
 	overflow: visible;
 	margin-bottom: 1em;
 	}
