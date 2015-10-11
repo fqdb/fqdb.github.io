@@ -55,17 +55,17 @@ Felix de Boer
 <a href="#" id="posts_parent"><div>Posts</div></a>
 <a href="#" id="resume_parent"><div>Resume</div></a>
 <a href="#" id="contact_parent"><div>Contact</div></a>
-<!-- <a href="about.html"><div>About</div></a> -->
-<div id="posts_expand" class="expand">
-	<a href="page/sony-devices-you-will-want-now.html"><div class="spotlight"><h3>Amazing Sony devices</h3>
-	Some of the coolest products Sony sells now.<br><br>
-	<div class="img_wrapper"><video src="res/photo/weird_sony/BSP60.mp4" style="max-width: 100%;"autoplay loop controls></video></div>
-	</div></a><a href="page/how-to-make-an-emui-30-theme.html"><div class="spotlight"><h3>How to make an EMUI 3.0 theme</h3>
-	Everything on making themes for recent Huawei/Honor devices. The guide is still a work in progress.
-	<div class="img_wrapper"><img src="res/photo/index/theming_preview.png"></div>
-	</div></a><a href="page/emui_3.0_vs_miui_v6.html"><div class="spotlight"><h3>EMUI 3.0 vs. MIUI V6</h3>
-	A short history of Huawei's way of skinning Android and a gallery full of comparison screenshots with Xiaomi's MIUI.
-	<div class="img_wrapper"><img src="http://static.tweakers.net/ext/f/XcKPbq2o2ZdFWmNl8A0dQonL/full.jpg"></div>
+<a href="#" id="about_parent"><div>About</div></a>
+<div id="posts_expand" class="expand" style="padding: 0; background: none;">
+	<a href="page/sony-devices-you-will-want-now.html"><div class="spotlight"><div class="spotlight_text"><h2>Amazing Sony devices</h2>
+	Some of the coolest products Sony sells now.</div>
+	<div class="spotlight_media"><video src="res/photo/weird_sony/BSP60.mp4" style="max-width: 100%;"autoplay loop controls></video></div>
+	</div></a><a href="page/how-to-make-an-emui-30-theme.html"><div class="spotlight"><div class="spotlight_text"><h2>How to make an EMUI 3.0 theme</h2>
+	Everything on making themes for recent Huawei/Honor devices.</div>
+	<div class="spotlight_media"><img src="res/photo/index/theming_preview.png"></div>
+	</div></a><a href="page/emui_3.0_vs_miui_v6.html"><div class="spotlight"><div class="spotlight_text"><h2>EMUI 3.0 vs. MIUI V6</h2>
+	A short history of Huawei's way of skinning Android and a gallery full of comparison screenshots with Xiaomi's MIUI.</div>
+	<div class="spotlight_media"><img src="http://static.tweakers.net/ext/f/XcKPbq2o2ZdFWmNl8A0dQonL/full.jpg"></div>
 	</div></a><a href="page/archive.html" style="margin-bottom: 5em;"><div class="spotlight"><h1 style="vertical-align: center; text-align: center;">more posts</h1>
 	</div></a>
 </div>
@@ -102,10 +102,13 @@ Felix de Boer
 	<p>E-mail: <script>mail("fqdeboer","ilevn?l",-2,"")</script></p>
 	<p>Telegram: <a href="https://telegram.me/felixdeboer">@FelixDeBoer</a></p>
 </div>
+<div id="about_expand" class="expand">
+	<h1>About</h1>
+	<p>Felix de Boer, 2014–2015</p>
+	<p><a href="https://github.com/fqdb/fqdb.github.io">Source code</a></p>
+	<p>Hosted by <a href="https://github.com/pages">Github Pages</p>
 </div>
-<footer>
-Felix de Boer 2014-2015 hosted by <a href="https://github.com/pages">Github Pages</a>
-</footer>
+<!-- clicky things*/ -->
 <script>
 $(function(){
          $('#posts_parent').click(function(){
@@ -124,6 +127,12 @@ $(function(){
          $('#resume_parent').click(function(){
                $('.expand').hide();
 			   $('#resume_expand').show();
+        });
+});
+$(function(){
+         $('#about_parent').click(function(){
+               $('.expand').hide();
+			   $('#about_expand').show();
         });
 });
 </script>

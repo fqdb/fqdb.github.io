@@ -3,6 +3,12 @@ body {
 	font-family: Roboto, Helvetica, Arial, sans-serif;
 	text-align: justify;
 	}
+	
+a {
+	text-decoration: none;
+	color: #ff5722;
+	font-weight: bold;
+}
 
 #title {
 	font-size: 5em;
@@ -24,7 +30,9 @@ body {
 }
 p {
 	font-size: 1.2em;
-	max-width: 40em;
+	max-width: 37em;
+}
+body > p {
 	margin-left: 1.5em;
 }
 
@@ -32,9 +40,10 @@ p {
 	display: block;
 	max-width: 15em;
 }
-#home_menu a {
+#home_menu > a {
 	text-decoration: none;
 	color: black;
+	font-weight: normal;
 }
 #home_menu > a > div {
 	font-size: 2em;
@@ -50,53 +59,51 @@ p {
 	display: none;
 	position: absolute;
 	margin-left: 15em;
-	margin-top: -9.6em;/* 3.2em per menu item */
+	margin-top: -12.8em;/* 3.2em per menu item */
 	font-size: 1em;
 	max-width: 100%;
 	background: #ffcdbe;
 	margin-bottom: 5em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .spotlight {
 	width: 20em;
-	padding: 1em;
 	display: inline-block;
 	background: #ffcdbe;
 	vertical-align: top;
-	height: 20em;
-	
+	height: auto;
+	padding: 1em;
+}
+.spotlight_text {
+	height: 9em;
+}
+.spotlight_media {
+	height: 15em;
 }
 .spotlight img,video {
 	margin-top: 0.5em;
 	max-width: 100%;
 	max-height: 13em;
 }
+#posts_expand > a {
+	text-decoration: none;
+	color: black;
+	font-weight: normal;
+}
 .spotlight:hover {
 	background: #aaa;
 }
 #resume_expand {
-	font-size: 0.9em;
 	width: 40em;
 	max-width: 70%;
-	padding-left: 1em;
 }
 
-#contact_expand {
+#contact_expand, #about_expand {
 	width: 20em;
 	height: 20em;
 	max-width: 100%;
-	padding-left: 1em;
-}
-
-footer {
-	position: fixed;
-	bottom: 0;
-	text-align: center;
-	background: #ffcdbe;
-	width: 100%;
-	border-top: 1px solid white;
-	font-size:0.8em;
-	z-index: -99;
 }
 
 ::selection {
@@ -105,8 +112,11 @@ footer {
 
 /* RESPONSIVE */
 	/* PHONES */
-@media only screen and (max-width : 37.5em) {
+@media only screen and (max-width : 59em) {
 	p {
+		margin-left: 0;
+	}
+	body > p {
 		margin-left: 0;
 	}
 	#title {
@@ -125,35 +135,41 @@ footer {
 		margin-left: 0em;
 		margin: 0em;
 		width: 100%;
+		height: auto;
+		max-width: 100%;
 		padding: 0.8em;
 		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 		box-sizing: border-box;         /* Opera/IE 8+ */
 	}
-	#contact_expand {
+	#contact_expand, #resume_expand, #about_expand {
 		width: 100%;
 		height: auto;
-	}
-	#resume_expand {
-		width: 100%;
 		max-width: 100%;
 	}
-	.spotlight a {
+
+	.expand a {
 		text-decoration: underline;
-		
 	}
 	.spotlight {
 		width: 100%;
 		text-align: center;
 		margin-top: 0.5em;
 		height: auto;
-		border-bottom: 4px solid #ff5722;
 		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 		box-sizing: border-box;         /* Opera/IE 8+ */
 	}
+	.spotlight_text {
+		height: auto;
+	}
+	.spotlight_media {
+		border: 1px solid black;
+		height: auto;
+	}
 	.spotlight img,video {
 		margin-top: 0.5em;
 		max-width: 100%;
+		max-height: 100%;
 	}
 }
