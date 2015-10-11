@@ -64,7 +64,7 @@ p {
 	background: #ffcdbe;
 	vertical-align: top;
 	height: 20em;
-	border: 5px solid #ff5722;
+	
 }
 .spotlight img,video {
 	margin-top: 0.5em;
@@ -95,6 +95,11 @@ footer {
 	background: #ffcdbe;
 	width: 100%;
 	border-top: 1px solid white;
+	font-size:0.8em;
+}
+
+::selection {
+    background: #ffcdbe;
 }
 
 /* RESPONSIVE */
