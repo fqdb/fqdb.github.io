@@ -33,15 +33,15 @@
 </head>
 
 <body>
-<span id="title">
+<span id="title" title="click to hide expanded menu items">
 Felix de Boer
 </span>
 <div id="hline"></div>
-<p>Welcome to fqdeboer.net v3 beta. Everything should be fully functional albeit with some minor layout bugs.</p>
+<p>Hi, I am a student in Applied Physics (MSc) at Delft University of Technology.</p>
 <noscript>
-	<div style="background: #cc0000; padding: 1em; font-weight: bold; color: white; max-width: 30em; ">
-	JavaScript is not enabled or supported by your browser. The menu does not work now because it utilizes JavaScript.<br>
-	Here is a basic HTML version of the menu to help you out:
+	<div style="background: #cc0000; padding: 1em; font-weight: bold; color: white; max-width: 100%; display: inline-block; margin-bottom: 1em;">
+	Wow. <br>JavaScript is not enabled or supported by your browser. The menu does not work now because it uses JavaScript to expand. I'll help you out this time though, you can use the legacy menu below:
+	<div style="background: white; padding: 1em; margin-top: 1em;"
 	<ul>
 		
 		<li><a href="/page/archive.html">Archive</a></li>
@@ -49,8 +49,8 @@ Felix de Boer
 		<li><a href="/contact.html">Contact</a></li>
 	</ul>
 	</div>
+	</div>
 </noscript>
-
 <div id="home_menu">
 <a href="#" id="posts_parent"><div>Posts</div></a>
 <a href="#" id="resume_parent"><div>Resume</div></a>
@@ -73,6 +73,7 @@ Felix de Boer
 	<h1>Resume</h1>
 	<h2>Work experience</h2>
 	<h3>Tocano</h3>
+	<p><i>Summer 2014</i></br></p>
 	<p>At Delft based start-up <a href="http://www.tocano.nl/">Tocano</a>, I programmed a precise 3D positioning rig and executed lab experiments involving a class 4 infrared laser.</p>
 	<h2>Education</h2>
 	<h3>Master Applied Physics, Delft University of Technology</h3>
@@ -104,12 +105,18 @@ Felix de Boer
 </div>
 <div id="about_expand" class="expand">
 	<h1>About</h1>
-	<p>Felix de Boer, 2014–2015</p>
+	<p>Felix de Boer</p>
+	<p>2014–2015</p>
 	<p><a href="https://github.com/fqdb/fqdb.github.io">Source code</a></p>
 	<p>Hosted by <a href="https://github.com/pages">Github Pages</p>
 </div>
 <!-- clicky things*/ -->
 <script>
+$(function(){
+         $('#title').click(function(){
+               $('.expand').hide();
+        });
+});
 $(function(){
          $('#posts_parent').click(function(){
                $('.expand').hide();

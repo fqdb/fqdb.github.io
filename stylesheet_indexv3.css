@@ -1,7 +1,7 @@
 body {
-	background: none;
 	font-family: Roboto, Helvetica, Arial, sans-serif;
 	text-align: justify;
+	background: white;
 	}
 	
 a {
@@ -100,9 +100,14 @@ body > p {
 	max-width: 70%;
 }
 
-#contact_expand, #about_expand {
+#contact_expand {
 	width: 20em;
 	height: 12.8em;
+	max-width: 100%;
+}
+#about_expand {
+	width: 20em;
+	height: auto;
 	max-width: 100%;
 }
 
@@ -164,7 +169,6 @@ body > p {
 		height: auto;
 	}
 	.spotlight_media {
-		border: 1px solid black;
 		height: auto;
 	}
 	.spotlight img,video {
