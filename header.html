@@ -56,12 +56,10 @@
 		if (st > lastScrollTop && st > navbarHeight){
 			// Scroll Down
 			$('header').removeClass('nav-down').addClass('nav-up');
-			$('footer').removeClass('nav-down').addClass('nav-up-footer');
 		} else {
 			// Scroll Up
 			if(st + $(window).height() < $(document).height()) {
 				$('header').removeClass('nav-up').removeClass('nav-up-footer').addClass('nav-down');
-				$('footer').removeClass('nav-up-footer').addClass('nav-down');
 			}
 		}
 		

@@ -18,15 +18,24 @@
 	</script>
 	
 	<section id="main">
-	<h1>How to make an EMUI 3 theme<div id="share_to""></div>
+	<h1>How to make an EMUI 3 theme<div id="share_to"></div>
 	<script type="text/javascript" language="javascript">
 	$(document).ready(function() {
 		$('#share_to').load('../share_to.html');
 	});
 	</script></h1>
+	<span class="date_posted">Last updated: 20151029</span>
 	<p><img src="../res/photo/theme_guide/example_themes.jpg"></p>
 	<p>One of the main features of EMUI is the possibility to theme the user interface extensively. This guide will explain the basics of making themes for EMUI 3 (3.0 and 3.1). EMUI 2 themes have the same structure, but the filenames may be different.</p>
 	<p>EMUI themes are distributed in the <span style="font-family:monospace">.hwt</span> format. This format is nothing else than a ZIP file with a different extension. It's best to take a ready made .hwt theme and unzip it to see the structure. If you can't find one, download a sample theme <a href="https://github.com/fqdb/CM11_theme/raw/master/Releases/Beta/CM11_0.14.hwt">here</a> or download a theme using the Themes app on your Huawei/Honor device and find the <span style="font-family:monospace">.hwt</span> file in <span style="font-family:monospace">/SDCard/HWThemes</span>.</p>
+	<h2>Getting started</h2>
+	<p>First make sure you have all the tools required:</p>
+	<ul>
+	<li>XML editor (e.g. Notepad++)</li>
+	<li>Archive program (e.g. 7-zip, WinRar)</li>
+	<li>Image editor (e.g. Photoshop, GIMP)</li>
+	</ul>
+	
 	<h2>Unzipping a <span style="font-family:monospace">.hwt</span> file</h2>
 	<p>To unzip the <span style="font-family:monospace">.hwt</span> file, you can either rename the extension to <span style="font-family:monospace">.zip</span>, or use a <a href="http://7-zip.org/" title="7-zip is recommended">file archiver</a> that can unzip it directly. This is what you will find inside:
 	<p>
@@ -52,13 +61,14 @@
 	<tr><td>icons</td><td>File</td><td>Archive containing icons and icon masks</td></tr>
 	<tr><td><span style="font-family:monospace">description.xml</span></td><td>File</td><td>XML file containing information about the theme as displayed in the Themes app</td></tr>
 	<tr><td>preview</td><td>Folder</td><td>Contains preview images (as displayed in Themes app)</td></tr>
+	<tr><td>unlock</td><td>Folder</td><td>Contains lockscreen theme</td></tr>
 	<tr><td>wallpaper</td><td>Folder</td><td>Contains homescreen and lockscreen wallpapers</td></tr>
 	<!-- <tr><td></td><td></td><td></td></tr> -->
 	</table>
 	<span class="small_description">Table 1. Files you will find in a typical <code>.hwt</code> theme</span>
 	</p>
 	<h2>How to theme an app</h2>
-	<p>Every individual app is in principle themed the same way. If you want to theme theme the status bar, most of it is in com.android.systemui. I will here use the settings app as an example.</p>
+	<p>Every individual app is in principle themed the same way. If you want to theme the status bar, most of it is in com.android.systemui. I will here use the settings app as an example.</p>
 	<p>Within the zip file/folder com.android.settings, you have two folders and one xml file.<p>
 	<div style="border: solid grey 2px; padding: 0.5em; max-width: 18em; margin: auto;">
 	/framework-res<br>
@@ -79,6 +89,7 @@
 	<span class="small_description">Structure within for example the <code>com.android.systemui</code> archive.</span>
 	<p>
 	If you have ever decompiled or written Android apps, this will be familiar to you. The <code>res</code> folders contain image resources for the app such as buttons, backgrounds and icons. To theme this, simply replace the default image files with your own image files, but make sure they are the same dimensions, or will scale correctly. The <code>drawable-xxhdpi</code> folder is for full HD (1080x1920) devices for example, although strictly speaking the software screen density of the device determines what icon size is needed. For reference, see <a href="http://developer.android.com/guide/practices/screens_support.html">Android developer documentation</a>.</p>
+	<p>It's convenient to use icons from other devices. Simply unzip <code>SystemUI.apk</code> to browse for icons. You may also encounter images ending on <code>.9.png</code>, these are so called <a href="http://radleymarx.com/blog/simple-guide-to-9-patch/">9-patch images</a>. These images have a marker that allows scaling them correctly. If you replace these images with normal PNG files, they may look blurred and stretched.</p>
 	<h3>Text colours</h3>
 	<p>The font colours for various text labels are defined by the <code>theme.xml</code> files. Below is a sample line from a <code>theme.xml</code> file:</p>
 	<p>
@@ -90,19 +101,16 @@
 	<p>The other variable in the XML tags is the <code>name</code>. Unfortunately there is no good documentation on this (let alone documentation in English) and Huawei's software guys did not use logical naming, and some names even contain spelling errors. Therefore I can only recommend to use an existing theme that themes all labels. I used the 'Moral' theme, which you find in the Themes app or download directly <a href="https://www.androidfilehost.com/?fid=24052804347766943">here</a>.
 	</p>
 	<!-- <h3>List of name label identifiers</h3> -->
-
-	<h2>Documentation</h2>
-	<p>Here are two videos I found on Baidu. Both are for older EMUI versions (pre 3.0), but it will give you an idea on what to do. The first video explains which resource image will appear where in the UI, and also covers the basics of compiling the theme. The second video also discusses on how to change the lockscreen layout.</p>
+	
 	<p>
-	<iframe style="max-width: 100%" width="560" height="315" src="https://www.youtube.com/embed/7acFsA4c0vo" frameborder="0" allowfullscreen></iframe>
-	<span class="small_description">Instructional video I found on Baidu, which shows which image resource element fits where in the UI.</span>
-	Some stills from the video:
-	<a href="src="../res/photo/emui_theming/Picture03.png""><img src="../res/photo/emui_theming/Picture03.png"></a><br>
-	<a href="../res/photo/emui_theming/Picture04.png"><img src="../res/photo/emui_theming/Picture04.png"></a><br>
-	<a href="../res/photo/emui_theming/Picture05.png"><img src="../res/photo/emui_theming/Picture05.png"></a>
+	<iframe style="width: 100%;" width="560" height="315" src="https://www.youtube.com/embed/7acFsA4c0vo" frameborder="0" allowfullscreen></iframe>
+	<span class="small_description">Instructional video I found on Baidu, which shows which image resource element fits where in the UI. Note that this they make a theme for EMUI 2, so some stuff may have changed for EMUI 3.</span>
 	</p>
 	
-	<iframe style="max-width: 100%;" width="560" height="315" src="https://www.youtube.com/embed/Z6oviUqPfW0" frameborder="0" allowfullscreen></iframe>
+	<h2>Theming the lockscreen</h2>
+	<p>The lockscreen layout and icons are stored in the folder <code>unlock</code>. In the subfolder <code>layout-hdpi</code> you will find the file <code>layout1.xml</code>. In this file you can set the position of various lockscreen items (clock, date, notifications, unlock slider). Click <a href="https://github.com/fqdb/CM11_theme/blob/master/CM11.hwt/unlock/layout-hdpi/layout1.xml">here</a> for an example. Also make sure to watch this video if you're serious about theming the lockscreen:
+	<iframe style="width: 100%;" width="560" height="315" src="https://www.youtube.com/embed/Z6oviUqPfW0" frameborder="0" allowfullscreen></iframe>
+	<span class="small_description">Instructional video I found on Baidu, explaining how to theme the lockscreen.</span>
 	
 	<h2 id="Comments">Comments</h2>
 	<br>
