@@ -99,6 +99,11 @@ body > p {
 	width: 40em;
 	max-width: 70%;
 }
+#resume_expand img {
+	width: 20em;
+	margin-left: 25%;
+    margin-right: auto;
+}
 
 #contact_expand {
 	width: 20em;
