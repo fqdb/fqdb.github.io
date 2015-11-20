@@ -4,21 +4,83 @@
 	<script src="../jquery-2.1.1.js"></script>
 	<!-- For slideshow -->	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
 							<link rel="stylesheet" type="text/css" href="../slick-theme.css"/>
-	<link type="text/css" rel="stylesheet" href="../stylesheet.css"/>
 	<link type="text/css" rel="stylesheet" href="../fonts.css"/>
 	<link rel="shortcut icon" type="image/ico" href="../favicon.ico" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 	<!--
-	.small_description {
-		color: white;
-		padding-top: 1em;
+	* {
+		font-family: Roboto, Helvetica, Arial, sans-serif;
+		font-size: 1em;
+		text-align: justify;
+	}
+	body {
+		margin-top: 6em;
+		background-image: url('../res/photo/homescreens/gallery_bg.jpg');
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		background-attachment: fixed;
 	}
 	
-	.slideshow2 {
-		max-width: 100%
+	h1 {
+		font-size: 1.5em;
 		}
+	section > div {
+		max-width: 100%;
+		}
+	#intro {
+		float: left;
+		max-width: 30em;
+		background-color:rgba(255, 255, 255, 0.5);
+		padding: 1em;
+		margin-top: 0em;
+		margin-bottom: 1.5em;
+	}
+	.small_description {
+		color: white;
+		text-align: center;
+		display: block;
+	}
+	
+	#gallery_background {
+		padding: 2em;
+	}
+	
+	#homescreens {
+		display: inline-block;
+		background-color: black;
+		border: 0.7em solid black;
+		border-radius: 8px;
+		width: 20em;
+		margin-left: 1em;
+		padding-top: 2.1em;
+		padding-bottom: 0.8em;
+		}
+	
+	#homescreens img{
+		max-width: 100%;
+		max-height: 35em;
+		}
+	/* RESPONSIVE */
+	/* PHONES */
+	@media only screen and (max-width : 43em) {
+	section > div {
+		display: block;
+		text-align: center;
+		margin: auto;
+		}
+	#homescreens {
+		border: none;
+		padding: none;
+		background: none;
+		}
+	.small_description {
+		color: black;
+		padding: 0.5em;
+		background-color:rgba(255, 255, 255, 0.5);}
+	}
 	-->
 	</style>
 	<title>Homescreens</title>
@@ -33,36 +95,14 @@
 	</script>
 	
 	<section id="main">
+	<div id="intro">
 	<h1>Homescreens</h1>
 	<p>On this page I'm showcasing some homescreens I've made throughout the years. Don't expect masterpieces, but maybe you'll find some inspiration. For wallpapers, use reverse image search.</p>
+	</div>
 
-	<p>
-	<input type="button" value="toggle fullscreen" onclick="toggleFullScreen()"><br>
-	<script type="text/javascript">
-	function toggleFullScreen() {
-	  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
-	   (!document.mozFullScreen && !document.webkitIsFullScreen)) {
-		if (document.documentElement.requestFullScreen) {  
-		  document.documentElement.requestFullScreen();  
-		} else if (document.documentElement.mozRequestFullScreen) {  
-		  document.documentElement.mozRequestFullScreen();  
-		} else if (document.documentElement.webkitRequestFullScreen) {  
-		  document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
-		}  
-	  } else {  
-		if (document.cancelFullScreen) {  
-		  document.cancelFullScreen();  
-		} else if (document.mozCancelFullScreen) {  
-		  document.mozCancelFullScreen();  
-		} else if (document.webkitCancelFullScreen) {  
-		  document.webkitCancelFullScreen();  
-		}  
-	  }  
-	}
-	</script>
-	<div class="slideshow2" style="background-color: black; border: 0.7em solid black; border-radius: 8px; width: 32em; margin: auto; padding-top: 2.5em; padding-bottom: 2em">
-	<!-- Slideshow by http://kenwheeler.github.io/slick/  under MIT licence-->
-	<!-- <div>
+	<div id="homescreens">
+<!-- 	Slideshow by http://kenwheeler.github.io/slick/  under MIT licence -->	
+<!-- <div>
 	<video src="../res/photo/homescreens/2015-11-20.webm" style="height: 100%" autoplay loop controls></video>
 	<span class="small_description"> November 2015 </span>
 	</div> --><div>
@@ -121,10 +161,10 @@
 	<span class="small_description"> March 2012</span>
 	</div>
 	</div>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+	<script type="text/javascript" src="../slick.min.js"></script>
 	<script type="text/javascript">
     $(document).ready(function(){
-      $('.slideshow2').slick({
+      $('#homescreens').slick({
         arrows:true,
 		lazyLoad: 'ondemand',
 		slidesToShow: 1,
@@ -136,8 +176,6 @@
       });
     });
 	</script>
-	</p>
-	
 	
 	</section>
 	
