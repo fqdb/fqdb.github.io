@@ -2,7 +2,7 @@
 <html>
 <head>
 	<script src="../jquery-2.1.1.js"></script>
-	<!-- For slideshow -->	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
+	<!-- For slideshow -->	<link rel="stylesheet" type="text/css" href="../slick.css"/>
 							<link rel="stylesheet" type="text/css" href="../slick-theme.css"/>
 	<link type="text/css" rel="stylesheet" href="../fonts.css"/>
 	<link rel="shortcut icon" type="image/ico" href="../favicon.ico" />
@@ -30,18 +30,25 @@
 	section > div {
 		max-width: 100%;
 		}
-	#intro {
+	#intro, #descriptions {
 		float: left;
-		max-width: 30em;
+		width: 30em;
+		max-width: 100%;
 		background-color:rgba(255, 255, 255, 0.5);
 		padding: 1em;
 		margin-top: 0em;
 		margin-bottom: 1.5em;
+		box-sizing: border-box;
 	}
+	#descriptions {
+		position: absolute;
+		top: 19em;
+		}
 	.small_description {
 		color: white;
 		text-align: center;
 		display: block;
+		margin-top: 0.3em;
 	}
 	
 	#gallery_background {
@@ -54,9 +61,10 @@
 		border: 0.7em solid black;
 		border-radius: 8px;
 		width: 20em;
-		margin-left: 1em;
+		margin-left: 2em;
 		padding-top: 2.1em;
 		padding-bottom: 0.8em;
+		box-shadow: 12px 11px 10px rgba(0,0,0,0.3);;
 		}
 	
 	#homescreens img{
@@ -66,20 +74,27 @@
 	/* RESPONSIVE */
 	/* PHONES */
 	@media only screen and (max-width : 43em) {
-	section > div {
-		display: block;
-		text-align: center;
-		margin: auto;
+		section > div {
+			display: block;
+			text-align: center;
+			margin: auto;
+			}
+		#homescreens {
+			border: none;
+			padding: none;
+			background: none;
+			box-shadow: none;
+			margin-left: none;
+			margin-right: none;
+			}
+		.small_description {
+			color: black;
+			padding: 0.5em;
+			background-color:rgba(255, 255, 255, 0.5);}
 		}
-	#homescreens {
-		border: none;
-		padding: none;
-		background: none;
-		}
-	.small_description {
-		color: black;
-		padding: 0.5em;
-		background-color:rgba(255, 255, 255, 0.5);}
+		#descriptions {
+			top: 65em;
+			}
 	}
 	-->
 	</style>
@@ -102,14 +117,14 @@
 
 	<div id="homescreens">
 <!-- 	Slideshow by http://kenwheeler.github.io/slick/  under MIT licence -->	
-<!-- <div>
-	<video src="../res/photo/homescreens/2015-11-20.webm" style="height: 100%" autoplay loop controls></video>
+	<div>
+	<img src="../res/photo/homescreens/Screenshot_2015-11-22-11-06-39.jpg">
 	<span class="small_description"> November 2015 </span>
-	</div> --><div>
+	</div><div>
 	<img src="../res/photo/homescreens/Screenshot_2015-11-02-17-49-07.jpg">
 	<span class="small_description"> November 2015 </span>
 	</div><div>
-	<img src="../res/photo/homescreens/Screenshot_2015-07-26-09-05-38.jpg">
+	<img data-lazy="../res/photo/homescreens/Screenshot_2015-07-26-09-05-38.jpg">
 	<span class="small_description"> July 2015 </span>
 	</div><div>
 	<img data-lazy="../res/photo/homescreens/Screenshot_2015-05-24-20-40-28.jpg">
@@ -159,6 +174,30 @@
 	</div><div>
 	<img data-lazy="../res/photo/homescreens/2012-03-04 15.03.18.jpg">
 	<span class="small_description"> March 2012</span>
+	</div><div>
+	<img data-lazy="../res/photo/homescreens/screenshot_2012-02-18_1659.jpg">
+	<span class="small_description">February 2012</span>
+	</div><div>
+	<img data-lazy="../res/photo/homescreens/screenshot_2012-02-17_2107.jpg">
+	<span class="small_description">February 2012</span>
+	</div><div>
+	<img data-lazy="../res/photo/homescreens/screenshot_2012-02-15_1959.jpg">
+	<span class="small_description">February 2012</span>
+	</div><div>
+	<img data-lazy="../res/photo/homescreens/screenshot_2011-12-25_1404_1.jpg">
+	<span class="small_description">December 2011</span>
+	</div><div>
+	<img data-lazy="../res/photo/homescreens/screenshot_2011-12-20_2115.jpg">
+	<span class="small_description">December 2011</span>
+	</div><div>
+	<img data-lazy="../res/photo/homescreens/screenshot_2011-12-15_2145.jpg">
+	<span class="small_description">December 2011</span>
+	</div><div>
+	<img data-lazy="../res/photo/homescreens/screenshot_2011-09-30_0758.jpg">
+	<span class="small_description">September 2011</span>
+	</div><div>
+	<img data-lazy="../res/photo/homescreens/screenshot_2011-07-31.jpg">
+	<span class="small_description">July 2011</span>
 	</div>
 	</div>
 	<script type="text/javascript" src="../slick.min.js"></script>
@@ -176,7 +215,16 @@
       });
     });
 	</script>
-	
+	<div id="descriptions">
+	<h1>Descriptions</h1>
+	<p><h2>November 2015</h2>
+	<ul>
+	<li>Wallpaper: @copterpilot <a href="https://www.instagram.com/p/9z-HtxiGSR/">[Instagram]</a></li>
+	<li>Icons: Numix Circle <a href="https://play.google.com/store/apps/details?id=com.numix.icons_circle">[Google Play]</a></li>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
+	<li>Device: Huawei Ascend P7</li>
+	</ul></p>
+	</div>
 	</section>
 	
 	<div id="footer"></div>
