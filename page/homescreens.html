@@ -24,6 +24,11 @@
 		background-attachment: fixed;
 	}
 	
+	#main {
+		margin: auto;
+		width: 900px;
+		}
+	
 	h1 {
 		font-size: 1.5em;
 		}
@@ -31,7 +36,6 @@
 		max-width: 100%;
 		}
 	#intro, #descriptions {
-		float: left;
 		width: 30em;
 		max-width: 100%;
 		background-color:rgba(255, 255, 255, 0.5);
@@ -41,9 +45,8 @@
 		box-sizing: border-box;
 	}
 	#descriptions {
-		position: absolute;
-		top: 19em;
-		}
+			text-align: left;
+	}
 	.small_description {
 		color: white;
 		text-align: center;
@@ -56,12 +59,15 @@
 	}
 	
 	#homescreens {
+		float: left;
+		position: fixed;
+		top: 6em;
 		display: inline-block;
 		background-color: black;
 		border: 0.7em solid black;
 		border-radius: 8px;
-		width: 20em;
-		margin-left: 2em;
+		width: 22%;
+		margin-left: 32em;
 		padding-top: 2.1em;
 		padding-bottom: 0.8em;
 		box-shadow: 12px 11px 10px rgba(0,0,0,0.3);;
@@ -69,32 +75,40 @@
 	
 	#homescreens img{
 		max-width: 100%;
-		max-height: 35em;
+		max-height: 100%;
 		}
 	/* RESPONSIVE */
 	/* PHONES */
-	@media only screen and (max-width : 43em) {
+	@media only screen and (max-width : 900px) {
+		#main {
+			width: auto;
+		}
 		section > div {
 			display: block;
 			text-align: center;
 			margin: auto;
 			}
 		#homescreens {
+			position: relative;
+			top: -2em;
 			border: none;
 			padding: none;
 			background: none;
 			box-shadow: none;
-			margin-left: none;
-			margin-right: none;
+			float: none;
+			display: block;
+			text-align: center;
+			margin: auto;
+			width: 70%;
 			}
+		#homescreens img{
+			margin: auto;
+		}
 		.small_description {
 			color: black;
-			padding: 0.5em;
+			font-weight: bold;
 			background-color:rgba(255, 255, 255, 0.5);}
 		}
-		#descriptions {
-			top: 65em;
-			}
 	}
 	-->
 	</style>
@@ -112,35 +126,42 @@
 	<section id="main">
 	<div id="intro">
 	<h1>Homescreens</h1>
-	<p>On this page I'm showcasing some homescreens I've made throughout the years. Don't expect masterpieces, but maybe you'll find some inspiration. For wallpapers, use reverse image search.</p>
+	<p>On this page I'm showcasing some homescreens I've made throughout the years with resources so you can copy them or use stuff for inspiration.</p>
+	<p><i>This page is still work in progress. Layout bugs may be present. Come back later for more detailed descriptions.</i>
 	</div>
 
 	<div id="homescreens">
 <!-- 	Slideshow by http://kenwheeler.github.io/slick/  under MIT licence -->	
 	<div>
 	<img src="../res/photo/homescreens/Screenshot_2015-11-22-11-06-39.jpg">
-	<span class="small_description"> November 2015 </span>
+	<span class="small_description">November 2015 (1)</span>
 	</div><div>
 	<img src="../res/photo/homescreens/Screenshot_2015-11-02-17-49-07.jpg">
-	<span class="small_description"> November 2015 </span>
+	<span class="small_description">November 2015 (2)</span>
 	</div><div>
 	<img data-lazy="../res/photo/homescreens/Screenshot_2015-07-26-09-05-38.jpg">
 	<span class="small_description"> July 2015 </span>
 	</div><div>
 	<img data-lazy="../res/photo/homescreens/Screenshot_2015-05-24-20-40-28.jpg">
-	<span class="small_description"> May 2015 </span>
+	<span class="small_description"> May 2015 (1) </span>
 	</div><div>
 	<img data-lazy="../res/photo/homescreens/Screenshot_2015-05-17-07-44-32.jpg">
-	<span class="small_description"> May 2015 </span>
+	<span class="small_description"> May 2015 (2)</span>
 	</div><div>
 	<img data-lazy="../res/photo/homescreens/Screenshot_2015-05-16-21-22-32.jpg">
-	<span class="small_description"> May 2015 </span>
+	<span class="small_description"> May 2015 (3)</span>
 	</div><div>
 	<img data-lazy="../res/photo/homescreens/Screenshot_2015-05-12-21-58-22.jpg">
-	<span class="small_description"> May 2015 </span>
+	<span class="small_description"> May 2015 (4)</span>
 	</div><div>
 	<img data-lazy="../res/photo/homescreens/Screenshot_2015-03-19-20-37-25.jpg">
 	<span class="small_description"> March 2015 </span>
+	</div><div>
+	<img data-lazy="../res/photo/homescreens/Screenshot_2014-09-10-18-24-54.jpg">
+	<span class="small_description"> September 2014 </span>
+	</div><div>
+	<img data-lazy="../res/photo/homescreens/Screenshot_2014-01-28-09-01-18.jpg">
+	<span class="small_description"> January 2014 </span>
 	</div><div>
 	<img data-lazy="../res/photo/homescreens/Screenshot_2013-12-06-19-34-36.jpg">
 	<span class="small_description"> December 2013 </span>
@@ -161,16 +182,16 @@
 	<span class="small_description"> December 2012 </span>
 	</div><div>
 	<img data-lazy="../res/photo/homescreens/2012-11-26 10.39.50.jpg">
-	<span class="small_description"> November 2012</span>
+	<span class="small_description"> November 2012 (1)</span>
 	</div><div>
 	<img data-lazy="../res/photo/homescreens/2012-11-19 20.59.06.jpg">
-	<span class="small_description"> November 2012</span>
+	<span class="small_description"> November 2012 (2)</span>
 	</div><div>
 	<img data-lazy="../res/photo/homescreens/2012-09-20 18.58.24.jpg">
-	<span class="small_description"> September 2012</span>
+	<span class="small_description"> September 2012 (1)</span>
 	</div><div>
 	<img data-lazy="../res/photo/homescreens/2012-09-13 23.22.46.jpg">
-	<span class="small_description"> September 2012</span>
+	<span class="small_description"> September 2012 (2)</span>
 	</div><div>
 	<img data-lazy="../res/photo/homescreens/2012-03-04 15.03.18.jpg">
 	<span class="small_description"> March 2012</span>
@@ -217,12 +238,177 @@
 	</script>
 	<div id="descriptions">
 	<h1>Descriptions</h1>
-	<p><h2>November 2015</h2>
+	<p><h2 name="nov15">November 2015 (1)</h2>
 	<ul>
 	<li>Wallpaper: @copterpilot <a href="https://www.instagram.com/p/9z-HtxiGSR/">[Instagram]</a></li>
 	<li>Icons: Numix Circle <a href="https://play.google.com/store/apps/details?id=com.numix.icons_circle">[Google Play]</a></li>
 	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
 	<li>Device: Huawei Ascend P7</li>
+	</ul></p>
+	<p><h2 name="nov15_2">November 2015 (2)</h2>
+	<ul>
+	<li>Wallpaper: @lastsuspect 'WHPLowAltitude' <a href="https://www.instagram.com/p/4Ihfj9gX91/">[Instagram]</a></li>
+	<li>Icons: Stark <a href="https://play.google.com/store/apps/details?id=kov.theme.stark">[Google Play]</a></li>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
+	<li>Device: Huawei Ascend P7</li>
+	</ul></p>
+	<p><h2 name="nov15_2">July 2015</h2>
+	<ul>
+	<li>Wallpaper: Alex Ivic 'View from Tudor City' <a href="www.gettyimages.com/detail/foto/cotton-clouds-royalty-free-beeld/564154005">[Getty Images]</a></li>
+	<li>Icons: Stark <a href="https://play.google.com/store/apps/details?id=kov.theme.stark">[Google Play]</a></li>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
+	<li>Device: Huawei Ascend P7</li>
+	</ul></p>
+	<p><h2 name="nov15_2">May 2015 (1)</h2>
+	<ul>
+	<li>Wallpaper: unknown source <a href="https://app.box.com/s/i52kugsjnwfu7nawib5fb69bt2966ut8">[download]</a></li>
+	<li>Icons: unknown</li>
+	<li>Widget: UCCW (custom clock) <a href="https://play.google.com/store/apps/details?id=in.vineetsirohi.customwidget">[Google Play]</a></li>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a></li>
+	<li>Device: Huawei Ascend P7</li>
+	</ul></p>
+	<p><h2 name="nov15_2">May 2015 (2)</h2>
+	<ul>
+	<li>Wallpaper: unknown source <a href="http://www.pickywallpapers.com/1920x1080/animals/cats/cat-cruising-the-snow-wallpaper/download/">[download]</a></li>
+	<li>Icons: unknown</li>
+	<li>Widget: UCCW (custom clock) <a href="https://play.google.com/store/apps/details?id=in.vineetsirohi.customwidget">[Google Play]</a></li>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
+	<li>Device: Huawei Ascend P7</li>
+	</ul></p>
+	<p><h2 name="nov15_2">May 2015 (3)</h2>
+	<ul>
+	<li>Wallpaper: unknown 'Waterfront' <a href="https://app.box.com/s/doklezgapy17emq2tro7z8wzlzl3kmds">[Download]</a></li>
+	<li>Icons: Stark <a href="https://play.google.com/store/apps/details?id=kov.theme.stark">[Google Play]</a></li>
+	<li>Widget: minimalistic RSS reader (unknown)</li>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
+	<li>Device: Huawei Ascend P7</li>
+	</ul></p>
+	<p><h2 name="nov15_2">May 2015 (4)</h2>
+	<ul>
+	<li>Wallpaper: 'McLaren P1 Black'</li>
+	<li>Icons: Stark <a href="https://play.google.com/store/apps/details?id=kov.theme.stark">[Google Play]</a></li>
+	<li>Widget: Simple Weather <a href="https://play.google.com/store/apps/details?id=com.tanmay.simpleweather">[Google Play]</a></li>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
+	<li>Device: Huawei Ascend P7</li>
+	</ul></p>
+	<p><h2 name="nov15_2">March 2015</h2>
+	<ul>
+	<li>Wallpaper: 'Vintage rollercoaster' <a href="https://app.box.com/s/50zmjzw6reo69u7x5wxx2ko3npsqu62a">[download]</a></li>
+	<li>Icons: Stark <a href="https://play.google.com/store/apps/details?id=kov.theme.stark">[Google Play]</a></li>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p>
+	<p><h2 name="nov15_2">September 2014</h2>
+	<ul>
+	<li>Icons: Stark <a href="https://play.google.com/store/apps/details?id=kov.theme.stark">[Google Play]</a></li>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p>
+	<p><h2 name="nov15_2">January 2014</h2>
+	<ul>
+	<li>Wallpaper: unknown source 'Offshore Wind Farm North Sea' <a href="https://app.box.com/s/vs7zg7pitmmvi1c7obu6i3jefnsoduwg">[download]</a></li>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p>
+	<p><h2 name="nov15_2">December 2013</h2>
+	<ul>
+	<li>Wallpaper: unknown source <a href="http://www.pickywallpapers.com/1920x1080/animals/cats/cat-cruising-the-snow-wallpaper/download/">[download]</a></li>
+	<li>Widget: Eye in the Sky <a href="https://play.google.com/store/apps/details?id=com.citc.weather">[Google Play]</a></li>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p>
+	<p><h2 name="nov15_2">October 2013</h2>
+	<ul>
+	<li>Widget: Eye in the Sky <a href="https://play.google.com/store/apps/details?id=com.citc.weather">[Google Play]</a></li>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p>
+	<p><h2 name="nov15_2">April 2013</h2>
+	<ul>
+	<li>Widget: HTC One widget</li>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p><p><h2 name="nov15_2">February 2013</h2>
+	<ul>
+	<li>Widget: UCCW (custom clock) <a href="https://play.google.com/store/apps/details?id=in.vineetsirohi.customwidget">[Google Play]</a></li>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p>
+	<p><h2 name="nov15_2">January 2013</h2>
+	<ul>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p>
+	<p><h2 name="nov15_2">December 2012</h2>
+	<ul>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p>
+	<p><h2 name="nov15_2">November 2012 (1)</h2>
+	<ul>
+	<li>Widget: UCCW (custom clock) <a href="https://play.google.com/store/apps/details?id=in.vineetsirohi.customwidget">[Google Play]</a></li>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p>
+	<p><h2 name="nov15_2">November 2012 (2)</h2>
+	<ul>
+	<li>Widget: UCCW (custom clock) <a href="https://play.google.com/store/apps/details?id=in.vineetsirohi.customwidget">[Google Play]</a></li>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p>
+	<p><h2 name="nov15_2">September 2012 (1)</h2>
+	<ul>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p>
+	<p><h2 name="nov15_2">September 2012 (2)</h2>
+	<ul>
+	<li>Launcher: Nova Launcher (Prime)<a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">[Google Play]</a>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p>
+	<p><h2 name="nov15_2">March 2012</h2>
+	<ul>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p>
+	<p><h2 name="nov15_2">February 2012 (1)</h2>
+	<ul>
+	<li>Wallpaper: Lightgrid Pro Live Wallpaper <a href="https://play.google.com/store/apps/details?id=com.joko.lightgridpro">[Google Play]</a></li>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p><p><h2 name="nov15_2">February 2012 (2)</h2>
+	<ul>
+	<li>Wallpaper: Lightgrid Pro Live Wallpaper <a href="https://play.google.com/store/apps/details?id=com.joko.lightgridpro">[Google Play]</a></li>
+	<li>Widget: UberMusic <a href="https://play.google.com/store/apps/details?id=com.uberdroidstudio.ubermusic">[Google Play]</a></li>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p>
+	<p><h2 name="nov15_2">February 2012 (3)</h2>
+	<ul>
+	<li>Widget: Sony Walkman player [proprietary]</li>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p>
+	<p><h2 name="nov15_2">December 2011 (1)</h2>
+	<ul>
+	<li>Wallpaper: Lightgrid Pro Live Wallpaper <a href="https://play.google.com/store/apps/details?id=com.joko.lightgridpro">[Google Play]</a></li>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p>
+	<p><h2 name="nov15_2">December 2011 (2)</h2>
+	<ul>
+	<li>Widget: UberMusic <a href="https://play.google.com/store/apps/details?id=com.uberdroidstudio.ubermusic">[Google Play]</a></li>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p>
+	<p><h2 name="nov15_2">December 2011 (3)</h2>
+	<ul>
+	<li>Wallpaper: Lightgrid Pro Live Wallpaper <a href="https://play.google.com/store/apps/details?id=com.joko.lightgridpro">[Google Play]</a></li>
+	<li>Launcher: Launcher7 Pro [removed from Play Store]</a>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p>
+	<p><h2 name="nov15_2">September 2011</h2>
+	<ul>
+	<li>Device: Sony Ericsson Xperia Neo</li>
+	</ul></p>
+	<p><h2 name="nov15_2">July 2011</h2>
+	<ul>
+	<li>Widget: TimeScape [proprietary]</li>
+	<li>Device: Sony Ericsson Xperia Neo</li>
 	</ul></p>
 	</div>
 	</section>
