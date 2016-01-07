@@ -1,0 +1,48 @@
+* {
+	font-family: PT Serif, Georgia, serif;
+}
+
+body {
+	background-color: #eee;
+}
+
+section {
+	width: 55em;
+	margin: auto;
+	margin-top: 6em;
+	padding: 2em;
+	padding-top: 1em;
+	border-left: 1em solid #DB0006;
+	border-right: 1em solid #DB0006;
+	background-color: white;
+}
+
+h1 {
+	font-size: 2.5em;
+	border-bottom: 3px solid #DB0006;
+}
+h2 {
+	font-size: 1.8em;
+}
+
+p {
+	font-size: 1.1em;
+	text-align: justify;
+}
+
+a {
+	color: #DB0006;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #444;
+}
+
+img, iframe{
+	max-width: 100%;
+}
+
+td:nth-child(1) {  
+  padding-right: 1em;
+}
