@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script src="../../jquery-2.1.1.js"></script>
+	<link type="text/css" rel="stylesheet" href="../../fonts.css"/>
+	<link type="text/css" rel="stylesheet" href="denmark.css"/>
+	<link type="text/css" rel="stylesheet" href="../../header.css"/>
+	<link rel="stylesheet" type="text/css" href="../../slick.css"/>
+	<link rel="stylesheet" type="text/css" href="../../slick-theme.css"/>
+	<script src="../../sorttable.js"></script>
+	<link rel="shortcut icon" type="image/ico" href="../../favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Studying in Denmark</title>
+	
+</head>
+<body>
+	<div id="header"></div>
+	<script type="text/javascript" language="javascript">
+   $(document).ready(function() {
+		$('#header').load('../../header.html');
+	});
+	</script>
+	
+	<section>
+	<h1>Studying in Denmark</h1>
+	<p>From February til June I am doing an exchange semester at the <a href="http://www.dtu.dk">Technical University of Denmark</a> (Danmarks Tekniske Universitet). This is the first time for me that I'll study and live abroad.</p>
+	<p><a href="http://www.openstreetmap.org/way/25567300"><img src="../../res/photo/denmark/map.png" /></a></p>
+	<h2 id="posts_heading">Posts</h2>
+	<p>
+	<table class="sortable">
+	<tr><th>Date</th><th></th></tr>
+	<tr><td>20160107</td><td><a href="learning-danish.html">Learning Danish</a></td></tr>
+	<tr><td>20160110</td><td><a href="practical-preparations.html">Practical preparations</a></td></tr>
+	</table>
+	</p>
+	<h2>Camera roll</h2>
+	<p>
+	<div id="camera_roll">
+	<!-- 	Slideshow by http://kenwheeler.github.io/slick/  under MIT licence -->	
+	<div>
+	<img src="http://placehold.it/1600x900">
+	<span class="small_description">text goes here</span>
+	</div><div>
+	<img src="http://placehold.it/1600x900">
+	<span class="small_description">text goes here</span>
+	</div><div>
+	<img data-lazy="http://placehold.it/1600x900">
+	<span class="small_description">text goes here</span>
+	</div>
+	</div>
+	<script type="text/javascript" src="../../slick.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+      $('#camera_roll').slick({
+        arrows:true,
+		lazyLoad: 'ondemand',
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		speed: 500,
+		dots: false,
+		infinite: false,
+		adaptiveHeight: false,
+      });
+    });
+	</script>
+	</p>
+	
+	</section>
+	
+	<div id="footer"></div>
+	<script type="text/javascript" language="javascript">
+   $(document).ready(function() {
+		$('#footer').load('../../footer.html');
+	});
+	</script>
+</body>
+</html>
