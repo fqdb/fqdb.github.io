@@ -24,7 +24,7 @@
 		$('#share_to').load('../share_to.html');
 	});
 	</script></h1>
-	<span class="date_posted">Last updated: 20151029</span>
+	<span class="date_posted">Last updated: 20160121</span>
 	<p><img src="../res/photo/theme_guide/example_themes.jpg"></p>
 	<p>One of the main features of EMUI is the possibility to theme the user interface extensively. This guide will explain the basics of making themes for EMUI 3 (3.0 and 3.1). EMUI 2 themes have the same structure, but the filenames may be different.</p>
 	<p>EMUI themes are distributed in the <span style="font-family:monospace">.hwt</span> format. This format is nothing else than a ZIP file with a different extension. It's best to take a ready made .hwt theme and unzip it to see the structure. If you can't find one, download a sample theme <a href="https://github.com/fqdb/CM11_theme/raw/master/Releases/Beta/CM11_0.14.hwt">here</a> or download a theme using the Themes app on your Huawei/Honor device and find the <span style="font-family:monospace">.hwt</span> file in <span style="font-family:monospace">/SDCard/HWThemes</span>.</p>
@@ -59,7 +59,7 @@
 	<tr><td>framework-res</td><td>File</td><td>Contains xml for colour status bar notification texts and a few status bar icons</td></tr>
 	<tr><td>framework-res-hwext</td><td>File</td><td>Contains theming data for Huawei themed generic style: checkboxes, buttons, etc. and font colours</td></tr>
 	<tr><td>icons</td><td>File</td><td>Archive containing icons and icon masks</td></tr>
-	<tr><td><span style="font-family:monospace">description.xml</span></td><td>File</td><td>XML file containing information about the theme as displayed in the Themes app</td></tr>
+	<tr><td><code><a href="../res/other/description.xml">description.xml</a></code></td><td>File</td><td>XML file containing information about the theme as displayed in the Themes app</td></tr>
 	<tr><td>preview</td><td>Folder</td><td>Contains preview images (as displayed in Themes app)</td></tr>
 	<tr><td>unlock</td><td>Folder</td><td>Contains lockscreen theme</td></tr>
 	<tr><td>wallpaper</td><td>Folder</td><td>Contains homescreen and lockscreen wallpapers</td></tr>
@@ -72,24 +72,25 @@
 	<p>Within the zip file/folder com.android.settings, you have two folders and one xml file.<p>
 	<div style="border: solid grey 2px; padding: 0.5em; max-width: 18em; margin: auto;">
 	/framework-res<br>
-		<span style="margin-left: 2em; background-color: #4C9CF1; padding: 0.1em;">/res</span><br>
-		<span style="margin-left: 4em; background-color: #e3e2e2;">/drawable-xxhdpi</span><br>
+		<span style="margin-left: 2em; background-color: #dfdfdf; padding: 0.1em;">/res</span><br>
+		<span style="margin-left: 4em; background-color: #bbb;">/drawable-xxhdpi</span><br>
 		<span style="margin-left: 6em;">/<code>button_checked_focused.png</code></span><br>
-		<span style="margin-left: 6em;">/<code>...</code></span><br>
-		<span style="margin-left: 4em; background-color: #e3e2e2;">/drawable-xhdpi</span><br>
-		<span style="margin-left: 4em; background-color: #e3e2e2;">/...</span><br>
-		<span style="margin-left: 2em; background-color: #4C9CF1; padding: 0.1em;">/<code>theme.xml</code></span><br>
+		<span style="margin-left: 6em;">other image files</span><br>
+		<span style="margin-left: 4em; background-color: #bbb;">/drawable-xhdpi</span><br>
+		<span style="margin-left: 4em; background-color: #bbb;">/...</span><br>
+		<span style="margin-left: 2em; background-color: #dfdfdf; padding: 0.1em;">/<code>theme.xml</code></span><br>
 	/res<br>
-		<span style="margin-left: 2em; background-color: #e3e2e2;">/drawable-xxhdpi</span><br>
+		<span style="margin-left: 2em; background-color: #bbb;">/drawable-xxhdpi</span><br>
 		<span style="margin-left: 4em;">/<code>background_emui.png</code></span><br>
-		<span style="margin-left: 2em; background-color: #e3e2e2;">/drawable-xhdpi</span><br>
-		<span style="margin-left: 2em; background-color: #e3e2e2;">...</span><br>
+		<span style="margin-left: 2em; background-color: #bbb;">/drawable-xhdpi</span><br>
+		<span style="margin-left: 2em; background-color: #bbb;">...</span><br>
 	/<code>theme.xml</code>
 	</div>
 	<span class="small_description">Structure within for example the <code>com.android.systemui</code> archive.</span>
 	<p>
 	If you have ever decompiled or written Android apps, this will be familiar to you. The <code>res</code> folders contain image resources for the app such as buttons, backgrounds and icons. To theme this, simply replace the default image files with your own image files, but make sure they are the same dimensions, or will scale correctly. The <code>drawable-xxhdpi</code> folder is for full HD (1080x1920) devices for example, although strictly speaking the software screen density of the device determines what icon size is needed. For reference, see <a href="http://developer.android.com/guide/practices/screens_support.html">Android developer documentation</a>.</p>
 	<p>It's convenient to use icons from other devices. Simply unzip <code>SystemUI.apk</code> to browse for icons. You may also encounter images ending on <code>.9.png</code>, these are so called <a href="http://radleymarx.com/blog/simple-guide-to-9-patch/">9-patch images</a>. These images have a marker that allows scaling them correctly. If you replace these images with normal PNG files, they may look blurred and stretched.</p>
+	<p>The <code>/res</code> folder contains app-specific images and text labels, whereas the <code>framework-res</code> folder contains resources that are normally define system-wide, such as buttons and general text colours. It's not very clear which thing is defined through where, so use example themes or add stuff to both folders to be sure it works.</p>
 	<h3>Text colours</h3>
 	<p>The font colours for various text labels are defined by the <code>theme.xml</code> files. Below is a sample line from a <code>theme.xml</code> file:</p>
 	<p>
@@ -98,8 +99,9 @@
 	</p>
 	<p>For adjusting the text colour in apps, all tags are of the type <code>color</code>. Next we have <code>name</code> after which a label is given. This label will be used by the theme engine to set the appropriate text in the UI to the colour enclosed in the XML tag. The color is given as a <a href="https://en.wikipedia.org/wiki/Web_colors">HEX value</a>. Normally HEX colours will be six letters long (e.g. <code>#123abc</code>), but you see that the example is eight characters long (excluding the <code>#</code>). The first two characters are to define the alpha value (opacity) on a scale of <code>00</code> (0%) to <code>ff</code> (100%). You may omit these characters and use standard 6 character colour codes, the theme engine will interpret this as 100% opacity. So <code>#000000</code> is equivalent to <code>#ff000000</code>.
 	<p>
-	<p>The other variable in the XML tags is the <code>name</code>. Unfortunately there is no good documentation on this (let alone documentation in English) and Huawei's software guys did not use logical naming, and some names even contain spelling errors. Therefore I can only recommend to use an existing theme that themes all labels. I used the 'Moral' theme, which you find in the Themes app or download directly <a href="https://www.androidfilehost.com/?fid=24052804347766943">here</a>.
+	<p>The other variable in the XML tags is the <code>name</code>. Unfortunately there is no good documentation on this (let alone documentation in English) and Huawei's software guys did not use logical naming, and some names even contain spelling errors. Therefore I can only recommend to use an existing theme that themes all labels. I used the <a href="https://www.androidfilehost.com/?fid=24052804347766943">'Moral' theme</a>.
 	</p>
+	<p>I've made a start on documenting it, which you can find <a href="../res/other/text_labels.htm">here</a>.</p>
 	<!-- <h3>List of name label identifiers</h3> -->
 	
 	<p>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<HwTheme>
+    <title>Theme name</title>
+    <title-cn>Chinese theme name</title-cn>
+    <author>Author</author>
+    <designer>Designer</designer>
+    <screen>FHD</screen> <!--- FHD = Full HD -->
+    <version>1.0</version> <!-- Can also be text (e.g. 'Beta version') -->
+    <font>Default</font> <!-- If you include a font, put the name here as well -->
+    <font-cn>默认</font-cn>
+</HwTheme>
