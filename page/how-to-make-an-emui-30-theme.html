@@ -18,13 +18,8 @@
 	</script>
 	
 	<section id="main">
-	<h1>How to make an EMUI 3 theme<div id="share_to"></div>
-	<script type="text/javascript" language="javascript">
-	$(document).ready(function() {
-		$('#share_to').load('../share_to.html');
-	});
-	</script></h1>
-	<span class="date_posted">Last updated: 20160121</span>
+	<h1>How to make an EMUI 3 theme</h1>
+	<span class="date_posted">Last updated: 2016-03-20</span>
 	<p><img src="../res/photo/theme_guide/example_themes.jpg"></p>
 	<p>One of the main features of EMUI is the possibility to theme the user interface extensively. This guide will explain the basics of making themes for EMUI 3 (3.0 and 3.1). EMUI 2 themes have the same structure, but the filenames may be different.</p>
 	<p>EMUI themes are distributed in the <span style="font-family:monospace">.hwt</span> format. This format is nothing else than a ZIP file with a different extension. It's best to take a ready made .hwt theme and unzip it to see the structure. If you can't find one, download a sample theme <a href="https://github.com/fqdb/CM11_theme/raw/master/Releases/Beta/CM11_0.14.hwt">here</a> or download a theme using the Themes app on your Huawei/Honor device and find the <span style="font-family:monospace">.hwt</span> file in <span style="font-family:monospace">/SDCard/HWThemes</span>.</p>
@@ -113,6 +108,18 @@
 	<p>The lockscreen layout and icons are stored in the folder <code>unlock</code>. In the subfolder <code>layout-hdpi</code> you will find the file <code>layout1.xml</code>. In this file you can set the position of various lockscreen items (clock, date, notifications, unlock slider). Click <a href="https://github.com/fqdb/CM11_theme/blob/master/CM11.hwt/unlock/layout-hdpi/layout1.xml">here</a> for an example. Also make sure to watch this video if you're serious about theming the lockscreen:
 	<iframe style="width: 100%;" width="560" height="315" src="https://www.youtube.com/embed/Z6oviUqPfW0" frameborder="0" allowfullscreen></iframe>
 	<span class="small_description">Instructional video I found on Baidu, explaining how to theme the lockscreen.</span>
+	</p>
+	<h2>Changing the font</h2>
+	<p>Chaning the font is very easy. You need to do two things:</p>
+	<ol><li>Add a folder with the name <code>fonts</code> in the root of your theme and copy the font files to it.</li>
+	<li>In <code>description.xml</code> add the lines for your font:</li></ol>
+	<p>
+	<div style="background: #bebebe; padding: 0.5em; size: 2em; text-align: center; overflow:scroll"><code>
+	<span style="color: blue">&lt;font&gt;</span></span>Your Font Name<span style="color: blue">&lt;/font&gt;</span><br>
+    <span style="color: blue">&lt;font-cn&gt;</span>Your Font Name<span style="color: blue">&lt;/font-cn&gt;</span></code></div>
+	</p>
+	<p>As for the font files, I know that <code>ttf</code> (TrueType) fonts work, not sure about OpenType fonts. Add the font files for your preferred bold, italic, Chinese style fonts to the folder <code>fonts</code> and rename them to the Android default font names: Roboto-Bold, Roboto-BoldItalic, Roboto-Italic, Roboto-Light, Roboto-LightItalic, Roboto-Regular, Roboto-Thin, Roboto-ThinItalic, etc. If you do not have all these different styles for your font of choice, just add and name the ones you have, or, to replace multiple font styles with the same theme font, copy and rename multiple times.</p>
+	<p>Finally, you can add a preview picture of the font by placing a <code>jpg</code> file with the name <code>pic_font_default.jpg</code> <b>in the <code>fonts</code> folder</b> (so not in the <code>preview</code> folder!).</p>
 	
 	<h2 id="Comments">Comments</h2>
 	<br>
