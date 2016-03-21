@@ -35,6 +35,16 @@ p {
 body > p {
 	margin-left: 1.5em;
 }
+h2{
+	border-bottom: 3px solid #607d8b;
+	margin-bottom: -0.3em;
+}
+h3 {
+	margin-bottom: -0.5em;
+}
+h4 {
+	margin-bottom: -1em;
+}
 
 #home_menu {
 	display: block;
