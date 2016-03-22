@@ -10,26 +10,10 @@ header {
 	transition: top 0.5s ease-in-out;
 	text-align: center;
 }
-nav {
-	text-align: center;
-	width: 40em;;
-	height: 100%;
-	margin: auto;
-	text-align: left;
-}
-
-nav a {
-	color: black;
-	text-decoration: none;
-}
-nav a:hover {
-	color: #444;
-	text-decoration: underline;
-}
 
 #logo {
 	font-size: 3.5em;
-	font-family: CartoGothic, Asap, Calibri, sans-serif;
+	font-family: CartoGothic, Asap, Calibri, Arial, sans-serif;
 	margin-top: 0.2em;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -38,10 +22,26 @@ nav a:hover {
 	-ms-user-select: none;
 	user-select: none;
 	}
+#nav_btn_wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
 .nav_btn {
-	display:inline-block;
-	padding-left: 1em;
+	float: right;
+	border-left: 2px solid #444;
 	font-size: 1.5em;
+	height: 73px;
+	width: 79px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	text-decoration: none;
+	color: black;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	line-height: 73px;
+}
+.nav_btn:hover {
+	background: #ff5722;
 }
 
 /* To hide header */
@@ -64,9 +64,11 @@ nav a:hover {
 	#logo {
 		font-size: 2.8em;
 	}
-	.nav_btn {
-		display:block;
+	#nav_btn_wrapper {
 		border-top: 1px solid #444;
-		padding: 0.2em;
+		position: relative;
+	}
+	.nav_btn {
+		width: 49%;
 	}
 }
