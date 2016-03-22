@@ -36,9 +36,10 @@ body > p {
 	margin-left: 1.5em;
 }
 h2{
-	margin-bottom: -0.3em;
+	
 }
 #resume_expand h2 {
+	margin-bottom: -0.3em;
 	border-bottom: 3px solid #607d8b;
 }
 h3 {
@@ -110,6 +111,9 @@ h4 {
 #resume_expand {
 	width: 40em;
 	max-width: 70%;
+	border: 0.5em solid #ffcdbe;
+	background: white;
+	padding: 0.5em;
 }
 #resume_expand img {
 	width: 20em;
