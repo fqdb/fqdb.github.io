@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script src="../jquery-2.1.1.js"></script>
+	<!-- For slideshow -->	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
+							<link rel="stylesheet" type="text/css" href="../slick-theme.css"/>
+	<link type="text/css" rel="stylesheet" href="../stylesheet.css"/>
+	<link type="text/css" rel="stylesheet" href="../fonts.css"/>
+	<link rel="shortcut icon" type="image/ico" href="../favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Openstreetmap, toolkit, guide, beginners, how-to, how to, help">
+	<meta name="description" content="JOSM shortcuts and techniques that make mapping Openstreetmap faster.">
+	<title>Basic JOSM tips</title>
+</head>
+<body>
+	<div id="header"></div>
+	<script type="text/javascript" language="javascript">
+   $(document).ready(function() {
+		$('#header').load('../header.html');
+	});
+	</script>
+	
+	<section id="main">
+	<h1>Basic JOSM tips</h1>
+	<p>Some basic JOSM tips to speed up mapping.</p>
+	<h2>Before you start</h2>
+	<ol>
+	<li>Get the Building Tools plugin</li>
+	<li>Get the utils plugin</li>
+	</ol>
+	
+	<h2>Invaluable shortcuts</h2>
+	<h3>A</h3>
+	<p>Draw tool</p>
+	<h3>S</h3>
+	<p>Selection tool. Press 'S' twice to get a lasso selection tool.</p>
+	<h3>ALT+A</h3>
+	<p>Set tag. Simply press this after you finish drawing an object and you can quickly add tags to the selected object.</p>
+	<h3>ALT+S</h3>
+	<p>Edit selected tag (last changed tag). I use this a lot in combination with the building tools rectangle drawer. It allows me to draw neat rectangles very fast, also for objects that aren't buildings.</p>
+	<h3>B</h3>
+	<p>Building tools rectangle drawer</p>
+	<h3>C</h3>
+	<p>Combines line objects. Useful for combining roads.<p>
+	<h3>P</h3>
+	<p>Split objects. Useful for splitting roads at bridges or tunnels.<p>
+	<p>Select any number of nodes to split a way at these nodes. You can also split areas by selecting at least two nodes.</p>
+	<h3>SHIFT+O</h3>
+	<p>Make circle from diameter line</p>
+	<h3>SHIFT+C</h3>
+	<p>Makes an arc from an angle. Useful for drawing smooth road curves or complex building outlines.</p>
+	<p>Draw a very crudely drawn arc with only three nodes. A start point, a maximum 'bulge' point and an end point. The select the line and press the shortcut to make a smooth arc, similar to the circle tool.</p>
+	<h3>CRTL+J</h3>
+	<p>Join areas. Useful for drawing complex buildings that consist of overlapping geometries.</p>
+	<h3>CRTL+SHIFT+N</h3>
+	<p>This shortcut may be familiar... What is does in JOSM (only with utils2 plugin) is 'select all way nodes'. Indespensible for drawing power lines.</p>
+	<p>Select only the way, not the nodes, then press the shortcut. Now you can simply tag them all as <code>power=tower</code> for example. This method allows you to draw power lines with the same ease as roads.</p>
+	</table>
+	<h2>Drawing buildings</h2>
+	<p>Using the shortcuts mentioned above, some techniques can be applied that allow you to draw also complex buildings rather fast.</p>
+	<img src="../res/photo/JOSM-tips/JOSM_building.gif">
+	
+	<img src="../res/photo/JOSM-tips/JOSM_building_2.gif">
+	<h2>PicLayer<h2>
+	<p>This plugin allows you to use any image as background tracing material. Very useful if you have obtained a (properly licensed!) map or aerial photo that you want to trace.</p>
+	
+	<h2>Adding new map layers</h2>
+	<p>Although JOSM packs a good selection of freely licenced satellite imagery, some are not available by default. If you have the url in the proper syntax, you can add them however.</p>
+	<h2 id="Comments">Comments</h2>
+	<br>
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'fqdb';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+	<div id="footer"></div>
+	<script type="text/javascript" language="javascript">
+   $(document).ready(function() {
+		$('#footer').load('../footer.html');
+	});
+	</script>
+		<!-- Start of StatCounter Code for Default Guide -->
+	<script type="text/javascript">
+	var sc_project=10431585; 
+	var sc_invisible=1; 
+	var sc_security="d97b5958"; 
+	var scJsHost = (("https:" == document.location.protocol) ?
+	"https://secure." : "http://www.");
+	document.write("<sc"+"ript type='text/javascript' src='" +
+	scJsHost+
+	"statcounter.com/counter/counter.js'></"+"script>");
+	</script>
+	<noscript><div class="statcounter"><a title="hit counter"
+	href="http://statcounter.com/" target="_blank"><img
+	class="statcounter"
+	src="http://c.statcounter.com/10431585/0/d97b5958/1/"
+	alt="hit counter"></a></div></noscript>
+	<!-- End of StatCounter Code for Default Guide -->
+	</body>
+</html>
