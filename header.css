@@ -71,4 +71,7 @@ header {
 	.nav_btn {
 		width: 49%;
 	}
+	#home_btn {
+		border-left: 0px solid #444;
+	}
 }
