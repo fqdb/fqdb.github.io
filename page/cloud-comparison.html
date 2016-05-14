@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script src="../jquery-2.1.1.js"></script>
+	<!-- For slideshow -->	<link rel="stylesheet" type="text/css" href="../slick.css"/>
+							<link rel="stylesheet" type="text/css" href="../slick-theme.css"/>
+	<link type="text/css" rel="stylesheet" href="../fonts.css"/>
+	<link type="text/css" rel="stylesheet" href="cloud-comparison.css"/>
+	<link rel="shortcut icon" type="image/ico" href="../favicon.ico" />
+	<meta id="viewport" content="width=device-width, initial-scale=1.0">
+	<meta id="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="../sorttable.js"></script>
+	<title>Comparison of cloud storage services</title>
+	
+</head>
+<body>
+	<div id="header"></div>
+	<script type="text/javascript" language="javascript">
+   $(document).ready(function() {
+		$('#header').load('../header.html');
+	});
+	</script>
+	
+	<section id="main">
+	<div class="text">
+	<h1>Comparison of cloud storage services</h1>
+	<p>As I noticed that the existing comparisons are lacking, by being either limited to only the big three/four/whatever cloud services, by being sponsored (secretly) or by looking like a web 1.0 table (<a href="https://en.wikipedia.org/wiki/Comparison_of_online_backup_services">Wikipedia</a>), I've put this together, initially just to compare them for myself.<p>
+	<p>Before you ask, no I won't add this new amazing cloud service. I've looked into this last year as well and most of last years cheapest services are discontinued. I don't think anyone like to move their backups around every year. So the services listed are an arbitrary selection of long-time active businesses.</p>
+	</div>
+	<div id="overflow-box">
+<table class="sortable">
+	<thead>
+		<tr title="table">
+			<th><a href="#table"></a></th>
+			<th><a href="#table">Version history</a></th>
+			<th><a href="#table">Free space (GB)</a></th>
+			<th><a href="#table">webdav or equiv.</a></th>
+			<th><a href="#table">100 GB/month</a><sup><a href="#price">5</a></sup></th>
+			<th><a href="#table">&euro; / GB</a><sup><a href="#price">5</a>,<a href="#valuta">9</a></sup></th>
+			<th><a href="#table">Speed, stability</a><sup><a href="#speed">8</a></sup></th>
+			<th><a href="#table">Streaming video</a></th>
+			<th><a href="#table">File size (GB)</a><sup><a href="#box">3</a></sup></th>
+			<th><a href="#table">Security and privacy</a></th>
+			<th><a href="#table">Linux client</a></th>
+			<th><a href="#table">Other advantages</a></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><a href="http://pan.baidu.com/">Baidu Netdisc</a><sup><a href="#1">1</a></sup></td>
+			<td>no</td>
+			<td>1000</td>
+			<td>no</td>
+			<td> € -   </td>
+			<td> € -   </td>
+			<td>1</td>
+			<td>yes</td>
+			<td>no limit</td>
+			<td>bad</td>
+			<td>no</td>
+			<td>Download stats</td>
+		</tr>
+		<tr>
+			<td><a href="http://weiyun.com">Tencent Weiyun</a><sup><a href="#1">1</a></sup></td>
+			<td>no</td>
+			<td>1000</td>
+			<td>no</td>
+			<td> € -   </td>
+			<td> € -   </td>
+			<td>2</td>
+			<td>no</td>
+			<td>32</td>
+			<td>bad</td>
+			<td>yes</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="https://www.mediafire.com/">Mediafire Pro</a></td>
+			<td>no</td>
+			<td>50</td>
+			<td>no</td>
+			<td> € 3.38 </td>
+			<td> € 0.0034 </td>
+			<td>3</td>
+			<td>no</td>
+			<td>20</td>
+			<td>bad</td>
+			<td>file server</td>
+			<td>Download stats</td>
+		</tr>
+		<tr>
+			<td>Synology DS cloud</td>
+			<td>yes</td>
+			<td>0</td>
+			<td>yes</td>
+			<td> € 5.28 </td>
+			<td> € 0.0053 </td>
+			<td>2</td>
+			<td>yes</td>
+			<td>no limit</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>Can access data physically if needed</td>
+		</tr>
+		<tr>
+			<td><a href="https://onedrive.live.com">Onedrive Office 365</a></td>
+			<td>no<sup><a href="#file-history">4</a></sup></td>
+			<td>25</td>
+			<td>yes</td>
+			<td> € 7.00 </td>
+			<td> € 0.0070 </td>
+			<td>2</td>
+			<td>no</td>
+			<td>10</td>
+			<td>bad</td>
+			<td>file server</td>
+			<td>Windows integration, comes with Office 365</td>
+		</tr>
+		<tr>
+			<td><a href="https://www.bitcasa.com/">Bitcasa Premium</a></td>
+			<td>yes</td>
+			<td>0</td>
+			<td>yes</td>
+			<td> € 9.00 </td>
+			<td> € 0.0090 </td>
+			<td>&nbsp;</td>
+			<td>yes</td>
+			<td>no limit</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>Home server<sup><a href="#home-server">7</a></sup></td>
+			<td>yes</td>
+			<td>0</td>
+			<td>yes</td>
+			<td> € 9.72 </td>
+			<td> € 0.0097 </td>
+			<td>2</td>
+			<td>yes</td>
+			<td>no limit</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>Server can be used as PC, can access data physically if needed</td>
+		</tr>
+		<tr>
+			<td><a href="https://www.dropbox.com/">Dropbox Pro</a></td>
+			<td>free<sup><a href="#file-history">4</a></sup></td>
+			<td>5</td>
+			<td>no</td>
+			<td> €<span style="visibility:hidden; font-size:0.5em">9</span>10.00 </td>
+			<td> € 0.0100 </td>
+			<td>5</td>
+			<td>yes</td>
+			<td>no limit</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>Document editing</td>
+		</tr>
+		<tr>
+			<td><a href="https://spideroak.com">Spideroak</a></td>
+			<td>yes</td>
+			<td>0</td>
+			<td>no</td>
+			<td> €<span style="visibility:hidden; font-size:0.5em">9</span>10.80 </td>
+			<td> € 0.0108 </td>
+			<td>&nbsp;</td>
+			<td>no</td>
+			<td>no limit</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="http://disk.yandex.com">Yandex.Disk</a></td>
+			<td>no</td>
+			<td>10</td>
+			<td>yes</td>
+			<td> € 1.80 </td>
+			<td> € 0.0180 </td>
+			<td>4</td>
+			<td>yes</td>
+			<td>10</td>
+			<td>bad</td>
+			<td>yes</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="https://drive.google.com">Google Drive</a></td>
+			<td>free</td>
+			<td>15</td>
+			<td>no</td>
+			<td> € 2.17 </td>
+			<td> € 0.0217 </td>
+			<td>5</td>
+			<td>yes</td>
+			<td>no limit</td>
+			<td>bad</td>
+			<td>no</td>
+			<td>Google (Android) integration, document editing</td>
+		</tr>
+		<tr>
+			<td><a href="http">Sugarsync</a></td>
+			<td>yes</td>
+			<td>0</td>
+			<td>no</td>
+			<td> € 6.74 </td>
+			<td> € 0.0674 </td>
+			<td>4</td>
+			<td>yes</td>
+			<td>no limit</td>
+			<td>yes</td>
+			<td>yes</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="https://www.box.com/">Box personal pro</a><sup><a href="#box">3</a></sup></td>
+			<td>no</td>
+			<td>10</td>
+			<td>yes</td>
+			<td> € 8.00 </td>
+			<td> € 0.0800 </td>
+			<td>4</td>
+			<td>no</td>
+			<td>5</td>
+			<td>yes</td>
+			<td>webdav</td>
+			<td>Document editing, Download stats</td>
+		</tr>
+	</tbody>
+</table>
+	</div>
+	<div class="text">
+	<h2>Notes</h2>
+	<ol>
+	<li id="1">Baidu Netdisc and Tencent Weiyun are only available in Chinese, speeds are slow (50/20 MB/s for Baidu, Weiyun is acceptable) and the connection is prone to drop during large downloads. Streaming is of course worthless when taking this into account.</li>
+	<li id="2">Ad supported downloads on web interface in free version.</li>
+	<li id="box">Box offers a &euro; 4 / month plan with similar services, but only for at least 3 users (&euro; 12 /month).</li>
+	<li id="file-history">30 day version history, OneDrive only offers version history for Microsoft Office files.</li>
+	<li id="price">Monthly payment required for at least 100 GB storage, based on yearly payment. </li>
+	<li>Based on 8 W Synology DS115j with 1TB disk over 3 years. Off-site backup not included. Electricity price taken as €0.20 per kWh.</li>
+	<li id="home-server">Based on &euro; 250 server (Intel Dual Core) with one 1 TB HDD, 20 W power consumption 24/7. Off-site backup not included. No software costs included. Electricity price taken as €0.20 per kWh.</li>
+	<li id="speed">Based on own testing, reviews and in the case of self-hosted, a basic internet plan.</li>
+	<li id="valuta">$1 = €0.9, includes some overhead for credit card/paypal costs</li>
+	<li id = "file-size">File size limits more than 1TB are assumed to be 'limitless'</li>
+	</ol>
+	<ul>
+	<li>All services considered offer Windows and Android application.</li>
+	<li>Where empty: not tested and not possible to make an argumented guess</li>
+	<li>Speed ratings are based on own experience; up and down in Europe</li>
+	<li>Streaming means streaming video, previewing files is assumed for all.</li>
+	<li>Security and privacy judged by encryption, (parent) company track record and claims. Just take it as a rough guideline. If you care a lot about it, you probably know it better than me.</li>
+	</ul>
+	</div>
+
+	</section>
+	
+	<div id="footer"></div>
+	<script type="text/javascript" language="javascript">
+   $(document).ready(function() {
+		$('#footer').load('../footer.html');
+	});
+	</script>
+	<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10431585; 
+var sc_invisible=1; 
+var sc_security="d97b5958"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="hit counter"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/10431585/0/d97b5958/1/"
+alt="hit counter"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+	</body>
+</html>

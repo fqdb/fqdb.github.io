@@ -1,0 +1,61 @@
+#main {
+	margin-top: 6em;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+.text {
+	max-width: 100%;
+	width: 40em;
+	text-align: justify;
+	font-size: 13pt;
+	margin: auto;
+}
+
+#names {
+	float: left;
+}
+
+#overflow-box {
+	max-width: 100%;
+	overflow: scroll;
+}
+.sortable { 
+	width: 1500px;
+	margin-left: 9em;
+	}
+
+table, tr, td {
+	border: 1px dotted gray;
+	font-family: Roboto Condensed, Roboto, Arial Narrow, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+}
+
+th {
+	text-align: left;
+}
+th > a {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+td:nth-child(1) {
+    position: absolute;
+	left: 1em;
+	z-index: 10;
+	background: white;
+	width: 8em;
+}
+sup > a{
+	text-decoration: none;
+}
+/* TEXT SELECTION COLOUR */	
+::selection {
+    background: #ffcdbe;
+}
+
+/* RESPONSIVE */
+	/* PHONES */
+@media only screen and (max-width : 43em) {
+	#main {
+		margin-top: 10em;
+	}
+}
