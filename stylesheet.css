@@ -70,7 +70,7 @@ a:hover {
 	color: #444;
 }
 
-img {
+img, video {
 	max-width: 100%;
 	display: block;
 	margin-left: auto;

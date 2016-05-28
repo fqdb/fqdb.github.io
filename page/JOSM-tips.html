@@ -24,10 +24,11 @@
 	<h1>Basic JOSM tips</h1>
 	<p>Some basic JOSM tips to speed up mapping.</p>
 	<p>(will be updated as I learn more myself)</p>
-	<h2>Before you start</h2>
+	<h2>Useful plugins</h2>
 	<ol>
-	<li>Get the Building Tools plugin</li>
-	<li>Get the 'utilsplugin2' plugin</li>
+	<li>Building Tools</li>
+	<li>utilsplugin2</li>
+	<li>FastDraw</li>
 	</ol>
 	<p>(You get plugins by going to 'edit' - 'preferences', then click the power plug icon and there simply select the plugins you want.)</p>
 	
@@ -83,13 +84,18 @@
 	</p>
 	<p>
 	<img src="../res/photo/JOSM-tips/s03.jpg">
-	<span class="small_description">Note that if you join areas, the any untagged areas will be treated the same as tagged areas. JOSM also automatically makes a multipolygon for you if the joined areas contain some void area in the center.</span>
+	<span class="small_description">Note that if you join areas, any untagged areas will be treated the same as tagged areas. JOSM also automatically makes a multipolygon for you if the joined areas contain some void area in the center.</span>
 	</p>
+	<p>Another trick is to use the scaling tool (CTRL+ALT+mouse drag) creatively. To understand this, take a minute to test how the scaling tool works. It separates all selected points to or from the center. By selecting only part of the points of an area, you can make perfectly centered trapezoid shapes for example:</p>
+	<p><video controls loop src="../res/photo/JOSM-tips/2016-05-26_09-46-32.mp4"></p>
+	<p>I also use it to make inner areas of the same shape as the outer area. To do so, copy the outer area and paste a copy exactly over the original area. Then simply scale it to a smaller size. As the centerpoint stays at the same spot, the distance between the areas will remain equal everywhere.</p>
+	<h2>Bordering areas</h2>
+	<p>There are two tools that save you a lot of time when working with areas that border each other.<p>
+	<p>The first is the 'split area' tool. It is included in utilsplugin2. Draw one way that is at the desired splitting of your area. Then select the area and the splitting way and press ALT+X. You'll now have two areas!<p>
+	<p>The second tool is the <a href="https://josm.openstreetmap.de/wiki/Help/Action/FollowLine">Follow Line tool</a>. Conventionally you would need to go over each waypoint again to draw a new bordering area. The Follow Line tool automates this for you. First you do need to enable expert mode in the JOSM settings. Now the tool is available. Start by following at least two points, after that, press 'F' to let the tool follow subsequent points.</p>
 	<h2>PicLayer</h2>
-	<p><a href="https://josm.openstreetmap.de/wiki/Help/Plugin/PicLayer">This plugin</a> allows you to use any image as background tracing material. Very useful if you have obtained a (properly licensed!) map or aerial photo that you want to trace.</p>
+	<p><a href="https://josm.openstreetmap.de/wiki/Help/Plugin/PicLayer">This plugin</a> allows you to use any image as background tracing material. Very useful if you have obtained a (properly licensed!) map or aerial photo that you want to trace. For example, NASA often published very fresh satellite images of interesting area, which may be licenced for use in Openstreetmap.</p>
 	
-	<h2>Adding new map layers</h2>
-	<p>Although JOSM packs a good selection of freely licenced satellite imagery, some are not available by default. If you have the url in the proper syntax, you can add them however.</p>
 	<h2 id="Comments">Comments</h2>
 	<br>
 	<div id="disqus_thread"></div>
