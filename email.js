@@ -2,7 +2,7 @@
 var tld_ = new Array()
 tld_[0] = "com";
 tld_[1] = "org";
-tld_[2] = "net";
+tld_[2] = "nl";
 tld_[3] = "ws";
 tld_[4] = "info";
 tld_[10] = "co.uk";
