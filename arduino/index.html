@@ -1,0 +1,82 @@
+<?php
+$message='';
+// Read temperature
+$fp = fopen("/dev/rfcomm0", "w+");
+if (!$fp) {
+	$message = 'Failed to read data, port is closed';
+}
+else{
+	fputs ($fp, '3' );
+	$message = 'port is open for read';
+	$message = fread($fp, 1024);
+	fclose ($fp);
+}
+if(isset($_POST['pump_2'])){
+  $message = startPump('1');
+}
+if(isset($_POST['pump_3'])){
+  $message = startPump('2');
+}
+
+function startPump($num) {
+	$fp = fopen("/dev/rfcomm0", "w");
+	if (!$fp) {
+		$response = 'Failed to start Pump ' . $num . ', port is closed';
+	}
+	else{
+		fputs ($fp, $num );
+		$response = 'Activated pump ' . $num;
+		fclose ($fp);
+	}
+	return $response;
+}
+?>
+<html>
+ <head>
+  <title>Arduino</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+	body {
+		font-family: Helvetica, Roboto, sans-serif;
+		background-color: #00979d;
+		color: white;
+		font-weight: bold;
+		text-align: center;
+		}
+	p {
+		padding: 0.5em;
+		}
+	input {
+		width: 100%;
+		max-width: 10em;
+		font-weight: bold;
+		padding: 1em;
+		}
+	.error { 
+		max-width: 20em;
+		color: orange;
+		font-size: 5em;
+		}
+	</style>
+ </head>
+ <body>
+ <h1>Plant control panel</h1>
+<p>
+Temperature, humidity:
+<div style="background-color: black; padding: 1em">
+	<?php 	echo $message; ?>
+</div>
+</p>
+<form action="" method="post">
+  <input type="submit" name="pump_2" value="Pump 2">
+</form>
+
+<form action="" method="post">
+  <input type="submit" name="pump_3" value="Pump 3">
+</form>
+
+<form action="camera.php" method="get">
+  <input type="submit" value="Camera">
+</form>
+ </body>
+</html>
