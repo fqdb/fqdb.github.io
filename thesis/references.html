@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="F.Q. de Boer" />
+  <title>Computational analysis and modeling of fluoride ion battery materials</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<div class="references csl-bib-body hanging-indent"
+role="doc-bibliography">
+<h2>References</h2>
+<div id="ref-Allam2018" class="csl-entry" role="doc-biblioentry">
+Allam, Omar, Byung Woo Cho, Ki Chul Kim, and Seung Soon Jang. 2018.
+<span>“Application of <span>DFT</span>-Based Machine Learning for
+Developing Molecular Electrode Materials in Li-Ion Batteries.”</span>
+<em><span>RSC</span> Advances</em> 8 (69): 39414–20. <a
+href="https://doi.org/10.1039/c8ra07112h">https://doi.org/10.1039/c8ra07112h</a>.
+</div>
+<div id="ref-Amatucci2007" class="csl-entry" role="doc-biblioentry">
+Amatucci, Glenn G., and Nathalie Pereira. 2007. <span>“Fluoride Based
+Electrode Materials for Advanced Energy Storage Devices.”</span>
+<em>Journal of Fluorine Chemistry</em> 128 (4): 243–62. <a
+href="https://doi.org/10.1016/j.jfluchem.2006.11.016">https://doi.org/10.1016/j.jfluchem.2006.11.016</a>.
+</div>
+<div id="ref-Anand2018" class="csl-entry" role="doc-biblioentry">
+Anand, Shashwat, Kaiyang Xia, Vinay I. Hegde, Umut Aydemir, Vancho
+Kocevski, Tiejun Zhu, Chris Wolverton, and G. Jeffrey Snyder. 2018.
+<span>“A Valence Balanced Rule for Discovery of 18-Electron
+Half-Heuslers with Defects.”</span> <em>Energy <span>&amp;</span>
+Environmental Science</em> 11 (6): 1480–88. <a
+href="https://doi.org/10.1039/c8ee00306h">https://doi.org/10.1039/c8ee00306h</a>.
+</div>
+<div id="ref-ANDERSON1954" class="csl-entry" role="doc-biblioentry">
+Anderson, O. L., and D. A. Stuart. 1954. <span>“Calculation of
+Activation Energy of Ionic Conductivity in Silica Glasses by Classical
+Methods.”</span> <em>Journal of the American Ceramic Society</em> 37
+(12): 573–80. <a
+href="https://doi.org/10.1111/j.1151-2916.1954.tb13991.x">https://doi.org/10.1111/j.1151-2916.1954.tb13991.x</a>.
+</div>
+<div id="ref-Arbizzani2011" class="csl-entry" role="doc-biblioentry">
+Arbizzani, Catia, Giulio Gabrielli, and Marina Mastragostino. 2011.
+<span>“Thermal Stability and Flammability of Electrolytes for
+Lithium-Ion Batteries.”</span> <em>Journal of Power Sources</em> 196
+(10): 4801–5. <a
+href="https://doi.org/10.1016/j.jpowsour.2011.01.068">https://doi.org/10.1016/j.jpowsour.2011.01.068</a>.
+</div>
+<div id="ref-bilbaocrystserver" class="csl-entry"
+role="doc-biblioentry">
+Aroyo, M. I., J. M. Perez-Mato, D. Orobengoa, E. Tasci, G. de la Flor,
+and A. Kirov. 2011. <span>“Crystallography Online: Bilbao
+Crystallographic Server.”</span> <em>Bulg. Chem. Commun.</em> 43 (2):
+183–97.
+</div>
+<div id="ref-Aroyo2006a" class="csl-entry" role="doc-biblioentry">
+Aroyo, Mois I., Asen Kirov, Cesar Capillas, J. M. Perez-Mato, and Hans
+Wondratschek. 2006. <span>“Bilbao Crystallographic Server.
+<span>II</span>. Representations of Crystallographic Point Groups and
+Space Groups.”</span> <em>Acta Crystallographica Section A</em> 62 (2):
+115–28. <a
+href="https://doi.org/10.1107/s0108767305040286">https://doi.org/10.1107/s0108767305040286</a>.
+</div>
+<div id="ref-Aroyo2006" class="csl-entry" role="doc-biblioentry">
+Aroyo, Mois Ilia, Juan Manuel Perez-Mato, Cesar Capillas, Eli Kroumova,
+Svetoslav Ivantchev, Gotzon Madariaga, Asen Kirov, and Hans
+Wondratschek. 2006. <span>“Bilbao Crystallographic Server: I. Databases
+and Crystallographic Computing Programs.”</span> <em>Zeitschrift Für
+Kristallographie - Crystalline Materials</em> 221 (1): 15–27. <a
+href="https://doi.org/10.1524/zkri.2006.221.1.15">https://doi.org/10.1524/zkri.2006.221.1.15</a>.
+</div>
+<div id="ref-Evrenk2014" class="csl-entry" role="doc-biblioentry">
+Atahan-Evrenk, Şule, and Alan Aspuru-Guzik. 2014a. <em>Prediction and
+Calculation of Crystal Structures : Methods and Applications</em>. Cham
+Switzerland: Springer.
+</div>
+<div id="ref-Atahan" class="csl-entry" role="doc-biblioentry">
+———. 2014b. <em>Prediction and Calculation of Crystal Structures</em>.
+Springer-Verlag GmbH.
+</div>
+<div id="ref-Aydinol1997" class="csl-entry" role="doc-biblioentry">
+Aydinol, M. K., A. F. Kohan, G. Ceder, K. Cho, and J. Joannopoulos.
+1997. <span>“Ab Initio Study of Lithium Intercalation in Metal Oxides
+and Metal Dichalcogenides.”</span> <em>Physical Review B</em> 56 (3):
+1354–65. <a
+href="https://doi.org/10.1103/physrevb.56.1354">https://doi.org/10.1103/physrevb.56.1354</a>.
+</div>
+<div id="ref-Balbuena1999" class="csl-entry" role="doc-biblioentry">
+Balbuena, Perla. 1999. <em>Molecular Dynamics : From Classical to
+Quantum Methods</em>. Amsterdam New York: Elsevier.
+</div>
+<div id="ref-Bhatia2017" class="csl-entry" role="doc-biblioentry">
+Bhatia, Harshita, Duc Tho Thieu, Alexander Herald Pohl, Venkata Sai K.
+Chakravadhanula, Mohammed H. Fawey, Christian Kübel, and Maximilian
+Fichtner. 2017. <span>“Conductivity Optimization of Tysonite-Type
+La1<span></span><span>xBaxF</span>3<span></span>x Solid Electrolytes for
+Advanced Fluoride Ion Battery.”</span> <em><span>ACS</span> Applied
+Materials <span>&amp;</span> Interfaces</em> 9 (28): 23707–15. <a
+href="https://doi.org/10.1021/acsami.7b04936">https://doi.org/10.1021/acsami.7b04936</a>.
+</div>
+<div id="ref-Boev2021" class="csl-entry" role="doc-biblioentry">
+Boev, A. O., S. S. Fedotov, K. J. Stevenson, and D. A. Aksyonov. 2021.
+<span>“High-Throughput Computational Screening of Cathode Materials for
+Li-O2 Battery.”</span> <em>Computational Materials Science</em> 197
+(September): 110592. <a
+href="https://doi.org/10.1016/j.commatsci.2021.110592">https://doi.org/10.1016/j.commatsci.2021.110592</a>.
+</div>
+<div id="ref-hexagonal" class="csl-entry" role="doc-biblioentry">
+Bor75. 2013. <span>“Hexagonal latticeFRONT.svg.”</span> <a
+href="https://commons.wikimedia.org/wiki/File:Hexagonal_latticeFRONT.svg"
+class="uri">https://commons.wikimedia.org/wiki/File:Hexagonal_latticeFRONT.svg</a>.
+</div>
+<div id="ref-Borah2020" class="csl-entry" role="doc-biblioentry">
+Borah, R., F. R. Hughson, J. Johnston, and T. Nann. 2020. <span>“On
+Battery Materials and Methods.”</span> <em>Materials Today Advances</em>
+6 (June): 100046. <a
+href="https://doi.org/10.1016/j.mtadv.2019.100046">https://doi.org/10.1016/j.mtadv.2019.100046</a>.
+</div>
+<div id="ref-Borodin2015" class="csl-entry" role="doc-biblioentry">
+Borodin, Oleg, Marco Olguin, Carrie E Spear, Kenneth W Leiter, and
+Jaroslaw Knap. 2015. <span>“Towards High Throughput Screening of
+Electrochemical Stability of Battery Electrolytes.”</span>
+<em>Nanotechnology</em> 26 (35): 354003. <a
+href="https://doi.org/10.1088/0957-4484/26/35/354003">https://doi.org/10.1088/0957-4484/26/35/354003</a>.
+</div>
+<div id="ref-bortfitz" class="csl-entry" role="doc-biblioentry">
+Bortfitz, Deborah. 2019. <span>“What the Fluoride-Ion Battery
+<span>‘Breakthrough’</span> Really Means - Battery Power Online.”</span>
+<a
+href="https://www.batterypoweronline.com/news/what-the-fluoride-ion-battery-breakthrough-really-means/"
+class="uri">https://www.batterypoweronline.com/news/what-the-fluoride-ion-battery-breakthrough-really-means/</a>.
+</div>
+<div id="ref-bruce2003" class="csl-entry" role="doc-biblioentry">
+Bruce, Peter G., ed. 2003. <em>Solid State Electrochemistry</em>.
+Cambridge University Press.
+</div>
+<div id="ref-Bylaska" class="csl-entry" role="doc-biblioentry">
+Bylaska, Eric J. n.d. <span>“Introduction to Plane-Wave Basis Sets and
+Pseudopotential Theory.”</span> <a
+href="https://www.nwchem-sw.org/images/Pw-lecture.html"
+class="uri">https://www.nwchem-sw.org/images/Pw-lecture.html</a>.
+</div>
+<div id="ref-Cabana2010" class="csl-entry" role="doc-biblioentry">
+Cabana, Jordi, Laure Monconduit, Dominique Larcher, and M. Rosa Palacı́n.
+2010. <span>“Beyond Intercalation-Based Li-Ion Batteries: The State of
+the Art and Challenges of Electrode Materials Reacting Through
+Conversion Reactions.”</span> <em>Advanced Materials</em> 22 (35):
+E170–92. <a
+href="https://doi.org/10.1002/adma.201000717">https://doi.org/10.1002/adma.201000717</a>.
+</div>
+<div id="ref-Ceder2010" class="csl-entry" role="doc-biblioentry">
+Ceder, Gerbrand. 2010. <span>“Opportunities and Challenges for
+First-Principles Materials Design and Applications to Li Battery
+Materials.”</span> <em><span>MRS</span> Bulletin</em> 35 (9): 693–701.
+<a
+href="https://doi.org/10.1557/mrs2010.681">https://doi.org/10.1557/mrs2010.681</a>.
+</div>
+<div id="ref-ceder1998identification" class="csl-entry"
+role="doc-biblioentry">
+Ceder, Gerbrand, Y-M Chiang, DR Sadoway, MK Aydinol, Y-I Jang, and
+Biying Huang. 1998. <span>“Identification of Cathode Materials for
+Lithium Batteries Guided by First-Principles Calculations.”</span>
+<em>Nature</em> 392 (6677): 694–96.
+</div>
+<div id="ref-blank_ptable" class="csl-entry" role="doc-biblioentry">
+Cepheus, and InverseHypercube. 2012. <span>“White Periodic
+Table.svg.”</span> <a
+href="https://commons.wikimedia.org/wiki/File:White_periodic_table.svg"
+class="uri">https://commons.wikimedia.org/wiki/File:White_periodic_table.svg</a>.
+</div>
+<div id="ref-Chae2017" class="csl-entry" role="doc-biblioentry">
+Chae, Sujong, Namhyung Kim, Jiyoung Ma, Jaephil Cho, and Minseong Ko.
+2017. <span>“One-to-One Comparison of Graphite-Blended Negative
+Electrodes Using Silicon Nanolayer-Embedded Graphite Versus Commercial
+Benchmarking Materials for High-Energy Lithium-Ion Batteries.”</span>
+<em>Advanced Energy Materials</em> 7 (15): 1700071. <a
+href="https://doi.org/10.1002/aenm.201700071">https://doi.org/10.1002/aenm.201700071</a>.
+</div>
+<div id="ref-Chagnes2015" class="csl-entry" role="doc-biblioentry">
+Chagnes, Alexandre, and Jolanta Swiatowska, eds. 2015. <em>Lithium
+Process Chemistry: Resources, Extraction, Batteries, and Recycling</em>.
+Elsevier Science &amp; Technology.
+</div>
+<div id="ref-Chaudhuri2000" class="csl-entry" role="doc-biblioentry">
+Chaudhuri, Santanu, Michael Castiglione, Francis Wang, Mark Wilson, Paul
+A. Madden, and Clare P. Grey. 2000. <span>“Study of Fluoride Ion Motions
+in <span>PbSnF</span>4 and <span>BaSnF</span>4 Compounds with Molecular
+Dynamics Simulation and Solid State <span>NMR</span> Techniques.”</span>
+<em>MRS Online Proceedings Library (OPL)</em> 658. <a
+href="https://doi.org/10.1557/proc-658-gg10.9">https://doi.org/10.1557/proc-658-gg10.9</a>.
+</div>
+<div id="ref-Chaudhuri2002" class="csl-entry" role="doc-biblioentry">
+Chaudhuri, Santanu, Francis Wang, and Clare P. Grey. 2002.
+<span>“Resolving the Different Dynamics of the Fluorine Sublattices in
+the Anionic Conductor <span>BaSnF</span>4 by Using High-Resolution
+<span>MAS</span> <span>NMR</span> Techniques.”</span> <em>Journal of the
+American Chemical Society</em> 124 (39): 11746–57. <a
+href="https://doi.org/10.1021/ja026155j">https://doi.org/10.1021/ja026155j</a>.
+</div>
+<div id="ref-Cheng2015" class="csl-entry" role="doc-biblioentry">
+Cheng, Lei, Rajeev S. Assary, Xiaohui Qu, Anubhav Jain, Shyue Ping Ong,
+Nav Nidhi Rajput, Kristin Persson, and Larry A. Curtiss. 2015.
+<span>“Accelerating Electrolyte Discovery for Energy Storage with
+High-Throughput Screening.”</span> <em>The Journal of Physical Chemistry
+Letters</em> 6 (2): 283–91. <a
+href="https://doi.org/10.1021/jz502319n">https://doi.org/10.1021/jz502319n</a>.
+</div>
+<div id="ref-Chernov1991" class="csl-entry" role="doc-biblioentry">
+Chernov, S, A Moskvin, and I Murin. 1991. <span>“Structure of Lead (II)
+Tetrafluorostannate (II) Prepared by Hydrothermal Synthesis.”</span>
+<em>Solid State Ionics</em> 47: 71–73. <a
+href="https://doi.org/10.1016/0167-2738(91)90182-B">https://doi.org/10.1016/0167-2738(91)90182-B</a>.
+</div>
+<div id="ref-Christe1978" class="csl-entry" role="doc-biblioentry">
+Christe, Karl O., William W. Wilson, and Carl J. Schack. 1978. <span>“On
+the Syntheses and Properties of Some Hexafluorobismuthate (v) Salts and
+Their in the Metathetical Synthesis of Salts.”</span> <em>Journal of
+Fluorine Chemistry</em> 11 (1): 71–85. <a
+href="https://doi.org/10.1016/s0022-1139(00)81599-7">https://doi.org/10.1016/s0022-1139(00)81599-7</a>.
+</div>
+<div id="ref-plotly" class="csl-entry" role="doc-biblioentry">
+<span>“Collaborative Data Science.”</span> 2015. Montreal, QC: Plotly
+Technologies Inc. 2015.
+</div>
+<div id="ref-Crompton2000" class="csl-entry" role="doc-biblioentry">
+Crompton, T. R. 2000. <em>Battery Reference Book</em>. Elsevier Science
+&amp; Technology.
+</div>
+<div id="ref-Danto1978" class="csl-entry" role="doc-biblioentry">
+Danto, Y., G. Poujade, J. D. Pistré, C. Lucat, and J. Salardenne. 1978.
+<span>“A Pb<span class="math inline">|</span><span>PbF</span>2<span
+class="math inline">|</span><span class="math inline">|</span>bi Thin
+Solid Film Reversible Galvanic Cell.”</span> <em>Thin Solid Films</em>
+55 (3): 347–54. <a
+href="https://doi.org/10.1016/0040-6090(78)90151-7">https://doi.org/10.1016/0040-6090(78)90151-7</a>.
+</div>
+<div id="ref-de2015failure" class="csl-entry" role="doc-biblioentry">
+De Boer, FQ. 2015. <span>“Failure Mechanisms in Lithium Silicon
+Batteries.”</span> Master’s thesis, Delft University of Technology.
+</div>
+<div id="ref-Denes1991" class="csl-entry" role="doc-biblioentry">
+Denes, G., Y. H. Yu, T. Tyliszczak, and A. P. Hitchcock. 1991.
+<span>“Sn–k, Pb–L3, and Ba–L3 <span>EXAFS</span>, x-Ray Diffraction and
+119Sn Mössbauer Spectroscopic Studies of Ordered (m = Pb and Ba)
+Fluoride Ionic Conductors with the <span class="math inline">α</span>-
+Structure.”</span> <em>Journal of Solid State Chemistry</em> 91 (1):
+1–15. <a
+href="https://doi.org/10.1016/0022-4596(91)90051-i">https://doi.org/10.1016/0022-4596(91)90051-i</a>.
+</div>
+<div id="ref-Denes2002" class="csl-entry" role="doc-biblioentry">
+Dénès, Georges, Florence Grée, and Abdualhafeed Muntasar. 2002.
+<span>“Phase Transitions in Superionic BaSnF4 Upon Ball-Milling and
+Subsequent Treatments.”</span>
+</div>
+<div id="ref-Denes2007" class="csl-entry" role="doc-biblioentry">
+Dénès, Georges, Jamil Hantash, Abdualhafeed Muntasar, Philip Oldfield,
+and Alan Bartlett. 2007. <span>“Variations of <span>BaSnF</span>4 Fast
+Ion Conductor with the Method of Preparation and Temperature.”</span>
+<em>Hyperfine Interactions</em> 170 (1-3): 145–58. <a
+href="https://doi.org/10.1007/s10751-006-9464-5">https://doi.org/10.1007/s10751-006-9464-5</a>.
+</div>
+<div id="ref-Dudney2016" class="csl-entry" role="doc-biblioentry">
+Dudney, Nancy. 2016. <em>Handbook of Solid State Batteries</em>. New
+Jersey Hong Kong: World Scientific Pub.
+</div>
+<div id="ref-garche2013" class="csl-entry" role="doc-biblioentry">
+Garche, Jürgen, ed. 2013. <em>Encyclopedia of Electrochemical Power
+Sources</em>. Elsevier Science &amp; Techn.
+</div>
+<div id="ref-Gaskell2018" class="csl-entry" role="doc-biblioentry">
+Gaskell, David. 2018. <em>Introduction to the Thermodynamics of
+Materials</em>. Boca Raton, FL: CRC Press.
+</div>
+<div id="ref-DENES1984" class="csl-entry" role="doc-biblioentry">
+G.Dénès, T.Birchall, M.Sayer, and M. F.Bell. 1984.<span>“ <span></span>
+a New Fluoride Ionic Conductor with the <span
+class="math inline">α</span>- Structure.”</span> <em>Solid State
+Ionics</em> 13 (3): 213–19. <a
+href="https://doi.org/10.1016/0167-2738(84)90032-8">https://doi.org/10.1016/0167-2738(84)90032-8</a>.
+</div>
+<div id="ref-molmass" class="csl-entry" role="doc-biblioentry">
+Gohlke, Christoph. 2021. <span>“Molmass.”</span> <a
+href="https://pypi.org/project/molmass/"
+class="uri">https://pypi.org/project/molmass/</a>.
+</div>
+<div id="ref-GoodmanSciences" class="csl-entry" role="doc-biblioentry">
+GoodmanSciences. n.d. <span>“Periodic Table of Elements.csv.”</span> <a
+href="https://gist.github.com/GoodmanSciences/c2dd862cd38f21b0ad36b8f96b4bf1ee"
+class="uri">https://gist.github.com/GoodmanSciences/c2dd862cd38f21b0ad36b8f96b4bf1ee</a>.
+</div>
+<div id="ref-Gorai2021" class="csl-entry" role="doc-biblioentry">
+Gorai, Prashun, Theodosios Famprikis, Baltej Singh, Vladan Stevanović,
+and Pieremanuele Canepa. 2021. <span>“Devil Is in the Defects:
+Electronic Conductivity in Solid Electrolytes.”</span> <em>Chemistry of
+Materials</em> 33 (18): 7484–98. <a
+href="https://doi.org/10.1021/acs.chemmater.1c02345">https://doi.org/10.1021/acs.chemmater.1c02345</a>.
+</div>
+<div id="ref-Groult1996" class="csl-entry" role="doc-biblioentry">
+Groult, H., D. Devilliers, N. Kumagai, T. Nakajima, and Y. Matsuo. 1996.
+<span>“Vanadium Oxide Fluoride-Graphite Intercalation Compounds:
+Structural Characteristics and Electrochemical Insertion of Lithium
+Cations.”</span> <em>Journal of The Electrochemical Society</em> 143
+(7): 2093–99. <a
+href="https://doi.org/10.1149/1.1836964">https://doi.org/10.1149/1.1836964</a>.
+</div>
+<div id="ref-Gschwind2016" class="csl-entry" role="doc-biblioentry">
+Gschwind, F. 2016. <span>“Fluoride Ion Batteries: Theoretical
+Performance, Safety, Toxicity, and a Combinatorial Screening of New
+Electrodes.”</span> <em>Journal of Fluorine Chemistry</em> 182: 76–90.
+<a
+href="https://doi.org/10.1016/j.jﬂuchem.2015.12.002">https://doi.org/10.1016/j.jﬂuchem.2015.12.002</a>.
+</div>
+<div id="ref-Gschwind2015" class="csl-entry" role="doc-biblioentry">
+Gschwind, Fabienne, and Joshua Bastien. 2015. <span>“Parametric
+Investigation of Room-Temperature Fluoride-Ion Batteries: Assessment of
+Electrolytes, Mg-Based Anodes, and <span>BiF</span>3-Cathodes.”</span>
+<em>Journal of Materials Chemistry A</em> 3 (10): 5628–34. <a
+href="https://doi.org/10.1039/c4ta06625a">https://doi.org/10.1039/c4ta06625a</a>.
+</div>
+<div id="ref-Gschwind2017" class="csl-entry" role="doc-biblioentry">
+Gschwind, Fabienne, Holger Euchner, and Gonzalo Rodriguez-Garcia. 2017.
+<span>“Chloride Ion Battery Review: Theoretical Calculations, State of
+the Art, Safety, Toxicity, and an Outlook Towards Future
+Developments.”</span> <em>European Journal of Inorganic Chemistry</em>
+2017 (21): 2784–99. <a
+href="https://doi.org/10.1002/ejic.201700288">https://doi.org/10.1002/ejic.201700288</a>.
+</div>
+<div id="ref-Hafner2008" class="csl-entry" role="doc-biblioentry">
+Hafner, Jürgen. 2008. <span>“Ab-Initiosimulations of Materials Using
+<span>VASP</span>: Density-Functional Theory and Beyond.”</span>
+<em>Journal of Computational Chemistry</em> 29 (13): 2044–78. <a
+href="https://doi.org/10.1002/jcc.21057">https://doi.org/10.1002/jcc.21057</a>.
+</div>
+<div id="ref-Halleux2021" class="csl-entry" role="doc-biblioentry">
+Halleux, Vivienne. 2021. <span>“New EU Regulatory Framework for
+Batteries: Setting Sustainability Requirements.”</span> European
+Parliamentary Research Service. <a
+href="https://www.europarl.europa.eu/thinktank/en/document.html?reference=EPRS_BRI(2021)689337">https://www.europarl.europa.eu/thinktank/en/document.html?reference=EPRS_BRI(2021)689337</a>.
+</div>
+<div id="ref-Hamad2010" class="csl-entry" role="doc-biblioentry">
+Hamad, Ibrahim Abou, M. A. Novotny, D. O. Wipf, and P. A. Rikvold. 2010.
+<span>“A New Battery-Charging Method Suggested by Molecular Dynamics
+Simulations.”</span> <em>Physical Chemistry Chemical Physics</em> 12
+(11): 2740. <a
+href="https://doi.org/10.1039/b920970k">https://doi.org/10.1039/b920970k</a>.
+</div>
+<div id="ref-Hannah2018" class="csl-entry" role="doc-biblioentry">
+Hannah, Daniel C., Gopalakrishnan Sai Gautam, Pieremanuele Canepa, and
+Gerbrand Ceder. 2018. <span>“On the Balance of Intercalation and
+Conversion Reactions in Battery Cathodes.”</span> <em>Advanced Energy
+Materials</em> 8 (20): 1800379. <a
+href="https://doi.org/10.1002/aenm.201800379">https://doi.org/10.1002/aenm.201800379</a>.
+</div>
+<div id="ref-Hartman2020" class="csl-entry" role="doc-biblioentry">
+Hartman, Steven T., and Rohan Mishra. 2020. <span>“Layered Electrides as
+Fluoride Intercalation Anodes.”</span> <em>Journal of Materials
+Chemistry A</em> 8 (46): 24469–76. <a
+href="https://doi.org/10.1039/d0ta06162j">https://doi.org/10.1039/d0ta06162j</a>.
+</div>
+<div id="ref-Hautier2016" class="csl-entry" role="doc-biblioentry">
+Hautier, Geoffroy. 2016. <span>“Prediction of New Battery Materials
+Based on Ab Initio Computations.”</span> In <em>AIP Conference
+Proceedings</em>. Author(s). <a
+href="https://doi.org/10.1063/1.4961901">https://doi.org/10.1063/1.4961901</a>.
+</div>
+<div id="ref-Hautier2011" class="csl-entry" role="doc-biblioentry">
+Hautier, Geoffroy, Anubhav Jain, Hailong Chen, Charles Moore, Shyue Ping
+Ong, and Gerbrand Ceder. 2011. <span>“Novel Mixed Polyanions Lithium-Ion
+Battery Cathode Materials Predicted by High-Throughput Ab Initio
+Computations.”</span> <em>Journal of Materials Chemistry</em> 21 (43):
+17147. <a
+href="https://doi.org/10.1039/c1jm12216a">https://doi.org/10.1039/c1jm12216a</a>.
+</div>
+<div id="ref-Haynes2017" class="csl-entry" role="doc-biblioentry">
+Haynes, William. 2017. <em>CRC Handbook of Chemistry and Physics</em>.
+Boca Raton, Florida: CRC Press.
+</div>
+<div id="ref-He2019" class="csl-entry" role="doc-biblioentry">
+He, Qiu, Bin Yu, Zhaohuai Li, and Yan Zhao. 2019. <span>“Density
+Functional Theory for Battery Materials.”</span> <em><span>ENERGY</span>
+<span>&amp;</span> <span>ENVIRONMENTAL</span>
+<span>MATERIALS</span></em> 2 (4): 264–79. <a
+href="https://doi.org/10.1002/eem2.12056">https://doi.org/10.1002/eem2.12056</a>.
+</div>
+<div id="ref-Hellenbrandt2004" class="csl-entry" role="doc-biblioentry">
+Hellenbrandt, Mariette. 2004. <span>“The Inorganic Crystal Structure
+Database (<span>ICSD</span>)<span></span>present and Future.”</span>
+<em>Crystallography Reviews</em> 10 (1): 17–22. <a
+href="https://doi.org/10.1080/08893110410001664882">https://doi.org/10.1080/08893110410001664882</a>.
+</div>
+<div id="ref-Ichitsubo2011" class="csl-entry" role="doc-biblioentry">
+Ichitsubo, Tetsu, Shunsuke Yagi, Takayuki Doi, Shunsuke Yukitani, Kosuke
+Hirai, and Eiichiro Matsubara. 2011. <span>“Influence of Mechanical
+Strain on the Electrochemical Lithiation of Aluminum-Based Electrode
+Materials.”</span> <em>Journal of The Electrochemical Society</em> 159
+(1): A14–17. <a
+href="https://doi.org/10.1149/2.038201jes">https://doi.org/10.1149/2.038201jes</a>.
+</div>
+<div id="ref-materialsproject" class="csl-entry" role="doc-biblioentry">
+Jain, Anubhav, Shyue Ping Ong, Geoffroy Hautier, Wei Chen, William
+Davidson Richards, Stephen Dacek, Shreyas Cholia, et al. 2013.
+<span>“Commentary: The Materials Project: A Materials Genome Approach to
+Accelerating Materials Innovation.”</span> <em>APL Materials 1</em> 1
+(1): 011002. <a
+href="https://doi.org/10.1063/1.4812323">https://doi.org/10.1063/1.4812323</a>.
+</div>
+<div id="ref-Kahle2020" class="csl-entry" role="doc-biblioentry">
+Kahle, Leonid, Aris Marcolongo, and Nicola Marzari. 2020.
+<span>“High-Throughput Computational Screening for Solid-State Li-Ion
+Conductors.”</span> <em>Energy <span>&amp;</span> Environmental
+Science</em> 13 (3): 928–48. <a
+href="https://doi.org/10.1039/c9ee02457c">https://doi.org/10.1039/c9ee02457c</a>.
+</div>
+<div id="ref-KamaliHeidari2018" class="csl-entry"
+role="doc-biblioentry">
+Kamali-Heidari, Elham, Ata Kamyabi-Gol, Mahmoud Heydarzadeh sohi, and
+Abolghasem Ataie. 2018. <span>“Electrode Materials for Lithium Ion
+Batteries: A Review.”</span> <em>Journal of Ultrafine Grained and
+Nanostructured Materials</em> 51. <a
+href="https://doi.org/10.22059/jufgnsm.2018.01.01">https://doi.org/10.22059/jufgnsm.2018.01.01</a>.
+</div>
+<div id="ref-Kawahara2021" class="csl-entry" role="doc-biblioentry">
+Kawahara, Kazuaki, Ryo Ishikawa, Kei Nakayama, Naoya Shibata, and Yuichi
+Ikuhara. 2021. <span>“Room Temperature Fluoride Ion Conductivity in
+Defective <span class="math inline">β</span>-<span>KSb</span>1-<span
+class="math inline">δ</span>F4-3<span class="math inline">δ</span>
+Polycrystals.”</span> <em>Journal of Power Sources</em> 483 (January):
+229173. <a
+href="https://doi.org/10.1016/j.jpowsour.2020.229173">https://doi.org/10.1016/j.jpowsour.2020.229173</a>.
+</div>
+<div id="ref-Kennedy1976" class="csl-entry" role="doc-biblioentry">
+Kennedy, John H., and Ronald C. Miles. 1976. <span>“Ionic Conductivity
+of Doped Beta-Lead Fluoride.”</span> <em>Journal of The Electrochemical
+Society</em> 123 (1): 47–51. <a
+href="https://doi.org/10.1149/1.2132763">https://doi.org/10.1149/1.2132763</a>.
+</div>
+<div id="ref-Kharbachi2020" class="csl-entry" role="doc-biblioentry">
+Kharbachi, A. El, O. Zavorotynska, M. Latroche, F. Cuevas, V. Yartys,
+and M. Fichtner. 2020. <span>“Exploits, Advances and Challenges
+Benefiting Beyond Li-Ion Battery Technologies.”</span> <em>Journal of
+Alloys and Compounds</em> 817 (March): 153261. <a
+href="https://doi.org/10.1016/j.jallcom.2019.153261">https://doi.org/10.1016/j.jallcom.2019.153261</a>.
+</div>
+<div id="ref-Kim1991" class="csl-entry" role="doc-biblioentry">
+Kim, K Jin. 1991. <span>“Tentative Phase Diagram of the System
+<span>PbF</span>2-<span>BiF</span>3.”</span> <em>Solid State Ionics</em>
+44 (3-4): 281–85. <a
+href="https://doi.org/10.1016/0167-2738(91)90019-8">https://doi.org/10.1016/0167-2738(91)90019-8</a>.
+</div>
+<div id="ref-Kishore2005" class="csl-entry" role="doc-biblioentry">
+Kishore, M. V. V. M. Satya, and U. V. Varadaraju. 2005. <span>“Influence
+of Isovalent Ion Substitution on the Electrochemical Performance of
+<span>LiCoPO</span>4.”</span> <em>Materials Research Bulletin</em> 40
+(10): 1705–12. <a
+href="https://doi.org/10.1016/j.materresbull.2005.05.011">https://doi.org/10.1016/j.materresbull.2005.05.011</a>.
+</div>
+<div id="ref-Kisliuk2019" class="csl-entry" role="doc-biblioentry">
+Kisliuk, A., V. Bocharova, I. Popov, C. Gainaru, and A. P. Sokolov.
+2019. <span>“Fundamental Parameters Governing Ion Conductivity in
+Polymer Electrolytes.”</span> <em>Electrochimica Acta</em> 299 (March):
+191–96. <a
+href="https://doi.org/10.1016/j.electacta.2018.12.143">https://doi.org/10.1016/j.electacta.2018.12.143</a>.
+</div>
+<div id="ref-Klerk2018" class="csl-entry" role="doc-biblioentry">
+Klerk, Niek J. J. de, Eveline van der Maas, and Marnix Wagemaker. 2018.
+<span>“Analysis of Diffusion in Solid-State Electrolytes Through
+<span>MD</span> Simulations, Improvement of the Li-Ion Conductivity in
+<span class="math inline">β</span>- as an Example.”</span> <em>ACS
+Applied Energy Materials</em> 1 (7): 3230–42. <a
+href="https://doi.org/10.1021/acsaem.8b00457">https://doi.org/10.1021/acsaem.8b00457</a>.
+</div>
+<div id="ref-Konishi2017" class="csl-entry" role="doc-biblioentry">
+Konishi, Hiroaki, Taketoshi Minato, Takeshi Abe, and Zempachi Ogumi.
+2017a. <span>“Electrochemical Performance of a Bismuth Fluoride
+Electrode in a Reserve-Type Fluoride Shuttle Battery.”</span>
+<em>Journal of The Electrochemical Society</em> 164 (14): A3702–8. <a
+href="https://doi.org/10.1149/2.0931714jes">https://doi.org/10.1149/2.0931714jes</a>.
+</div>
+<div id="ref-Konishi2017a" class="csl-entry" role="doc-biblioentry">
+———. 2017b. <span>“Electrochemical Reaction Mechanism for Bi1-x Ba x
+F3-x (x =0, 0.1, 0.2, and 0.4) Electrodes in Lithium-Ion
+Batteries.”</span> <em><span>ChemistrySelect</span></em> 2 (22):
+6399–6406. <a
+href="https://doi.org/10.1002/slct.201701001">https://doi.org/10.1002/slct.201701001</a>.
+</div>
+<div id="ref-Konishi2020" class="csl-entry" role="doc-biblioentry">
+———. 2020. <span>“Electrochemical Performance of <span>BiF</span> 3
+-<span>BaF</span> 2 Solid Solution with Three Different Phases on a
+Fluoride Shuttle Battery System.”</span>
+<em><span>ChemistrySelect</span></em> 5 (16): 4943–46. <a
+href="https://doi.org/10.1002/slct.202000713">https://doi.org/10.1002/slct.202000713</a>.
+</div>
+<div id="ref-Kraytsberg2017" class="csl-entry" role="doc-biblioentry">
+Kraytsberg, Alexander, and Yair Ein-Eli. 2017. <span>“A Critical
+Review-Promises and Barriers of Conversion Electrodes for Li-Ion
+Batteries.”</span> <em>Journal of Solid State Electrochemistry</em> 21
+(7): 1907–23. <a
+href="https://doi.org/10.1007/s10008-017-3580-9">https://doi.org/10.1007/s10008-017-3580-9</a>.
+</div>
+<div id="ref-Kresse1993" class="csl-entry" role="doc-biblioentry">
+Kresse, G., and J. Hafner. 1993. <span>“Ab Initio Molecular Dynamics for
+Liquid Metals.”</span> <em>Physical Review B</em> 47 (1): 558–61. <a
+href="https://doi.org/10.1103/physrevb.47.558">https://doi.org/10.1103/physrevb.47.558</a>.
+</div>
+<div id="ref-Lalena2020" class="csl-entry" role="doc-biblioentry">
+Lalena, John N., David A. Cleary, and Olivier B. M. Hardouin Duparc.
+2020. <em>Principles of Inorganic Materials Design</em>. Wiley.
+</div>
+<div id="ref-Li2020" class="csl-entry" role="doc-biblioentry">
+Li, Hongyi, Takitaro Yamaguchi, Shingo Matsumoto, Hiroaki Hoshikawa,
+Toshiaki Kumagai, Norihiko L. Okamoto, and Tetsu Ichitsubo. 2020.
+<span>“Circumventing Huge Volume Strain in Alloy Anodes of Lithium
+Batteries.”</span> <em>Nature Communications</em> 11 (1). <a
+href="https://doi.org/10.1038/s41467-020-15452-0">https://doi.org/10.1038/s41467-020-15452-0</a>.
+</div>
+<div id="ref-CRC_handbook" class="csl-entry" role="doc-biblioentry">
+Lide, David. 2000. <em>CRC Handbook of Chemistry and Physics</em>. 81st
+ed. Boca Raton: CRC Press.
+</div>
+<div id="ref-LindorffLarsen2011" class="csl-entry"
+role="doc-biblioentry">
+Lindorff-Larsen, K., S. Piana, R. O. Dror, and D. E. Shaw. 2011.
+<span>“How Fast-Folding Proteins Fold.”</span> <em>Science</em> 334
+(6055): 517–20. <a
+href="https://doi.org/10.1126/science.1208351">https://doi.org/10.1126/science.1208351</a>.
+</div>
+<div id="ref-Liu2019" class="csl-entry" role="doc-biblioentry">
+Liu, Bo, Da Wang, Maxim Avdeev, Siqi Shi, Jiong Yang, and Wenqing Zhang.
+2019. <span>“High-Throughput Computational Screening of Li-Containing
+Fluorides for Battery Cathode Coatings.”</span> <em><span>ACS</span>
+Sustainable Chemistry <span>&amp;</span> Engineering</em> 8 (2): 948–57.
+<a
+href="https://doi.org/10.1021/acssuschemeng.9b05557">https://doi.org/10.1021/acssuschemeng.9b05557</a>.
+</div>
+<div id="ref-Liu2020a" class="csl-entry" role="doc-biblioentry">
+Liu, Lei, Li Yang, Min Liu, Xiaolong Li, Dingsheng Shao, Kaili Luo,
+Xianyou Wang, and Zhigao Luo. 2020. <span>“<span>SnF</span>2-Based
+Fluoride Ion Electrolytes <span>MSnF</span>4 (m = Ba, Pb) for the
+Application of Room-Temperature Solid-State Fluoride Ion
+Batteries.”</span> <em>Journal of Alloys and Compounds</em> 819 (April):
+152983. <a
+href="https://doi.org/10.1016/j.jallcom.2019.152983">https://doi.org/10.1016/j.jallcom.2019.152983</a>.
+</div>
+<div id="ref-Liu2020" class="csl-entry" role="doc-biblioentry">
+Liu, Lei, Li Yang, Dingsheng Shao, Kaili Luo, Changfei Zou, Zhigao Luo,
+and Xianyou Wang. 2020.<span>“ Doped Solid Electrolyte for Advanced
+Room-Temperature Solid-State Fluoride Ion Batteries.”</span>
+<em>Ceramics International</em> 46 (12): 20521–28. <a
+href="https://doi.org/10.1016/j.ceramint.2020.05.161">https://doi.org/10.1016/j.ceramint.2020.05.161</a>.
+</div>
+<div id="ref-Liu2012" class="csl-entry" role="doc-biblioentry">
+Liu, Xiao Hua, Li Zhong, Shan Huang, Scott X. Mao, Ting Zhu, and Jian Yu
+Huang. 2012. <span>“Size-Dependent Fracture of Silicon Nanoparticles
+During Lithiation.”</span> <em><span>ACS</span> Nano</em> 6 (2):
+1522–31. <a
+href="https://doi.org/10.1021/nn204476h">https://doi.org/10.1021/nn204476h</a>.
+</div>
+<div id="ref-Luo2016" class="csl-entry" role="doc-biblioentry">
+Luo, J., C. Y. Dai, Z. Wang, K. Liu, W. G. Mao, D. N. Fang, and X. Chen.
+2016. <span>“In-Situ Measurements of Mechanical and Volume Change of
+<span>LiCoO</span>2 Lithium-Ion Batteries During Repeated
+Charge<span></span>discharge Cycling by Using Digital Image
+Correlation.”</span> <em>Measurement</em> 94 (December): 759–70. <a
+href="https://doi.org/10.1016/j.measurement.2016.09.023">https://doi.org/10.1016/j.measurement.2016.09.023</a>.
+</div>
+<div id="ref-cubic" class="csl-entry" role="doc-biblioentry">
+Mayer, Daniel. 2007a. <span>“Cubic.svg.”</span> <a
+href="https://commons.wikimedia.org/wiki/File:Cubic.svg"
+class="uri">https://commons.wikimedia.org/wiki/File:Cubic.svg</a>.
+</div>
+<div id="ref-orthorhombic" class="csl-entry" role="doc-biblioentry">
+———. 2007b. <span>“Orthorhombic.svg.”</span> <a
+href="https://commons.wikimedia.org/wiki/File:Orthorhombic.svg"
+class="uri">https://commons.wikimedia.org/wiki/File:Orthorhombic.svg</a>.
+</div>
+<div id="ref-Meijer1989" class="csl-entry" role="doc-biblioentry">
+Meijer, J A, and W van der Lugt. 1989. <span>“Resistivity of Liquid k-Bi
+and Cs-Bi Alloys.”</span> <em>Journal of Physics: Condensed Matter</em>
+1 (48): 9779–84. <a
+href="https://doi.org/10.1088/0953-8984/1/48/024">https://doi.org/10.1088/0953-8984/1/48/024</a>.
+</div>
+<div id="ref-Menictas2014" class="csl-entry" role="doc-biblioentry">
+Menictas, Chris, M. Skyllas-Kazacos, and T. M. Lim, eds. 2014.
+<em>Advances in Batteries for Medium and Large-Scale Energy Storage:
+Types and Applications</em>. Cambridge, UK Waltham, MA, USA: Elsevier
+Woodhead Publishing.
+</div>
+<div id="ref-Meutzner2018" class="csl-entry" role="doc-biblioentry">
+Meutzner, F., T. Nestler, M. Zschornak, P. Canepa, G. S. Gautam, S.
+Leoni, S. Adams, T. Leisegang, V. A. Blatov, and D. C. Meyer. 2018.
+<span>“Computational Analysis and Identification of Battery
+Materials.”</span> <em>Physical Sciences Reviews</em> 4 (1). <a
+href="https://doi.org/10.1515/psr-2018-0044">https://doi.org/10.1515/psr-2018-0044</a>.
+</div>
+<div id="ref-Miller" class="csl-entry" role="doc-biblioentry">
+Miller, Beth. 2020. <span>“Study Finds Fluorine as Possible Substitute
+for Lithium in Rechargeable Batteries.”</span>
+</div>
+<div id="ref-Mohammad2019" class="csl-entry" role="doc-biblioentry">
+Mohammad, Irshad, and Raiker Witter. 2019. <span>“Testing Mg as an Anode
+Against <span>BiF</span>3 and <span>SnF</span>2 Cathodes for Room
+Temperature Rechargeable Fluoride Ion Batteries.”</span> <em>Materials
+Letters</em> 244 (June): 159–62. <a
+href="https://doi.org/10.1016/j.matlet.2019.02.052">https://doi.org/10.1016/j.matlet.2019.02.052</a>.
+</div>
+<div id="ref-Mohammad2018" class="csl-entry" role="doc-biblioentry">
+Mohammad, Irshad, Raiker Witter, Maximilian Fichtner, and M. Anji Reddy.
+2018. <span>“Room-Temperature, Rechargeable Solid-State Fluoride-Ion
+Batteries.”</span> <em><span>ACS</span> Applied Energy Materials</em> 1
+(9): 4766–75. <a
+href="https://doi.org/10.1021/acsaem.8b00864">https://doi.org/10.1021/acsaem.8b00864</a>.
+</div>
+<div id="ref-Mohammad2019a" class="csl-entry" role="doc-biblioentry">
+———. 2019. <span>“Introducing Interlayer Electrolytes: Toward
+Room-Temperature High-Potential Solid-State Rechargeable Fluoride Ion
+Batteries.”</span> <em><span>ACS</span> Applied Energy Materials</em> 2
+(2): 1553–62. <a
+href="https://doi.org/10.1021/acsaem.8b02166">https://doi.org/10.1021/acsaem.8b02166</a>.
+</div>
+<div id="ref-vesta" class="csl-entry" role="doc-biblioentry">
+Momma, Koichi, and Fujio Izumi. 2011. <span>“VESTA 3 for
+Three-Dimensional Visualization of Crystal, Volumetric and Morphology
+Data.”</span> <em>Journal of Applied Crystallography</em> 44 (6):
+1272–76. <a
+href="https://doi.org/10.1107/s0021889811038970">https://doi.org/10.1107/s0021889811038970</a>.
+</div>
+<div id="ref-Morris2011" class="csl-entry" role="doc-biblioentry">
+Morris, Andrew J., C. P. Grey, R. J. Needs, and Chris J. Pickard. 2011.
+<span>“Energetics of Hydrogen/Lithium Complexes in Silicon Analyzed
+Using the Maxwell Construction.”</span> <em>Physical Review B</em> 84
+(22): 224106. <a
+href="https://doi.org/10.1103/physrevb.84.224106">https://doi.org/10.1103/physrevb.84.224106</a>.
+</div>
+<div id="ref-Moses2021" class="csl-entry" role="doc-biblioentry">
+Moses, Isaiah A., Rajendra P. Joshi, Burak Ozdemir, Neeraj Kumar, Jesse
+Eickholt, and Veronica Barone. 2021. <span>“Machine Learning Screening
+of Metal-Ion Battery Electrode Materials.”</span> <em><span>ACS</span>
+Applied Materials <span>&amp;</span> Interfaces</em> 13 (45): 53355–62.
+<a
+href="https://doi.org/10.1021/acsami.1c04627">https://doi.org/10.1021/acsami.1c04627</a>.
+</div>
+<div id="ref-Murray2006" class="csl-entry" role="doc-biblioentry">
+Murray, Eoin. 2006. <span>“NMR Studies of Conduction Mechanisms in
+Electrolyte Materials for Fuel Cells.”</span> PhD thesis. Dublin City
+University.
+</div>
+<div id="ref-naccarato2019searching" class="csl-entry"
+role="doc-biblioentry">
+Naccarato, Francesco, Francesco Ricci, Jin Suntivich, Geoffroy Hautier,
+Ludger Wirtz, and Gian-Marco Rignanese. 2019. <span>“Searching for
+Materials with High Refractive Index and Wide Band Gap: A
+First-Principles High-Throughput Study.”</span> <em>Physical Review
+Materials</em> 3 (4): 044602.
+</div>
+<div id="ref-Nakamichi2020" class="csl-entry" role="doc-biblioentry">
+Nakamichi, Masaru, Jae-Hwan Kim, Makoto M. Nakamura, Tamaki Shibayama,
+Christopher K. Dorn, Chakin Vladimir, Dmitry V. Bachurin, Christopher
+Stihl, and Pavel V. Vladimirov. 2020. <span>“Beryllium and Its Alloys as
+Neutron Multiplying Materials.”</span> In <em>Comprehensive Nuclear
+Materials</em>, 203–50. Elsevier. <a
+href="https://doi.org/10.1016/b978-0-12-803581-8.11673-x">https://doi.org/10.1016/b978-0-12-803581-8.11673-x</a>.
+</div>
+<div id="ref-Nakano2020" class="csl-entry" role="doc-biblioentry">
+Nakano, Hiroyuki, Toshiyuki Matsunaga, Takuya Mori, Koji Nakanishi,
+Yoshiyuki Morita, Kazuto Ide, Ken-ichi Okazaki, et al. 2020.
+<span>“Fluoride-Ion Shuttle Battery with High Volumetric Energy
+Density.”</span> <em>Chemistry of Materials</em> 33 (1): 459–66. <a
+href="https://doi.org/10.1021/acs.chemmater.0c04570">https://doi.org/10.1021/acs.chemmater.0c04570</a>.
+</div>
+<div id="ref-Nazri2009" class="csl-entry" role="doc-biblioentry">
+Nazri, Gholamabbas. 2009. <em>Lithium Batteries : Science and
+Technology</em>. New York, N.Y: Springer.
+</div>
+<div id="ref-Newnham2005" class="csl-entry" role="doc-biblioentry">
+Newnham, Robert. 2005. <em>Properties of Materials : Anisotropy,
+Symmetry, Structure</em>. Oxford New York: Oxford University Press.
+</div>
+<div id="ref-Nowroozi2021" class="csl-entry" role="doc-biblioentry">
+Nowroozi, Mohammad Ali, Irshad Mohammad, Palanivel Molaiyan, Kerstin
+Wissel, Anji Reddy Munnangi, and Oliver Clemens. 2021. <span>“Fluoride
+Ion Batteries <span></span> Past, Present, and Future.”</span>
+<em>Journal of Materials Chemistry A</em> 9 (10): 5980–6012. <a
+href="https://doi.org/10.1039/d0ta11656d">https://doi.org/10.1039/d0ta11656d</a>.
+</div>
+<div id="ref-Nowroozi2017" class="csl-entry" role="doc-biblioentry">
+Nowroozi, Mohammad Ali, Kerstin Wissel, Jochen Rohrer, Anji Reddy
+Munnangi, and Oliver Clemens. 2017. <span>“<span>LaSrMnO</span>4:
+Reversible Electrochemical Intercalation of Fluoride Ions in the Context
+of Fluoride Ion Batteries.”</span> <em>Chemistry of Materials</em> 29
+(8): 3441–53. <a
+href="https://doi.org/10.1021/acs.chemmater.6b05075">https://doi.org/10.1021/acs.chemmater.6b05075</a>.
+</div>
+<div id="ref-Okazaki2017" class="csl-entry" role="doc-biblioentry">
+Okazaki, Ken-ichi, Yoshiharu Uchimoto, Takeshi Abe, and Zempachi Ogumi.
+2017. <span>“Charge<span></span>discharge Behavior of Bismuth in a
+Liquid Electrolyte for Rechargeable Batteries Based on a Fluoride
+Shuttle.”</span> <em><span>ACS</span> Energy Letters</em> 2 (6):
+1460–64. <a
+href="https://doi.org/10.1021/acsenergylett.7b00320">https://doi.org/10.1021/acsenergylett.7b00320</a>.
+</div>
+<div id="ref-Olivetti2017" class="csl-entry" role="doc-biblioentry">
+Olivetti, Elsa A., Gerbrand Ceder, Gabrielle G. Gaustad, and Xinkai Fu.
+2017. <span>“Lithium-Ion Battery Supply Chain Considerations: Analysis
+of Potential Bottlenecks in Critical Metals.”</span> <em>Joule</em> 1
+(2): 229–43. <a
+href="https://doi.org/10.1016/j.joule.2017.08.019">https://doi.org/10.1016/j.joule.2017.08.019</a>.
+</div>
+<div id="ref-Ong2013" class="csl-entry" role="doc-biblioentry">
+Ong, Shyue Ping, William Davidson Richards, Anubhav Jain, Geoffroy
+Hautier, Michael Kocher, Shreyas Cholia, Dan Gunter, Vincent L.
+Chevrier, Kristin A. Persson, and Gerbrand Ceder. 2013. <span>“Python
+Materials Genomics (Pymatgen): A Robust, Open-Source Python Library for
+Materials Analysis.”</span> <em>Computational Materials Science</em> 68
+(February): 314–19. <a
+href="https://doi.org/10.1016/j.commatsci.2012.10.028">https://doi.org/10.1016/j.commatsci.2012.10.028</a>.
+</div>
+<div id="ref-Parimalam2018" class="csl-entry" role="doc-biblioentry">
+Parimalam, Bharathy S., and Brett L. Lucht. 2018. <span>“Reduction
+Reactions of Electrolyte Salts for Lithium Ion Batteries:
+<span>LiPF</span>6, <span>LiBF</span>4, <span>LiDFOB</span>,
+<span>LiBOB</span>, and <span>LiTFSI</span>.”</span> <em>Journal of The
+Electrochemical Society</em> 165 (2): A251–55. <a
+href="https://doi.org/10.1149/2.0901802jes">https://doi.org/10.1149/2.0901802jes</a>.
+</div>
+<div id="ref-Patro2011" class="csl-entry" role="doc-biblioentry">
+Patro, L. N., and K. Hariharan. 2011. <span>“Influence of Synthesis
+Methodology on the Ionic Transport Properties of
+<span>BaSnF</span>4.”</span> <em>Materials Research Bulletin</em> 46
+(5): 732–37. <a
+href="https://doi.org/10.1016/j.materresbull.2011.01.010">https://doi.org/10.1016/j.materresbull.2011.01.010</a>.
+</div>
+<div id="ref-Patro2013" class="csl-entry" role="doc-biblioentry">
+———. 2013. <span>“Rare Earth Ions ( and ) Doped : Transport and
+Photoluminescence Characteristics.”</span> <em>Ionics</em> 19 (11):
+1611–17. <a
+href="https://doi.org/10.1007/s11581-013-0896-z">https://doi.org/10.1007/s11581-013-0896-z</a>.
+</div>
+<div id="ref-Pelton1993" class="csl-entry" role="doc-biblioentry">
+Pelton, A., and A. Petric. 1993. <span>“The Bi-Rb (Bismuth-Rubidium)
+System.”</span> <em>Journal of Phase Equilibria</em> 14: 368–72.
+</div>
+<div id="ref-Perez1980" class="csl-entry" role="doc-biblioentry">
+Pérez. 1980. <span>“About the Allotropic Transformations of .”</span>
+<em>Materials Research Bulletin</em> 15: 587–93.
+</div>
+<div id="ref-Petrovic2021" class="csl-entry" role="doc-biblioentry">
+Petrovic, Slobodan. 2021. <em>Battery Technology Crash Course</em>.
+Springer International Publishing.
+</div>
+<div id="ref-Portier1978" class="csl-entry" role="doc-biblioentry">
+Portier, J, P Hagenmuller, JM Réau, C Lucat, P Cot, and S Vilminot.
+1978. <span>“Study of Structural and Electrical-Properties of a New
+Anion Conductor-PbSnF4.”</span> <em>Materials Research Bulletin</em>.
+</div>
+<div id="ref-PreishuberPfluegl2014" class="csl-entry"
+role="doc-biblioentry">
+Preishuber-Pflügl, Florian, Viktor Epp, Suliman Nakhal, Martin Lerch,
+and Martin Wilkening. 2014. <span>“Defect-Enhanced f- Ion Conductivity
+in Layer-Structured Nanocrystalline <span>BaSnF</span>4 Prepared by
+High-Energy Ball Milling Combined with Soft Annealing.”</span>
+<em>Physica Status Solidi (c)</em> 12 (1-2): 10–14. <a
+href="https://doi.org/10.1002/pssc.201400193">https://doi.org/10.1002/pssc.201400193</a>.
+</div>
+<div id="ref-Reau1985" class="csl-entry" role="doc-biblioentry">
+Reau, J. 1985. <span>“Respective Influence of Optimization Criteria on
+Transport Properties of Solid Solution (m=in, Bi).”</span> <em>Solid
+State Ionics</em> 15 (3): 217–23. <a
+href="https://doi.org/10.1016/0167-2738(85)90006-2">https://doi.org/10.1016/0167-2738(85)90006-2</a>.
+</div>
+<div id="ref-Reau1982" class="csl-entry" role="doc-biblioentry">
+Reau, J. M., J. Grannec, C. Lucat, C. Chartier, S. Matar, J. Portier,
+and P. Hagenmuller. 1982. <span>“Anionic Conductivity of Some Bismuth
+Fluorides with Fluorite-Type Structure.”</span> <em>Journal of Fluorine
+Chemistry</em> 19 (3-6): 363–68. <a
+href="https://doi.org/10.1016/s0022-1139(00)83138-3">https://doi.org/10.1016/s0022-1139(00)83138-3</a>.
+</div>
+<div id="ref-Reddy2011" class="csl-entry" role="doc-biblioentry">
+Reddy, M. Anji, and M. Fichtner. 2011. <span>“Batteries Based on
+Fluoride Shuttle.”</span> <em>Journal of Materials Chemistry</em> 21
+(43): 17059. <a
+href="https://doi.org/10.1039/c1jm13535j">https://doi.org/10.1039/c1jm13535j</a>.
+</div>
+<div id="ref-Rhandour1985" class="csl-entry" role="doc-biblioentry">
+Rhandour, A., J. M. Reau, S. F. Matar, S. B. Tian, and P. Hagenmuller.
+1985. <span>“New Fluorine Ion Conductors with Tysonite-Type
+Structure.”</span> <em>Materials Research Bulletin</em> 20 (11):
+1309–27. <a
+href="https://doi.org/10.1016/0025-5408(85)90125-4">https://doi.org/10.1016/0025-5408(85)90125-4</a>.
+</div>
+<div id="ref-ricci2020gapped" class="csl-entry" role="doc-biblioentry">
+Ricci, Francesco, Alexander Dunn, Anubhav Jain, Gian-Marco Rignanese,
+and Geoffroy Hautier. 2020. <span>“Gapped Metals as Thermoelectric
+Materials Revealed by High-Throughput Screening.”</span> <em>Journal of
+Materials Chemistry A</em> 8 (34): 17579–94.
+</div>
+<div id="ref-Rongeat2013" class="csl-entry" role="doc-biblioentry">
+Rongeat, Carine, M. Anji Reddy, Raiker Witter, and Maximilian Fichtner.
+2013. <span>“Nanostructured Fluorite-Type Fluorides as Electrolytes for
+Fluoride Ion Batteries.”</span> <em>The Journal of Physical Chemistry
+C</em> 117 (10): 4943–50. <a
+href="https://doi.org/10.1021/jp3117825">https://doi.org/10.1021/jp3117825</a>.
+</div>
+<div id="ref-Rongeat2014" class="csl-entry" role="doc-biblioentry">
+———. 2014. <span>“Solid Electrolytes for Fluoride Ion Batteries: Ionic
+Conductivity in Polycrystalline Tysonite-Type Fluorides.”</span>
+<em><span>ACS</span> Applied Materials <span>&amp;</span>
+Interfaces</em> 6 (3): 2103–10. <a
+href="https://doi.org/10.1021/am4052188">https://doi.org/10.1021/am4052188</a>.
+</div>
+<div id="ref-Sangster1991" class="csl-entry" role="doc-biblioentry">
+Sangster, J., and A. Pelton. 1991. <span>“The Bi-Cs (Bismuth-Cesium)
+System.”</span> <em>Journal of Phase Equilibria</em> 12: 443–46.
+</div>
+<div id="ref-DavidSholl2011" class="csl-entry" role="doc-biblioentry">
+Sholl, David, and Janice A. Steckel. 2011. <em>Density Functional
+Theory: A Practical Introduction</em>. John Wiley &amp; Sons.
+</div>
+<div id="ref-Sorokin2007" class="csl-entry" role="doc-biblioentry">
+Sorokin, N. I., and B. P. Sobolev. 2007. <span>“Nonstoichiometric
+Fluorides<span></span>solid Electrolytes for Electrochemical Devices: A
+Review.”</span> <em>Crystallography Reports</em> 52 (5): 842–63. <a
+href="https://doi.org/10.1134/s1063774507050148">https://doi.org/10.1134/s1063774507050148</a>.
+</div>
+<div id="ref-tanner2012lengthening" class="csl-entry"
+role="doc-biblioentry">
+Tanner, David. 2012. <span>“Lengthening the Timescale Reach of Molecular
+Dynamics.”</span> PhD thesis, University of Illinois at
+Urbana-Champaign.
+</div>
+<div id="ref-Trapp2011" class="csl-entry" role="doc-biblioentry">
+Trapp, C. A., and M. P. Cady. 2011. <em>Solutions Manual to Accompany
+Physical Chemistry for the Life Sciences</em>. Oxford: Oxford University
+Press.
+</div>
+<div id="ref-Urban2016" class="csl-entry" role="doc-biblioentry">
+Urban, Alexander, Dong-Hwa Seo, and Gerbrand Ceder. 2016.
+<span>“Erratum: Computational Understanding of Li-Ion Batteries.”</span>
+<em>Npj Computational Materials</em> 2 (1). <a
+href="https://doi.org/10.1038/npjcompumats.2016.10">https://doi.org/10.1038/npjcompumats.2016.10</a>.
+</div>
+<div id="ref-Urusov2009" class="csl-entry" role="doc-biblioentry">
+Urusov, V, and T Nadezhina. 2009. <span>“Frequency Distribution and
+Selection of Space Groups in Inorganic Crystal Chemistry.”</span>
+<em>Journal of Structural Chemistry</em> 50: 22–37.
+</div>
+<div id="ref-Vitins1997" class="csl-entry" role="doc-biblioentry">
+Vitins, G., and K. West. 1997. <span>“Lithium Intercalation into Layered
+<span>LiMnO</span>2.”</span> <em>Journal of The Electrochemical
+Society</em> 144 (8): 2587–92. <a
+href="https://doi.org/10.1149/1.1837869">https://doi.org/10.1149/1.1837869</a>.
+</div>
+<div id="ref-Wang2021" class="csl-entry" role="doc-biblioentry">
+Wang, Jinzhu, Jipeng Hao, Chaomin Duan, Xinchao Wang, Kai Wang, and
+Cheng Ma. 2021. <span>“A Fluoride-Ion-Conducting Solid Electrolyte with
+Both High Conductivity and Excellent Electrochemical Stability.”</span>
+<em>Small</em>, November, 2104508. <a
+href="https://doi.org/10.1002/smll.202104508">https://doi.org/10.1002/smll.202104508</a>.
+</div>
+<div id="ref-Wilkening2016" class="csl-entry" role="doc-biblioentry">
+Wilkening, Martin, Andre Düvel, Florian Preishuber-Pflügl, Klebson da
+Silva, Stefan Breuer, Vladimir Šepelák, and Paul Heitjans. 2016.
+<span>“Structure and Ion Dynamics of Mechanosynthesized Oxides and
+Fluorides.”</span> <em>Zeitschrift Für Kristallographie - Crystalline
+Materials</em> 232 (1-3): 107–27. <a
+href="https://doi.org/10.1515/zkri-2016-1963">https://doi.org/10.1515/zkri-2016-1963</a>.
+</div>
+<div id="ref-Xiao2021" class="csl-entry" role="doc-biblioentry">
+Xiao, Albert W., Giulia Galatolo, and Mauro Pasta. 2021. <span>“The Case
+for Fluoride-Ion Batteries.”</span> <em>Joule</em>, October. <a
+href="https://doi.org/10.1016/j.joule.2021.09.016">https://doi.org/10.1016/j.joule.2021.09.016</a>.
+</div>
+<div id="ref-Xie2020" class="csl-entry" role="doc-biblioentry">
+Xie, Jing, and Yi-Chun Lu. 2020. <span>“A Retrospective on Lithium-Ion
+Batteries.”</span> <em>Nature Communications</em> 11 (1). <a
+href="https://doi.org/10.1038/s41467-020-16259-9">https://doi.org/10.1038/s41467-020-16259-9</a>.
+</div>
+<div id="ref-Yabuuchi2014" class="csl-entry" role="doc-biblioentry">
+Yabuuchi, Naoaki, Kei Kubota, Mouad Dahbi, and Shinichi Komaba. 2014.
+<span>“Research Development on Sodium-Ion Batteries.”</span>
+<em>Chemical Reviews</em> 114 (23): 11636–82. <a
+href="https://doi.org/10.1021/cr500192f">https://doi.org/10.1021/cr500192f</a>.
+</div>
+<div id="ref-Yang2013" class="csl-entry" role="doc-biblioentry">
+Yang, Zhenhua, Yong Pei, Xianyou Wang, Li Liu, and Xuping Su. 2013.
+<span>“First Principles Investigation of the Effects of Bi Vacancy on
+the Magnetic, Conductive and Electrochemical Properties of .”</span>
+<em>Computational Materials Science</em> 68 (February): 117–20. <a
+href="https://doi.org/10.1016/j.commatsci.2012.10.003">https://doi.org/10.1016/j.commatsci.2012.10.003</a>.
+</div>
+<div id="ref-Yang2016" class="csl-entry" role="doc-biblioentry">
+Yang, Zhenhua, Shuncheng Tan, Yunqing Huang, Xianyou Wang, and Yong Pei.
+2016. <span>“First-Principles Study on Doping Effect of Sn in as Cathode
+Materials for Li-Ion Battery.”</span> <em>Current Applied Physics</em>
+16 (1): 12–19. <a
+href="https://doi.org/10.1016/j.cap.2015.10.004">https://doi.org/10.1016/j.cap.2015.10.004</a>.
+</div>
+<div id="ref-Yang2011" class="csl-entry" role="doc-biblioentry">
+Yang, Zhenhua, Xianyou Wang, Li Liu, Shunyi Yang, and Xuping Su. 2011.
+<span>“First-Principles Calculations on Structural, Magnetic and
+Electronic Properties of Oxygen Doped <span>BiF</span>3.”</span>
+<em>Computational Materials Science</em> 50 (11): 3131–35. <a
+href="https://doi.org/10.1016/j.commatsci.2011.05.040">https://doi.org/10.1016/j.commatsci.2011.05.040</a>.
+</div>
+<div id="ref-Yu2019" class="csl-entry" role="doc-biblioentry">
+Yu, Seungho, Sang-Ok Kim, Hyung-Seok Kim, and Wonchang Choi. 2019.
+<span>“Computational Screening of Anode Materials for Sodium-Ion
+Batteries.”</span> <em>Journal of The Electrochemical Society</em> 166
+(10): A1915–19. <a
+href="https://doi.org/10.1149/2.0691910jes">https://doi.org/10.1149/2.0691910jes</a>.
+</div>
+<div id="ref-Zeng2013" class="csl-entry" role="doc-biblioentry">
+Zeng, Lingxing, Cheng Zheng, Jingchao Xi, Hailong Fei, and Mingdeng Wei.
+2013. <span>“Composites of V2o3<span></span>ordered Mesoporous Carbon as
+Anode Materials for Lithium-Ion Batteries.”</span> <em>Carbon</em> 62
+(October): 382–88. <a
+href="https://doi.org/10.1016/j.carbon.2013.06.021">https://doi.org/10.1016/j.carbon.2013.06.021</a>.
+</div>
+<div id="ref-Zhang2006" class="csl-entry" role="doc-biblioentry">
+Zhang, Xueyuan, and T. M. Devine. 2006. <span>“Factors That Influence
+Formation of Passive Film on Aluminum in Li-Ion Battery Electrolytes
+with .”</span> <em>Journal of The Electrochemical Society</em> 153 (9):
+B375. <a
+href="https://doi.org/10.1149/1.2218816">https://doi.org/10.1149/1.2218816</a>.
+</div>
+<div id="ref-Zhang2018" class="csl-entry" role="doc-biblioentry">
+Zhang, Xu, Zihe Zhang, Sai Yao, An Chen, Xudong Zhao, and Zhen Zhou.
+2018. <span>“An Effective Method to Screen Sodium-Based Layered
+Materials for Sodium Ion Batteries.”</span> <em>Npj Computational
+Materials</em> 4 (1). <a
+href="https://doi.org/10.1038/s41524-018-0070-2">https://doi.org/10.1038/s41524-018-0070-2</a>.
+</div>
+<div id="ref-Zhang2015" class="csl-entry" role="doc-biblioentry">
+Zhang, Ying, Yue Pan, Jia Liu, Guiling Wang, and Dianxue Cao. 2015.
+<span>“Synthesis and Electrochemical Studies of Carbon-Modified
+<span>LiNiPO</span>4 as the Cathode Material of Li-Ion
+Batteries.”</span> <em>Chemical Research in Chinese Universities</em> 31
+(1): 117–22. <a
+href="https://doi.org/10.1007/s40242-015-4261-9">https://doi.org/10.1007/s40242-015-4261-9</a>.
+</div>
+<div id="ref-Zhao2019" class="csl-entry" role="doc-biblioentry">
+Zhao, Wenjia, Jin Yi, Ping He, and Haoshen Zhou. 2019.
+<span>“Solid-State Electrolytes for Lithium-Ion Batteries: Fundamentals,
+Challenges and Perspectives.”</span> <em>Electrochemical Energy
+Reviews</em> 2 (4): 574–605. <a
+href="https://doi.org/10.1007/s41918-019-00048-0">https://doi.org/10.1007/s41918-019-00048-0</a>.
+</div>
+<div id="ref-Zhu2015" class="csl-entry" role="doc-biblioentry">
+Zhu, Jian-Nan, Wen-Cui Li, Fei Cheng, and An-Hui Lu. 2015.
+<span>“Synthesis of <span>LiMnPO</span>4/c with Superior Performance as
+Li-Ion Battery Cathodes by a Two-Stage Microwave Solvothermal
+Process.”</span> <em>Journal of Materials Chemistry A</em> 3 (26):
+13920–25. <a
+href="https://doi.org/10.1039/c5ta02653a">https://doi.org/10.1039/c5ta02653a</a>.
+</div>
+<div id="ref-Zhuang2017" class="csl-entry" role="doc-biblioentry">
+Zhuang, Yuchan, Zhen Ma, Yaoming Deng, Xiaona Song, Xiaoxi Zuo, Xin
+Xiao, and Junmin Nan. 2017. <span>“Sandwich-Like Mn3O4/Carbon
+Nanofragment Composites with a Higher Capacity Than Commercial Graphite
+and Hierarchical Voltage Plateaus for Lithium Ion Batteries.”</span>
+<em>Electrochimica Acta</em> 245 (August): 448–55. <a
+href="https://doi.org/10.1016/j.electacta.2017.05.171">https://doi.org/10.1016/j.electacta.2017.05.171</a>.
+</div>
+</div>
+
+</body>

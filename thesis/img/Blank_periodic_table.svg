@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 450" style="enable-background:new 0 0 800 450;" xml:space="preserve">
+<g transform="translate(-.5,-56.5)">
+	<path style="fill:#FFFFFF;" d="M144,387v-36h36v36H144z"/>
+	<path style="fill:#FFFFFF;" d="M144,347v-36h36v36H144z"/>
+	<g>
+		<g id="Unclass" transform="translate(384,387)">
+			<path style="fill:#EB663B;stroke:#000000;" d="M0,0v-36h36V0H0z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M40,0v-36h36V0H40z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M80,0v-36h36V0H80z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M160,0v-36h36V0H160z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M200,0v-36h36V0H200z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M240,0v-36h36V0H240z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M280,0v-36h36V0H280z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M320,0v-36h36V0H320z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M360,0v-36h36V0H360z"/>
+		</g>
+		<g id="NonMetals">
+			<path style="fill:#511CFB;stroke:#000000;" d="M64,147v-36h36v36H64z"/>
+			<path style="fill:#511CFB;stroke:#000000;" d="M664,267v-36h36v36H664z"/>
+			<path style="fill:#FB0D0D;stroke:#000000;" d="M624,227v-36h36v36H624z"/>
+			<path style="fill:#511CFB;stroke:#000000;" d="M664,227v-36h36v36H664z"/>
+			<path style="fill:#E15F99;stroke:#000000;" d="M584,187v-36h36v36H584z"/>
+			<path style="fill:#FB0D0D;stroke:#000000;" d="M624,187v-36h36v36H624z"/>
+			<path style="fill:#FB00D1;stroke:#000000;" d="M664,187v-36h36v36H664z"/>
+		</g>
+		<g id="AlkaliMetals" transform="translate(64)">
+			<path style="fill:#222A2A;stroke:#000000;" d="M0,387v-36h36v36H0z"/>
+			<path style="fill:#222A2A;stroke:#000000;" d="M0,347v-36h36v36H0z"/>
+			<path style="fill:#222A2A;stroke:#000000;" d="M0,267v-36h36v36H0z"/>
+			<path style="fill:#222A2A;stroke:#000000;" d="M0,227v-36h36v36H0z"/>
+			<path style="fill:#222A2A;stroke:#000000;" d="M0,187v-36h36v36H0z"/>
+			<path style="fill:#222A2A;stroke:#000000;" d="M0,307v-36h36v36H0z"/>
+		</g>
+		<g id="EarthMetals" transform="translate(104,187)">
+			<path style="fill:#B68100;stroke:#000000;" d="M0,0v-36h36V0H0z"/>
+			<path style="fill:#B68100;stroke:#000000;" d="M0,40V4h36v36H0z"/>
+			<path style="fill:#B68100;stroke:#000000;" d="M0,80V44h36v36H0z"/>
+			<path style="fill:#B68100;stroke:#000000;" d="M0,120V84h36v36H0z"/>
+			<path style="fill:#B68100;stroke:#000000;" d="M0,160v-36h36v36H0z"/>
+			<path style="fill:#B68100;stroke:#000000;" d="M0,200v-36h36v36H0z"/>
+		</g>
+		<g id="SemiMetals">
+			<path style="fill:#511CFB;stroke:#000000;" d="M544,187v-36h36v36H544z"/>
+			<path style="fill:#E15F99;stroke:#000000;" d="M584,227v-36h36v36H584z"/>
+			<path style="fill:#E15F99;stroke:#000000;" d="M584,267v-36h36v36H584z"/>
+			<path style="fill:#FB0D0D;stroke:#000000;" d="M624,267v-36h36v36H624z"/>
+			<path style="fill:#FB0D0D;stroke:#000000;" d="M624,307v-36h36v36H624z"/>
+			<path style="fill:#511CFB;stroke:#000000;" d="M664,307v-36h36v36H664z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M664,347v-36h36v36H664z"/>
+		</g>
+		<g id="Halogens" transform="translate(704,187)">
+			<path style="fill:#FFFFFF;stroke:#C90022;stroke-width:4;" d="M0,0v-36h36V0H0z"/>
+			<path style="fill:#750D86;stroke:#000000;" d="M0,40V4h36v36H0z"/>
+			<path style="fill:#750D86;stroke:#000000;" d="M0,80V44h36v36H0z"/>
+			<path style="fill:#750D86;stroke:#000000;" d="M0,120V84h36v36H0z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M0,160v-36h36v36H0z"/>
+		</g>
+		<g id="InertGases" transform="translate(744,147)">
+			<path style="fill:#00A08B;stroke:#000000;" d="M0,0v-36h36V0H0z"/>
+			<path style="fill:#00A08B;stroke:#000000;" d="M0,40V4h36v36H0z"/>
+			<path style="fill:#00A08B;stroke:#000000;" d="M0,80V44h36v36H0z"/>
+			<path style="fill:#00A08B;stroke:#000000;" d="M0,120V84h36v36H0z"/>
+			<path style="fill:#00A08B;stroke:#000000;" d="M0,160v-36h36v36H0z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M0,200v-36h36v36H0z"/>
+		</g>
+		<g id="PTMetals">
+			<path style="fill:#1CA71C;stroke:#000000;" d="M544,227v-36h36v36H544z"/>
+			<path style="fill:#1CA71C;stroke:#000000;" d="M544,267v-36h36v36H544z"/>
+			<path style="fill:#1CA71C;stroke:#000000;" d="M544,307v-36h36v36H544z"/>
+			<path style="fill:#1CA71C;stroke:#000000;" d="M544,347v-36h36v36H544z"/>
+			<path style="fill:#1CA71C;stroke:#000000;" d="M584,307v-36h36v36H584z"/>
+			<path style="fill:#1CA71C;stroke:#000000;" d="M584,347v-36h36v36H584z"/>
+			<path style="fill:#1CA71C;stroke:#000000;" d="M624,347v-36h36v36H624z"/>
+		</g>
+		<g id="TransMetals" transform="translate(184,267)">
+			<path style="fill:#EB663B;stroke:#000000;" d="M0,120V84h36v36H0z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M40,120V84h36v36H40z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M80,120V84h36v36H80z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M120,120V84h36v36H120z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M160,120V84h36v36H160z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M320,120V84h36v36H320z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M0,80V44h36v36H0z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M40,80V44h36v36H40z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M80,80V44h36v36H80z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M120,80V44h36v36H120z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M160,80V44h36v36H160z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M200,80V44h36v36H200z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M240,80V44h36v36H240z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M280,80V44h36v36H280z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M320,80V44h36v36H320z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M-40,40V4h36v36H-40z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M0,40V4h36v36H0z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M40,40V4h36v36H40z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M80,40V4h36v36H80z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M120,40V4h36v36H120z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M160,40V4h36v36H160z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M200,40V4h36v36H200z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M240,40V4h36v36H240z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M280,40V4h36v36H280z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M320,40V4h36v36H320z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M-40,0v-36h36V0H-40z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M0,0v-36h36V0H0z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M40,0v-36h36V0H40z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M80,0v-36h36V0H80z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M120,0v-36h36V0H120z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M160,0v-36h36V0H160z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M200,0v-36h36V0H200z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M240,0v-36h36V0H240z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M280,0v-36h36V0H280z"/>
+			<path style="fill:#2E91E5;stroke:#000000;" d="M320,0v-36h36V0H320z"/>
+		</g>
+		<g id="Lanths" transform="translate(184,447)">
+			<path style="fill:#DA16FF;stroke:#000000;" d="M0,0v-36h36V0H0z"/>
+			<path style="fill:#DA16FF;stroke:#000000;" d="M40,0v-36h36V0H40z"/>
+			<path style="fill:#DA16FF;stroke:#000000;" d="M80,0v-36h36V0H80z"/>
+			<path style="fill:#DA16FF;stroke:#000000;" d="M120,0v-36h36V0H120z"/>
+			<path style="fill:#DA16FF;stroke:#000000;" d="M160,0v-36h36V0H160z"/>
+			<path style="fill:#DA16FF;stroke:#000000;" d="M200,0v-36h36V0H200z"/>
+			<path style="fill:#DA16FF;stroke:#000000;" d="M240,0v-36h36V0H240z"/>
+			<path style="fill:#DA16FF;stroke:#000000;" d="M280,0v-36h36V0H280z"/>
+			<path style="fill:#DA16FF;stroke:#000000;" d="M320,0v-36h36V0H320z"/>
+			<path style="fill:#DA16FF;stroke:#000000;" d="M360,0v-36h36V0H360z"/>
+			<path style="fill:#DA16FF;stroke:#000000;" d="M400,0v-36h36V0H400z"/>
+			<path style="fill:#DA16FF;stroke:#000000;" d="M440,0v-36h36V0H440z"/>
+			<path style="fill:#DA16FF;stroke:#000000;" d="M480,0v-36h36V0H480z"/>
+			<path style="fill:#DA16FF;stroke:#000000;" d="M520,0v-36h36V0H520z"/>
+			<path style="fill:#DA16FF;stroke:#000000;" d="M560,0v-36h36V0H560z"/>
+		</g>
+		<g id="Actins" transform="translate(184,487)">
+			<path style="fill:#EB663B;stroke:#000000;" d="M0,0v-36h36V0H0z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M40,0v-36h36V0H40z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M80,0v-36h36V0H80z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M120,0v-36h36V0H120z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M160,0v-36h36V0H160z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M200,0v-36h36V0H200z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M240,0v-36h36V0H240z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M280,0v-36h36V0H280z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M320,0v-36h36V0H320z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M360,0v-36h36V0H360z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M400,0v-36h36V0H400z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M440,0v-36h36V0H440z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M480,0v-36h36V0H480z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M520,0v-36h36V0H520z"/>
+			<path style="fill:#EB663B;stroke:#000000;" d="M560,0v-36h36V0H560z"/>
+		</g>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 77.6631 94)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">1</text>
+		<text transform="matrix(1 0 0 1 117.6631 94)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">2</text>
+		<text transform="matrix(1 0 0 1 157.6631 94)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">3</text>
+		<text transform="matrix(1 0 0 1 197.6631 94)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">4</text>
+		<text transform="matrix(1 0 0 1 237.6631 94)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">5</text>
+		<text transform="matrix(1 0 0 1 277.6631 94)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">6</text>
+		<text transform="matrix(1 0 0 1 317.6631 94)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">7</text>
+		<text transform="matrix(1 0 0 1 357.6631 94)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">8</text>
+		<text transform="matrix(1 0 0 1 397.6631 94)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">9</text>
+		<text transform="matrix(1 0 0 1 434.3262 94)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">10</text>
+		<text transform="matrix(1 0 0 1 474.7715 94)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">11</text>
+		<text transform="matrix(1 0 0 1 514.3262 94)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">12</text>
+		<text transform="matrix(1 0 0 1 554.3262 94)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">13</text>
+		<text transform="matrix(1 0 0 1 594.3262 94)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">14</text>
+		<text transform="matrix(1 0 0 1 634.3262 94)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">15</text>
+		<text transform="matrix(1 0 0 1 674.3262 94)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">16</text>
+		<text transform="matrix(1 0 0 1 714.3262 94)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">17</text>
+		<text transform="matrix(1 0 0 1 754.3262 94)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">18</text>
+		<text transform="matrix(1 0 0 1 38.6631 134)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">1</text>
+		<text transform="matrix(1 0 0 1 38.6631 174)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">2</text>
+		<text transform="matrix(1 0 0 1 38.6631 214)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">3</text>
+		<text transform="matrix(1 0 0 1 38.6631 254)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">4</text>
+		<text transform="matrix(1 0 0 1 38.6631 294)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">5</text>
+		<text transform="matrix(1 0 0 1 38.6631 334)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">6</text>
+		<text transform="matrix(1 0 0 1 38.6631 374)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">7</text>
+		<g>
+			<text transform="matrix(1 0 0 1 758.6631 125)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">2</text>
+			<text transform="matrix(1 0 0 1 78.6631 125)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">1</text>
+			<text transform="matrix(1 0 0 1 754.3301 141)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">He</text>
+			<text transform="matrix(1 0 0 1 77.667 141)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">H</text>
+			<text transform="matrix(1 0 0 1 118.6631 165)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">4</text>
+			<text transform="matrix(1 0 0 1 558.6631 165)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">5</text>
+			<text transform="matrix(1 0 0 1 598.6631 165)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">6</text>
+			<text transform="matrix(1 0 0 1 638.6631 165)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">7</text>
+			<text transform="matrix(1 0 0 1 678.6631 165)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">8</text>
+			<text transform="matrix(1 0 0 1 718.6631 165)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">9</text>
+			<text transform="matrix(1 0 0 1 755.3262 165)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">10</text>
+			<text transform="matrix(1 0 0 1 78.6631 165)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">3</text>
+			<text transform="matrix(1 0 0 1 114.6611 181)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Be</text>
+			<text transform="matrix(1 0 0 1 557.998 181)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">B</text>
+			<text transform="matrix(1 0 0 1 597.667 181)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">C</text>
+			<text transform="matrix(1 0 0 1 637.667 181)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">N</text>
+			<text transform="matrix(1 0 0 1 677.333 181)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">O</text>
+			<text transform="matrix(1 0 0 1 718.335 181)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">F</text>
+			<text transform="matrix(1 0 0 1 754.3301 181)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Ne</text>
+			<text transform="matrix(1 0 0 1 77.3301 181)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Li</text>
+			<text transform="matrix(1 0 0 1 115.3262 205)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">12</text>
+			<text transform="matrix(1 0 0 1 555.3262 205)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">13</text>
+			<text transform="matrix(1 0 0 1 595.3262 205)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">14</text>
+			<text transform="matrix(1 0 0 1 635.3262 205)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">15</text>
+			<text transform="matrix(1 0 0 1 675.3262 205)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">16</text>
+			<text transform="matrix(1 0 0 1 715.3262 205)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">17</text>
+			<text transform="matrix(1 0 0 1 755.3262 205)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">18</text>
+			<text transform="matrix(1 0 0 1 75.7715 205)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">11</text>
+			<text transform="matrix(1 0 0 1 113.665 221)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Mg</text>
+			<text transform="matrix(1 0 0 1 556.665 221)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Al</text>
+			<text transform="matrix(1 0 0 1 596.665 221)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Si</text>
+			<text transform="matrix(1 0 0 1 637.998 221)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">P</text>
+			<text transform="matrix(1 0 0 1 677.998 221)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">S</text>
+			<text transform="matrix(1 0 0 1 716.334 221)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Cl</text>
+			<text transform="matrix(1 0 0 1 756 221)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Ar</text>
+			<text transform="matrix(1 0 0 1 74.3301 221)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Na</text>
+			<text transform="matrix(1 0 0 1 115.3262 245)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">20</text>
+			<text transform="matrix(1 0 0 1 155.3262 245)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">21</text>
+			<text transform="matrix(1 0 0 1 195.3262 245)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">22</text>
+			<text transform="matrix(1 0 0 1 235.3262 245)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">23</text>
+			<text transform="matrix(1 0 0 1 275.3262 245)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">24</text>
+			<text transform="matrix(1 0 0 1 315.3262 245)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">25</text>
+			<text transform="matrix(1 0 0 1 355.3262 245)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">26</text>
+			<text transform="matrix(1 0 0 1 395.3262 245)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">27</text>
+			<text transform="matrix(1 0 0 1 435.3262 245)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">28</text>
+			<text transform="matrix(1 0 0 1 475.3262 245)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">29</text>
+			<text transform="matrix(1 0 0 1 515.3262 245)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">30</text>
+			<text transform="matrix(1 0 0 1 555.3262 245)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">31</text>
+			<text transform="matrix(1 0 0 1 595.3262 245)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">32</text>
+			<text transform="matrix(1 0 0 1 635.3262 245)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">33</text>
+			<text transform="matrix(1 0 0 1 675.3262 245)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">34</text>
+			<text transform="matrix(1 0 0 1 715.3262 245)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">35</text>
+			<text transform="matrix(1 0 0 1 755.3262 245)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">36</text>
+			<text transform="matrix(1 0 0 1 75.3262 245)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">19</text>
+			<text transform="matrix(1 0 0 1 114.3301 261)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Ca</text>
+			<text transform="matrix(1 0 0 1 154.998 261)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Sc</text>
+			<text transform="matrix(1 0 0 1 197.2246 261)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Ti</text>
+			<text transform="matrix(1 0 0 1 237.998 261)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">V</text>
+			<text transform="matrix(1 0 0 1 275.6689 261)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Cr</text>
+			<text transform="matrix(1 0 0 1 313.665 261)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Mn</text>
+			<text transform="matrix(1 0 0 1 354.998 261)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Fe</text>
+			<text transform="matrix(1 0 0 1 394.3301 261)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Co</text>
+			<text transform="matrix(1 0 0 1 436.334 261)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Ni</text>
+			<text transform="matrix(1 0 0 1 474.3301 261)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Cu</text>
+			<text transform="matrix(1 0 0 1 514.998 261)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Zn</text>
+			<text transform="matrix(1 0 0 1 553.9961 261)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Ga</text>
+			<text transform="matrix(1 0 0 1 593.9961 261)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Ge</text>
+			<text transform="matrix(1 0 0 1 634.998 261)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">As</text>
+			<text transform="matrix(1 0 0 1 674.6611 261)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Se</text>
+			<text transform="matrix(1 0 0 1 716 261)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Br</text>
+			<text transform="matrix(1 0 0 1 756 261)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Kr</text>
+			<text transform="matrix(1 0 0 1 77.998 261)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">K</text>
+			<text transform="matrix(1 0 0 1 115.3262 285)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">38</text>
+			<text transform="matrix(1 0 0 1 155.3262 285)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">39</text>
+			<text transform="matrix(1 0 0 1 195.3262 285)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">40</text>
+			<text transform="matrix(1 0 0 1 235.3262 285)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">41</text>
+			<text transform="matrix(1 0 0 1 275.3262 285)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">42</text>
+			<text transform="matrix(1 0 0 1 315.3262 285)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">43</text>
+			<text transform="matrix(1 0 0 1 355.3262 285)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">44</text>
+			<text transform="matrix(1 0 0 1 395.3262 285)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">45</text>
+			<text transform="matrix(1 0 0 1 435.3262 285)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">46</text>
+			<text transform="matrix(1 0 0 1 475.3262 285)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">47</text>
+			<text transform="matrix(1 0 0 1 515.3262 285)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">48</text>
+			<text transform="matrix(1 0 0 1 555.3262 285)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">49</text>
+			<text transform="matrix(1 0 0 1 595.3262 285)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">50</text>
+			<text transform="matrix(1 0 0 1 635.3262 285)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">51</text>
+			<text transform="matrix(1 0 0 1 675.3262 285)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">52</text>
+			<text transform="matrix(1 0 0 1 715.3262 285)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">53</text>
+			<text transform="matrix(1 0 0 1 755.3262 285)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">54</text>
+			<text transform="matrix(1 0 0 1 75.3262 285)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">37</text>
+			<text transform="matrix(1 0 0 1 474.6611 301)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Ag</text>
+			<text transform="matrix(1 0 0 1 116 301)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Sr</text>
+			<text transform="matrix(1 0 0 1 157.998 301)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Y</text>
+			<text transform="matrix(1 0 0 1 196.3369 301)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Zr</text>
+			<text transform="matrix(1 0 0 1 234.3301 301)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Nb</text>
+			<text transform="matrix(1 0 0 1 273.665 301)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Mo</text>
+			<text transform="matrix(1 0 0 1 316 301)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Tc</text>
+			<text transform="matrix(1 0 0 1 354.3301 301)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Ru</text>
+			<text transform="matrix(1 0 0 1 394.3301 301)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Rh</text>
+			<text transform="matrix(1 0 0 1 434.6611 301)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Pd</text>
+			<text transform="matrix(1 0 0 1 514.3301 301)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Cd</text>
+			<text transform="matrix(1 0 0 1 556.9961 301)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">In</text>
+			<text transform="matrix(1 0 0 1 594.6611 301)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Sn</text>
+			<text transform="matrix(1 0 0 1 634.6611 301)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Sb</text>
+			<text transform="matrix(1 0 0 1 675.6631 301)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Te</text>
+			<text transform="matrix(1 0 0 1 720.333 301)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">I</text>
+			<text transform="matrix(1 0 0 1 754.6611 301)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Xe</text>
+			<text transform="matrix(1 0 0 1 74.3301 301)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Rb</text>
+			<text transform="matrix(1 0 0 1 115.3262 325)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">56</text>
+			<text transform="matrix(1 0 0 1 195.3262 325)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">72</text>
+			<text transform="matrix(1 0 0 1 235.3262 325)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">73</text>
+			<text transform="matrix(1 0 0 1 275.3262 325)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">74</text>
+			<text transform="matrix(1 0 0 1 315.3262 325)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">75</text>
+			<text transform="matrix(1 0 0 1 355.3262 325)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">76</text>
+			<text transform="matrix(1 0 0 1 395.3262 325)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">77</text>
+			<text transform="matrix(1 0 0 1 435.3262 325)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">78</text>
+			<text transform="matrix(1 0 0 1 475.3262 325)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">79</text>
+			<text transform="matrix(1 0 0 1 515.3262 325)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">80</text>
+			<text transform="matrix(1 0 0 1 555.3262 325)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">81</text>
+			<text transform="matrix(1 0 0 1 595.3262 325)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">82</text>
+			<text transform="matrix(1 0 0 1 635.3262 325)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">83</text>
+			<text transform="matrix(1 0 0 1 675.3262 325)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">84</text>
+			<text transform="matrix(1 0 0 1 715.3262 325)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">85</text>
+			<text transform="matrix(1 0 0 1 755.3262 325)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">86</text>
+			<text transform="matrix(1 0 0 1 75.3262 325)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">55</text>
+			<text transform="matrix(1 0 0 1 114.6611 341)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Ba</text>
+			<text transform="matrix(1 0 0 1 196 341)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Hf</text>
+			<text transform="matrix(1 0 0 1 235.6631 341)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Ta</text>
+			<text transform="matrix(1 0 0 1 276.3369 341)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">W</text>
+			<text transform="matrix(1 0 0 1 314.3301 341)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Re</text>
+			<text transform="matrix(1 0 0 1 354.333 341)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Os</text>
+			<text transform="matrix(1 0 0 1 398.335 341)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Ir</text>
+			<text transform="matrix(1 0 0 1 436.3311 341)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Pt</text>
+			<text transform="matrix(1 0 0 1 474.6611 341)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Au</text>
+			<text transform="matrix(1 0 0 1 514.3301 341)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Hg</text>
+			<text transform="matrix(1 0 0 1 557.002 341)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Tl</text>
+			<text transform="matrix(1 0 0 1 594.6611 341)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Pb</text>
+			<text transform="matrix(1 0 0 1 636.665 341)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Bi</text>
+			<text transform="matrix(1 0 0 1 674.6611 341)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Po</text>
+			<text transform="matrix(1 0 0 1 716.3311 341)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">At</text>
+			<text transform="matrix(1 0 0 1 754.3301 341)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Rn</text>
+			<text transform="matrix(1 0 0 1 74.667 341)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Cs</text>
+			<text transform="matrix(1 0 0 1 115.3262 365)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">88</text>
+			<text transform="matrix(1 0 0 1 191.9893 365)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">104</text>
+			<text transform="matrix(1 0 0 1 231.9893 365)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">105</text>
+			<text transform="matrix(1 0 0 1 271.9893 365)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">106</text>
+			<text transform="matrix(1 0 0 1 311.9893 365)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">107</text>
+			<text transform="matrix(1 0 0 1 351.9893 365)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">108</text>
+			<text transform="matrix(1 0 0 1 391.9893 365)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">109</text>
+			<text transform="matrix(1 0 0 1 432.4346 365)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">110</text>
+			<text transform="matrix(1 0 0 1 472.8799 365)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">111</text>
+			<text transform="matrix(1 0 0 1 512.4346 365)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">112</text>
+			<text transform="matrix(1 0 0 1 552.4346 365)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">113</text>
+			<text transform="matrix(1 0 0 1 592.4346 365)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">114</text>
+			<text transform="matrix(1 0 0 1 632.4346 365)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">115</text>
+			<text transform="matrix(1 0 0 1 672.4346 365)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">116</text>
+			<text transform="matrix(1 0 0 1 712.4346 365)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">117</text>
+			<text transform="matrix(1 0 0 1 752.4346 365)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">118</text>
+			<text transform="matrix(1 0 0 1 75.3262 365)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">87</text>
+			<text transform="matrix(1 0 0 1 274.6611 381)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Sg</text>
+			<text transform="matrix(1 0 0 1 474.3301 381)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Rg</text>
+			<text transform="matrix(1 0 0 1 596.9932 381)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Fl</text>
+			<text transform="matrix(1 0 0 1 634.9932 381)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Mc</text>
+			<text transform="matrix(1 0 0 1 114.3301 381)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Ra</text>
+			<text transform="matrix(1 0 0 1 196 381)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Rf</text>
+			<text transform="matrix(1 0 0 1 234.3301 381)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Db</text>
+			<text transform="matrix(1 0 0 1 314.6611 381)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Bh</text>
+			<text transform="matrix(1 0 0 1 354.667 381)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Hs</text>
+			<text transform="matrix(1 0 0 1 395.335 381)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Mt</text>
+			<text transform="matrix(1 0 0 1 434.667 381)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Ds</text>
+			<text transform="matrix(1 0 0 1 514.3301 381)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Cn</text>
+			<text transform="matrix(1 0 0 1 554.6631 381)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Nh</text>
+			<text transform="matrix(1 0 0 1 675.9932 381)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Lv</text>
+			<text transform="matrix(1 0 0 1 716.3301 381)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Ts</text>
+			<text transform="matrix(1 0 0 1 754.9932 381)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Og</text>
+			<text transform="matrix(1 0 0 1 76.3369 381)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Fr</text>
+			<text transform="matrix(1 0 0 1 195.3262 425)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">57</text>
+			<text transform="matrix(1 0 0 1 235.3262 425)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">58</text>
+			<text transform="matrix(1 0 0 1 275.3262 425)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">59</text>
+			<text transform="matrix(1 0 0 1 315.3262 425)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">60</text>
+			<text transform="matrix(1 0 0 1 355.3262 425)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">61</text>
+			<text transform="matrix(1 0 0 1 395.3262 425)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">62</text>
+			<text transform="matrix(1 0 0 1 435.3262 425)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">63</text>
+			<text transform="matrix(1 0 0 1 475.3262 425)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">64</text>
+			<text transform="matrix(1 0 0 1 515.3262 425)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">65</text>
+			<text transform="matrix(1 0 0 1 555.3262 425)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">66</text>
+			<text transform="matrix(1 0 0 1 595.3262 425)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">67</text>
+			<text transform="matrix(1 0 0 1 635.3262 425)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">68</text>
+			<text transform="matrix(1 0 0 1 675.3262 425)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">69</text>
+			<text transform="matrix(1 0 0 1 715.3262 425)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">70</text>
+			<text transform="matrix(1 0 0 1 755.3262 425)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">71</text>
+			<text transform="matrix(1 0 0 1 554.667 441)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Dy</text>
+			<text transform="matrix(1 0 0 1 195.3262 441)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">La</text>
+			<text transform="matrix(1 0 0 1 234.3301 441)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Ce</text>
+			<text transform="matrix(1 0 0 1 276 441)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Pr</text>
+			<text transform="matrix(1 0 0 1 314.3301 441)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Nd</text>
+			<text transform="matrix(1 0 0 1 353 441)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Pm</text>
+			<text transform="matrix(1 0 0 1 393 441)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Sm</text>
+			<text transform="matrix(1 0 0 1 434.6611 441)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Eu</text>
+			<text transform="matrix(1 0 0 1 473.9961 441)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Gd</text>
+			<text transform="matrix(1 0 0 1 514.998 441)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Tb</text>
+			<text transform="matrix(1 0 0 1 594.3301 441)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Ho</text>
+			<text transform="matrix(1 0 0 1 636 441)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Er</text>
+			<text transform="matrix(1 0 0 1 673.3369 441)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Tm</text>
+			<text transform="matrix(1 0 0 1 714.6611 441)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Yb</text>
+			<text transform="matrix(1 0 0 1 755.3262 441)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Lu</text>
+			<text transform="matrix(1 0 0 1 195.3262 465)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">89</text>
+			<text transform="matrix(1 0 0 1 235.3262 465)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">90</text>
+			<text transform="matrix(1 0 0 1 275.3262 465)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">91</text>
+			<text transform="matrix(1 0 0 1 315.3262 465)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">92</text>
+			<text transform="matrix(1 0 0 1 355.3262 465)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">93</text>
+			<text transform="matrix(1 0 0 1 395.3262 465)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">94</text>
+			<text transform="matrix(1 0 0 1 435.3262 465)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">95</text>
+			<text transform="matrix(1 0 0 1 475.3262 465)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">96</text>
+			<text transform="matrix(1 0 0 1 515.3262 465)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">97</text>
+			<text transform="matrix(1 0 0 1 555.3262 465)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">98</text>
+			<text transform="matrix(1 0 0 1 595.3262 465)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">99</text>
+			<text transform="matrix(1 0 0 1 631.9893 465)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">100</text>
+			<text transform="matrix(1 0 0 1 671.9893 465)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">101</text>
+			<text transform="matrix(1 0 0 1 711.9893 465)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">102</text>
+			<text transform="matrix(1 0 0 1 751.9893 465)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">103</text>
+			<text transform="matrix(1 0 0 1 194.998 481)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Ac</text>
+			<text transform="matrix(1 0 0 1 234.998 481)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Th</text>
+			<text transform="matrix(1 0 0 1 274.6611 481)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Pa</text>
+			<text transform="matrix(1 0 0 1 317.667 481)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">U</text>
+			<text transform="matrix(1 0 0 1 354.3301 481)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Np</text>
+			<text transform="matrix(1 0 0 1 394.6611 481)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Pu</text>
+			<text transform="matrix(1 0 0 1 433 481)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Am</text>
+			<text transform="matrix(1 0 0 1 472.6689 481)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Cm</text>
+			<text transform="matrix(1 0 0 1 514.998 481)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Bk</text>
+			<text transform="matrix(1 0 0 1 556 481)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Cf</text>
+			<text transform="matrix(1 0 0 1 594.998 481)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Es</text>
+			<text transform="matrix(1 0 0 1 633.3369 481)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Fm</text>
+			<text transform="matrix(1 0 0 1 673.665 481)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Md</text>
+			<text transform="matrix(1 0 0 1 714.3301 481)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">No</text>
+			<text transform="matrix(1 0 0 1 756.665 481)" style="fill:#FFFFFF; font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Lr</text>
+			<text transform="matrix(1 0 0 1 10 93)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Group</text>
+			<text transform="matrix(1 0 0 1 20 108)" style="font-family:'Arial', sans-serif; font-size:12px; font-weight:bold;">Period</text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 92.7109 434)" style="font-family:'Arial', sans-serif; font-size:14px;">Lanthanides</text>
+			<text transform="matrix(1 0 0 1 112.1934 472)" style="font-family:'Arial', sans-serif; font-size:14px;">Actinides</text>
+		</g>
+	</g>
+	<path d="M11.5,97h1v10h-2l2.5,4l2.5-4h-2V97"/>
+	<path d="M52,88.5v1h10v-2l4,2.5l-4,2.5v-2H52"/>
+</g>
+</svg>
