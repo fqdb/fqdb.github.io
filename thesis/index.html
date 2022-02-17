@@ -131,24 +131,15 @@ data</a></li>
 
 <h2 class="unnumbered" id="abstract">Abstract</h2>
 <div class="small">
-<p>As the current standard of lithium-ion batteries remain costly,
-fluoride-ion batteries have in recent years gained significant interest
-as an alternative new battery chemistry, however the technology is still
-at the stage of exploring which materials to use. Using a
-high-throughput computational approach, battery materials can be
-analysed fast and focused on specific limitations. Hundreds of fluoride
-compounds from the Materials Project database are collected and their
-electrochemical properties are calculated to compare their suitability
-for use in fluoride ion batteries. Using ab-initio density functional
-theorem simulations, for the experimentally widely used electrode
-material , the effect of doping the material with , and are studied. It
-is found that at around a 0.5 ratio between and dopant, the material
-goes through a structure phase change. In addition, the ionic
-conductivity and the conduction pathways of fluoride ions in , and in ,
-a promising solid state electrolyte, are studied using first-principles
-molecular dynamics simulations. An activation energy of
-3.5 × 10<sup>−3</sup> S cm<sup>−1</sup> is found for , at 1000 K, which
-increased to 0.86 S cm<sup>−1</sup> for the doped structure.</p>
+As the current standard of lithium-ion batteries remain costly, fluoride-ion batteries have in recent years gained significant interest as an alternative new battery chemistry, however the technology is still at the stage of exploring which materials to use. Using a high-throughput computational approach, battery materials can be analysed fast and focused on specific limitations. 
+
+For this research, this approach was used to study the theoretical suitability of fluoride-ion battery materials. Hundreds of fluoride compounds from the Materials Project database were collected and their electrochemical properties were calculated to compare their suitability for use in fluoride ion batteries. It is shown that based on their theoretical properties, BiF<sub>3</sub>, SnF<sub>3</sub> and V<sub>2</sub>O<sub>2</sub>F are the most suitable fluoride-ion battery electrode materials to use with BaSnF4 electrolyte. The electrode pair of Sn<sub>2</sub>OF<sub>5</sub>/Sn<sub>2</sub>OF<sub>2</sub> was found to be a possible intercalation electrode as it shares the same space group.
+
+The material BiF<sub>3</sub> is an experimentally tested fluoride-ion battery electrode material which has a low ionic conductivity. Doping this material has been reported to improve its conductivity. By using first-principles density functional theorem simulations, the stability of Pnma, P6<sub>3</sub> and Fm3m space group structures of the Bi<sub>1-x</sub>M<sub>x</sub>F<sub>3-x</sub> (M=Sn, Ba, Pb) system were investigated. It was found that the intermediates of these three systems are stable or metastable, with especially Bi<sub>0.45</sub>Ba<sub>0.55</sub>F<sub>2.55</sub> forming a stable intermediate of the Fm3m space group. These findings show that Bi<sub>1-x</sub>M<sub>x</sub>F<sub>3-x</sub> (M=Sn, Ba, Pb) solid solutions are likely to be synthesizable experimentally.
+
+The ionic conductivity of fluoride ions in BaSnF4, a solid state electrolyte, was studied using first-principles molecular dynamics simulations. Is it known that BaSnF4 of the P4/nmm space group has a conduction barrier formed by the Ba-Ba layer. Selective creation of fluorine vacancies in the Ba-Ba barrier layer showed improved ionic conductivity from 4.4e-3 S/cm to 1.7e-2 S/cm at room temperature.
+
+The ionic conductivity of fluoride ions in BiF3 was studied, and specific vacancies were created targeting an improvement of the ionic conductivity. The aliovalent substitution of Sn<sub>Bi</sub>' and of v<sub>F</sub>* were simulated using first-principles molecular dynamics simulations and compared against BiF3 without defects. It was found that the combination of Sn<sub>Bi</sub>' and of v<sub>F</sub>* resulted in an improved conductivity to a much larger degree than Sn<sub>Bi</sub>' or v<sub>F</sub>* separately could accomplish. For undoped BiF<sub>3</sub> at 1000 K, a conductivity of 3.5e-3 S/cm was found and an activation energy of 1.33 eV, which was reduced to 1.0S/cm and 0.230 eV for Bi<sub>6</sub>Sn<sub>2</sub>F<sub>22</sub>.
 </div>
 </div>
 
@@ -1220,10 +1211,10 @@ answer the questions:</p>
 <ul>
 <li><p>Which fluoride materials have favourable properties to be used as
 electrodes in fluoride ion batteries?</p></li>
-<li><p>How does the phase diagram of the (M=Sn,Ba,Pb) solid solutions
+<li><p>How does the phase diagram of the Bi<sub>1-x</sub>M<sub>x</sub>F<sub>3-x</sub> (M=Sn,Ba,Pb) solid solutions
 change with increasing <span
 class="math inline"><em>x</em></span>?</p></li>
-<li><p>What are the conduction pathways of fluoride ions in and and how
+<li><p>What are the conduction pathways of fluoride ions in BiF<sub>3</sub> and BaSnF<sub>4</sub> and how
 can the conduction be improved?</p></li>
 </ul>
 <h3 id="thesis-overview">Thesis overview</h3>
@@ -1411,7 +1402,7 @@ graphite anodes and have a lower diffusivity.<span class="citation"
 data-cites="Kharbachi2020">(Kharbachi et al. 2020)</span> And because
 sodium is a metal itself, it cannot form conversion type electrodes with
 metals like fluorine can.</p></li>
-<li><p><strong>Magnesium</strong>: As a multivalent ion () it would
+<li><p><strong>Magnesium</strong>: As a multivalent ion (Mg<sup>2+</sup>) it would
 offer high theoretical energy densities, but the higher charge per ion
 also makes it more difficult to cycle.<span class="citation"
 data-cites="Xiao2021">(Xiao, Galatolo, and Pasta 2021)</span></p></li>
@@ -1476,15 +1467,15 @@ Fichtner 2011)</span></figcaption>
 <p>The reactions that take place in the FIB are:<span class="citation"
 data-cites="Okazaki2017">(Okazaki et al. 2017)</span></p>
 <div class="center">
-<p>(cathode)<br />
-(anode)</p>
+<p>MaF<sub>x</sub> + xe<sup>-</sup> &rarr; Ma + xF<sup>-</sup> (cathode)<br />
+Mb + xF<sup>-</sup> &rarr; MbF<sub>x</sub> + xe<sup>-</sup> (anode)</p>
 </div>
-<p>Where and are two types of materials, generally assumed to be metals,
-that can form an fluoride and are the electrons. This is also shown in
+<p>Where Ma and Mb are two types of materials, generally assumed to be metals,
+that can form an MF<sub>x</sub> fluoride and e<sup>-</sup> are the electrons. This is also shown in
 figure <a href="#fig:FIB_diagram" data-reference-type="ref"
 data-reference="fig:FIB_diagram">2.3</a> including the other main
 battery components. It can be seen that under normal operation, there is
-no elemental fluorine present in the battery, which would be gaseous and
+no elemental fluorine (F<sub>2</sub>) present in the battery, which would be gaseous and
 highly reactive, impeding safe operation of such a battery.<span
 class="citation" data-cites="Reddy2011">(Reddy and Fichtner
 2011)</span><br />
@@ -1498,7 +1489,7 @@ mechanism to reversibly store lithium in a host structure.<span
 class="citation" data-cites="Xie2020">(Xie and Lu 2020)</span> This
 keeps the structure of the host material intact, which helps to allow
 good cycle life of the battery. For redox reactions involving transfer
-of a single electron, such as the reduction of the ion, intercalation
+of a single electron, such as the reduction of the F<sup>-</sup> ion, intercalation
 remains possible.<span class="citation" data-cites="Hannah2018">(Hannah
 et al. 2018)</span> On the other hand, conversion, which changes the
 crystal structure, is also possible for some materials. Conversion
@@ -1517,11 +1508,11 @@ class="citation" data-cites="Chagnes2015">(Chagnes and Swiatowska
 they have a high fluoride ratio, their specific capacity is relatively
 high.<span class="citation" data-cites="Konishi2017">(Konishi et al.
 2017a)</span> Since the fluoride ion is monovalent, it is able to form
-bivalent or trivalent metal fluorides, as many metals can have oxidation
-states. <span class="citation" data-cites="Mohammad2018">(Mohammad et
+bivalent or trivalent metal fluorides, as many metals can have M<sup>3+</sup> oxidation
+states.<span class="citation" data-cites="Mohammad2018">(Mohammad et
 al. 2018)</span> This allows each reduced metal atom to store two or
 three fluorine atoms upon oxidation, allowing high theoretical energy
-densities. For research purposes is particularly useful, as bismuth can
+densities. For research purposes BiF<sub>3</sub> is particularly useful, as bismuth can
 be identified with X-ray diffraction technique easily.<span
 class="citation" data-cites="Gschwind2015">(Fabienne Gschwind and
 Bastien 2015)</span> The material has been tested successfully as being
@@ -1529,13 +1520,13 @@ able to function as a reversible FIB cathode material,<span
 class="citation" data-cites="Xiao2021">(Xiao, Galatolo, and Pasta
 2021)</span> making it attractive as a proof of concept in this early
 stage of research, to develop improvements that can later be applied to
-similar materials. Pure is not a good ionic and electronic
+similar materials. Pure BiF<sub>3</sub> is not a good ionic and electronic
 conductor.<span class="citation" data-cites="Reddy2011">(Reddy and
 Fichtner 2011)</span> Doping the material has been reported to improve
 its conductivity,<span class="citation" data-cites="Yang2011">(Yang et
 al. 2011)</span> as well as increasing the operating temperature, which
 is not practical for most applications. The effects of doping and
-creating vacancies in have earlier been investigated by other
+creating vacancies in BiF<sub>3</sub> have earlier been investigated by other
 researchers using DFT and MD in the context of lithium-ion batteries,
 where it is considered as a cathode material.<span class="citation"
 data-cites="Yang2013">(Yang et al. 2013)</span><span class="citation"
@@ -1571,14 +1562,14 @@ electrolytes to be able to work at room temperature.<span
 class="citation" data-cites="Mohammad2018">(Mohammad et al.
 2018)</span></p>
 <p>With regards to solid fluoride-ion conductors, there are two
-materials well known for high conductivity, those being and .<span
+materials well known for high conductivity, those being BaSnF<sub>4</sub> and PbSnF<sub>4</sub>.<span
 class="citation" data-cites="DENES1984">(G.Dénès et al.
 1984)</span><span class="citation" data-cites="Murray2006">(Murray
-2006)</span> The two materials are very similar – shares the same P4/nmm
-space group and most of ’s properties<span class="citation"
+2006)</span> The two materials are very similar – BaSnF<sub>4</sub> shares the same P4/nmm
+space group and most of PbSnF<sub>4</sub>’s properties<span class="citation"
 data-cites="Denes2002">(Dénès, Grée, and Muntasar 2002)</span><span
 class="citation" data-cites="Denes1991">(Denes et al. 1991)</span> – but
-although actually has a somewhat higher conductivity, the use of lead is
+although PbSnF<sub>4</sub> actually has a somewhat higher conductivity, the use of lead is
 to be avoided where possible, as it is a toxic material.<span
 class="citation" data-cites="Patro2011">(Patro and Hariharan
 2011)</span><span class="citation" data-cites="Halleux2021">(Halleux
@@ -1587,7 +1578,7 @@ gas sensors and measurement devices already employ these materials for
 their role as a fluoride-ion conductor.<span class="citation"
 data-cites="Liu2020a">(L. Liu, Yang, Liu, et al. 2020)</span> A 2018
 paper by <span class="citation" data-cites="Mohammad2018">Mohammad et
-al. (2018)</span> successfully used as an electrolyte in
+al. (2018)</span> successfully used BaSnF<sub>4</sub> as an electrolyte in
 room-temperature FIBs.</p>
 <p>To increase the conductivity, point defects can be introduced in the
 crystal, which is done by doping.<span class="citation"
@@ -1599,18 +1590,18 @@ strong influence on the conductivity.<span class="citation"
 data-cites="Patro2013">(Patro and Hariharan 2013)</span> Defects may be
 introduced by doping with ions with a different ionic radius, and by
 doping with ions with a larger or smaller ionic charge, which will
-create vacant sites. For example, has fewer interstitial sites than for
+create vacant sites. For example, BaSnF<sub>4</sub> has fewer interstitial sites than BaF<sub>2</sub>for
 fluoride atoms to transport through, however the conductivity is much
 higher. This is attributed to the tin atoms adding disorder in the form
 of spacing in the lattice.<span class="citation"
 data-cites="Denes2007">(Dénès et al. 2007)</span> Another example is
 research by <span class="citation" data-cites="Wilkening2016">Wilkening
-et al. (2016)</span> who doped with and studied the conductivity of the
+et al. (2016)</span> who doped BaSnF<sub>4</sub> with Ca and studied the conductivity of the Ba<sub>1-x</sub>Ca<sub>x</sub>F<sub>2</sub>
 system, finding the most improved conductivity for <span
-class="math inline"><em>x</em> = 0.5</span>. <span class="citation"
+class="math inline"><em>x</em> = 0.5</span>. <span
 data-cites="Denes2002">Dénès, Grée, and Muntasar (2002)</span> also
-found that the conductivity of material was best for an equal ratio of
-and atoms in the material.</p>
+found that the conductivity of PbSnF<sub>4</sub> was best for an equal ratio of Pb
+and Sn atoms in the material.</p>
 <p>Quantitatively, a conductivity of at least
 1 × 10<sup>−3</sup> S cm<sup>−1</sup> is believed to be required for an
 electrolyte to be usable in a battery at room temperature.<span
@@ -1620,7 +1611,7 @@ For liquid electrolytes, much higher values of up to
 data-cites="Newnham2005">(Newnham 2005)</span> For , a conductivity of
 3.5 × 10<sup>−4</sup> S cm<sup>−1</sup> at room temperature has been
 reported.<span class="citation" data-cites="Liu2020a">(L. Liu, Yang,
-Liu, et al. 2020)</span> Hence, the ionic conductivity of needs to be
+Liu, et al. 2020)</span> Hence, the ionic conductivity of BaSnF<sub>4</sub> needs to be
 improved.</p>
 <h3 id="first-principle-simulations-of-molecules">First-principle
 simulations of molecules</h3>
