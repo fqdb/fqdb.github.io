@@ -1157,7 +1157,7 @@ of choosing which materials to use, rather than at refining the battery
 design for commercial use.<span class="citation"
 data-cites="bortfitz">(Bortfitz 2019)</span> This includes choosing
 suitable electrode pairs, but one of the most studied topics on FIBs is
-the search for a suitable electrolyte material. The material has been
+the search for a suitable electrolyte material. The material BaSnF<sub>4</sub> has been
 experimentally tested but still requires further improvement.<span
 class="citation" data-cites="Wang2021">(Wang et al. 2021)</span> The
 considerations for battery materials are further explained in the next
@@ -1342,12 +1342,12 @@ battery operation, the electrolyte will irreversibly decompose.<span
 class="citation" data-cites="Urban2016">(Urban, Seo, and Ceder
 2016)</span> To pair electrodes with a certain voltage difference, the
 electrolyte used should have at least a larger voltage window. For
-example, the stability window of the material can be calculated using
+example, the stability window of the material BaSnF<sub>4</sub> can be calculated using
 the equation: <span class="math display">$$\begin{aligned}
-V_{red} &amp; = -\frac{E(\textrm{\ce{BaSnF_6}}) -
-E(\textrm{\ce{BaSnF_4}}) - E(\textrm{\ce{BaSnF_4}}) - 2E(\text{F})}{2}\\
+V_{red} &amp; = -\frac{E(\text{BaSnF}_6) -
+E(\text{BaSnF}_4) - E(\text{BaSnF}_4) - 2E(\text{F})}{2}\\
 V_{ox} &amp; =
--\frac{E(\textrm{\ce{BaSnF_4}})-E(\textrm{\ce{BaF_2}})-E(\text{Sn})
+-\frac{E(\text{BaSnF}_4)-E(\text{BaF}_2)-E(\text{Sn})
 -2E(\text{F})}{2}
 \label{eq:basnf4_stab_win}\end{aligned}$$</span></p>
 <p>The last point concerns the resistance of interfaces between the
@@ -1817,7 +1817,7 @@ data-reference="fig:mp_scheme">1.1</a>. The first step is to retrieve
 materials from the database that contain fluoride atoms. In order to
 keep the dataset manageable, and since the primary focus of present
 research is on metal-fluorides, the query is limited to binary and
-ternary fluorides. This can include materials such as , and . The next
+ternary fluorides. This can include materials such as BiF<sub>3</sub>, HF and NaSn<sub>2</sub>F<sub>5</sub>}. The next
 step is to discard materials that are unstable based on their energy
 above the hull. The energy above the hull gives a measure of the
 decomposition energy of a material, for <span
@@ -1837,19 +1837,19 @@ may have slipped through this filter as the reference table contains
 fewer fluoride listings than the Materials Project database does.</p>
 <p>The subsequent step can be considered the most important: the
 fluoride compounds are matched to defluorinated compounds, constructing
-the redox half-reaction for the material. For example is matched with ,
-corresponding to the reaction . In addition, partially defluorinated
-compounds are also matched, such as , this can be used to determine how
+the redox half-reaction for the material. For example, BiF<sub>3</sub> is matched with Bi,
+corresponding to the reaction BiF<sub>3</sub> + 3 e<sup>-</sup> &rarr; Bi + 3F<sup>-</sup>. In addition, partially defluorinated
+compounds are also matched. This can be be used to determine how
 through how many equilibrium voltage steps the material goes upon
 defluorination. For ternary materials, care is taken to ensure that the
-ratio of the other atoms is also the same in the matched material, e.g.
-should be matched to and not to .</p>
+ratio of the other atoms is also the same in the matched material, e.g. M<sub>x</sub>N<sub>x</sub>F<sub>2</sub>
+should be matched to M<sub>x</sub>N<sub>x</sub> and not to M<sub>x</sub>N<sub>y</sub>.</p>
 <p>With both the fluorides and the corresponding defluorinated material
 known, the theoretical half cell voltage of the materials can be
 calculated, using their free energy values from the database and
 equation <a href="#eq:voltage2" data-reference-type="ref"
 data-reference="eq:voltage2">[eq:voltage2]</a>. A correction is applied
-for cases such as /: the number of should match on both sides, so
+for cases such as SnF<sub>3</sub>/Sn<sub>3</sub>F<sub>8</sub>: the number of Sn should match on both sides, so
 effectively, during the reaction <span
 class="math inline"><em>n</em> = 3 − (8/3) = 1/3</span> fluoride ions
 are reduced.</p>
@@ -1867,7 +1867,7 @@ materials from Materials Project, followed by querying the corresponding
 unfluorinated formulas. The fluorides and corresponding materials were
 then matched and paired based on their fluoride contents. The voltage is
 presented against the reference voltage of a hypothetical pure fluor
-electrode (), as was also done in prior DFT research by <span
+electrode (F + e<sup>-</sup> &rarr; F<sup>-</sup>), as was also done in prior DFT research by <span
 class="citation" data-cites="Nowroozi2017">Nowroozi et al. (2017)</span>
 The plots were generated using the Plotly graphing library for
 Python.<span class="citation" data-cites="plotly">(<span>“Collaborative
@@ -1885,12 +1885,15 @@ materials. This can be explained by the reference values being based on
 experimental data. In experiments there will be capacity and voltage
 losses from matters such as internal resistance, inability to fully
 cycle the battery and measurement. The large disparity between the
-literature and calculated voltage of For the difference is also around 1
+literature and calculated voltage of LiNiPO<sub>4</sub> can not be explained with certainty,
+but may be due to this being a fairly new electrode material, 
+with fewer corrections to the DFT results available from experimental data. 
+For LiMnO<sub>2</sub> the difference is also around 1
 V, this may be explained due to the fact that the Python code calculates
 the average voltage, whereas in practice, the material is delithiated
 over several voltage plateaus, where the highest voltage is reported in
 the literature data.<span class="citation"
-data-cites="Vitins1997">(Vitins and West 1997)</span> In the case of ,
+data-cites="Vitins1997">(Vitins and West 1997)</span> In the case of LiMnO<sub>2</sub>,
 the first voltage plateau is indeed at around 4.5 V, with a second
 plateau 1 V lower. When considering this, the calculated value is only
 slight below the average voltage as reported in literature.</p>
@@ -1898,7 +1901,7 @@ slight below the average voltage as reported in literature.</p>
 of materials for which comparison values are available. These potentials
 are shown in figure <a href="#fluoride_references"
 data-reference-type="ref" data-reference="fluoride_references">1.3</a>.
-In this case, only theoretical voltages and capacities against / were
+In this case, only theoretical voltages and capacities against Li/Li<sup>+</sup> were
 available, the potential of the lithium half reaction is close to that
 of fluoride (-3.03 and -2.86 respectively), hence they can be readily
 compared. Across the board there is a larger discrepancy in the voltage
@@ -1917,15 +1920,15 @@ losses.</p>
 data-reference-type="ref"
 data-reference="fluoride_capacity_references">1.4</a>, the values
 correspond to the literature reported theoretical capacities, except for
-, where the discrepancy could not be explained.</p>
+SnF<sub>4</sub>, where the discrepancy could not be explained.</p>
 <figure>
 <embed width="100%" height="500px"  src="img/Reference_data_plot_Li.html" id="lithium_references" />
 <figcaption aria-hidden="true">Comparison with reference values for
 lithium. Experimental data from <span class="citation"
-data-cites="Zhang2015">Y. Zhang et al. (2015)</span> (), <span
+data-cites="Zhang2015">Y. Zhang et al. (2015)</span> (LiNiPO4), <span
 class="citation" data-cites="Kishore2005">Kishore and Varadaraju
-(2005)</span> () and <span class="citation" data-cites="Zhu2015">Zhu et
-al. (2015)</span> (), for all others, theoretical data from <span
+(2005)</span> (LiCoPO4) and <span class="citation" data-cites="Zhu2015">Zhu et
+al. (2015)</span> (LiMnPO4), for all others, theoretical data from <span
 class="citation" data-cites="garche2013">Garche (2013)</span>, <span
 class="citation" data-cites="Hautier2016">Hautier
 (2016)</span></figcaption>
@@ -1966,32 +1969,32 @@ class="citation" data-cites="Kennedy1976">(Kennedy and Miles
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">/</td>
+<td style="text-align: left;">PbF2/AgF</td>
 <td style="text-align: left;">1.32 V</td>
 <td style="text-align: left;">1.56 V</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/</td>
+<td style="text-align: left;">PbF2/CuF2</td>
 <td style="text-align: left;">0.72 V</td>
 <td style="text-align: left;">1.30 V</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/</td>
+<td style="text-align: left;">MgF2/BiF3</td>
 <td style="text-align: left;">1.5 V</td>
 <td style="text-align: left;">2.04 V</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/</td>
+<td style="text-align: left;">CeF3/CuF2</td>
 <td style="text-align: left;">2.75 V</td>
 <td style="text-align: left;">3.02 V</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">/</td>
+<td style="text-align: left;">CeF3/SnF3</td>
 <td style="text-align: left;">2.2 V</td>
 <td style="text-align: left;">2.07 V</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">/</td>
+<td style="text-align: left;">BiF3/PbF2</td>
 <td style="text-align: left;">0.353 V</td>
 <td style="text-align: left;">0.45 V</td>
 </tr>
@@ -2023,7 +2026,7 @@ stored in mechanical strain of the crystal lattice.<span
 class="citation" data-cites="Ichitsubo2011">(Ichitsubo et al.
 2011)</span><span class="citation" data-cites="Liu2012">(X. H. Liu et
 al. 2012)</span> The volume change of commercial lithium-ion battery
-electrodes is generally low, for example 4.27% for and 10% for .<span
+electrodes is generally low, for example 4.27% for LiCoO<sub>2</sub> and 10% for LiC<sub>6</sub>.<span
 class="citation" data-cites="Luo2016">(Luo et al. 2016)</span><span
 class="citation" data-cites="Li2020">(Li et al. 2020)</span> For blended
 electrodes, for example mixed with graphite, higher volume change of the
@@ -2033,11 +2036,11 @@ a maximum volume change of 100% is targeted in the graph colour scale
 and filtering.</p>
 <p>In figure <a href="#fig:volume_change" data-reference-type="ref"
 data-reference="fig:volume_change">1.5</a> and onwards, the
-electrochemical stability window of the proposed electrolyte is given,
+electrochemical stability window of the proposed BaSnF<sub>4</sub> electrolyte is given,
 which is between 3.46 V and 3.89 V, as calculated from formula <a
 href="#eq:basnf4_stab_win" data-reference-type="ref"
 data-reference="eq:basnf4_stab_win">[eq:basnf4_stab_win]</a>. This is an
-important window, as , and the similar are the only materials presently
+important window, as BaSnF<sub>4</sub>, and the similar PbSnF<sub>4</sub> are the only materials presently
 known to have acceptable fluoride ion conductivity at room temperature.
 In practice the window is slightly broader, around 0.5 V, hence
 materials just outside the band could be feasible.<span class="citation"
@@ -2045,22 +2048,22 @@ data-cites="Wang2021">(Wang et al. 2021)</span></p>
 <p>In figure <a href="#volume_change_subset" data-reference-type="ref"
 data-reference="volume_change_subset">1.6</a> it can be noted that from
 the hundreds of materials considered, only a handful of materials are
-within the voltage window while also having a limited volume expansion
-upon fluorination. In particular, could be of interest. Its partially
-defluorinated phase has been used in experimental fluoride-ion
+within the BaSnF<sub>4</sub> voltage window while also having a limited volume expansion
+upon fluorination. In particular, SnF<sub>4</sub> could be of interest. Its partially
+defluorinated phase SnF<sub>2</sub> has been used in experimental fluoride-ion
 batteries.<span class="citation" data-cites="Liu2020a">(L. Liu, Yang,
-Liu, et al. 2020)</span> may also be of interest, although no relevant
-information was found about this material in literature.The other
-materials found in the figure are not particularly usable, for example
+Liu, et al. 2020)</span> V<sub>2</sub>O<sub>3</sub>F may also be of interest, although no relevant
+information was found about this material in literature. The other
+materials found in the figure are not particularly usable, for example KF<sub>2</sub>
 would form metallic potassium upon defluorination, which is highly
-reactive, is a toxic material and is a very expensive material.</p>
+reactive, As is a toxic material and Te is a very expensive material.</p>
 <figure>
 <embed width="100%" height="500px"  src="img/Volume_change_F.html" id="fig:volume_change" />
 <figcaption aria-hidden="true">Volume change between the fluorinated and
 unfluorinated phase is also an important consideration, this graph shows
 this volume change, and how it would discount many of the materials that
 combine a suitable potential and high capacity. The marked horizontal
-area denotes the voltage range of the proposed electrolyte.</figcaption>
+area denotes the voltage range of the proposed BaSnF<sub>4</sub> electrolyte.</figcaption>
 </figure>
 <figure>
 <embed width="100%" height="500px"  src="img/Volume_change_BaSnF4_band.html"
@@ -2078,7 +2081,7 @@ could also be a useful filter. In figure <a
 href="#fig:data_voltage_steps_F_selected" data-reference-type="ref"
 data-reference="fig:data_voltage_steps_F_selected">1.7</a> the voltage
 steps of a few metal fluorides are plotted as an example, it can be seen
-that defluorinates in two steps and in three. The methodology was also
+that BiF<sub>3</sub> defluorinates in two steps and MnF<sub>4</sub> in three. The methodology was also
 verified with the paper by <span class="citation" data-cites="Yu2019">Yu
 et al. (2019)</span>. Being able to visualize and calculate the number
 of fluorination phases could be helpful to readily verify whether
@@ -2087,7 +2090,7 @@ likely that not the intended material is reacting. From figure <a
 href="#fig:number_of_steps" data-reference-type="ref"
 data-reference="fig:number_of_steps">1.8</a> a handful of materials with
 over a dozen of fluorination phases are found. Those within the
-stability window of the electrolyte are shown by formula in figure <a
+stability window of the BaSnF<sub>4</sub> electrolyte are shown by formula in figure <a
 href="#fig:number_of_steps_band" data-reference-type="ref"
 data-reference="fig:number_of_steps_band">1.9</a>.</p>
 <figure>
@@ -2106,42 +2109,42 @@ plotted for all materials with at least 2 steps.</figcaption>
 id="fig:number_of_steps_band" />
 <figcaption aria-hidden="true">The number of voltage plateau steps
 plotted for all materials with at least 2 steps, zoomed in around the
-stability window of .</figcaption>
+stability window of BaSnF<sub>4</sub>.</figcaption>
 </figure>
 <p>Evidently it would be of interest to find materials that combine
 favourable voltage, capacity, volume change and have at least one
 intermediate fluorination phase. This is shown in figure <a
 href="#fig:combined_all" data-reference-type="ref"
-data-reference="fig:combined_all">1.10</a>. can be recognized in the
-figure just above the stabililty window of , which can be expected to be
-a suitable material based on the available literature. has also been
+data-reference="fig:combined_all">1.10</a>. BiF<sub>3</sub> can be recognized in the
+figure just above the stabililty window of BaSnF<sub>4</sub>, which can be expected to be
+a suitable material based on the available literature. SnF<sub>2</sub> has also been
 successfully employed in an experimental FIB.<span class="citation"
 data-cites="Mohammad2019">(Mohammad and Witter 2019)</span> More
-suprising is , vanadium oxides have been studied in the context of
+suprising is V<sub>2</sub>O<sub>3</sub>F, vanadium oxides have been studied in the context of
 lithium-ion battery electrodes and were discussed as having the
 advantages of "low cost, easy synthesis process, high safety, large
 capacity and energy density."<span class="citation"
 data-cites="Zeng2013">(Zeng et al. 2013)</span> However, no literature
-was found for , although other vanadium fluoride oxides such as have
+was found for V<sub>2</sub>O<sub>3</sub>F, although other vanadium fluoride oxides such as VOF<sub>3</sub> have
 been synthesized.<span class="citation" data-cites="Groult1996">(Groult
 et al. 1996)</span> Potassium, cesium, and rubidium are very reactive
-materials and would not be safe when defluorinated. , while calculated
+materials and would not be safe when defluorinated. RbBi, while calculated
 as stable in the Materials Project database, has not been documented to
-exist, with other - ratios being more common.<span class="citation"
+exist, with other Bi-Rb ratios being more common.<span class="citation"
 data-cites="Pelton1993">(Pelton and Petric 1993)</span> The same holds
-for and .<span class="citation" data-cites="Sangster1991">(Sangster and
+for CsBi and KBi.<span class="citation" data-cites="Sangster1991">(Sangster and
 Pelton 1991)</span><span class="citation"
 data-cites="Meijer1989">(Meijer and Lugt 1989)</span> Here a limitation
 of the methodology can be identified: a DFT-calculated energy above hull
 of zero does not necessarily correspond to a material that can be easily
-synthesized. Nevertheless, the identification of and confirms that the
+synthesized. Nevertheless, the identification of BiF<sub>3</sub> and SnF<sub>2</sub> confirms that the
 results provided do correspond to real-world performance.</p>
 <figure>
 <embed width="100%" height="500px"  src="img/Volume_change_band_volume_combined.html"
 id="fig:combined_all" />
 <figcaption aria-hidden="true">The volume change plotted for all
 materials with at least 2 steps, zoomed in around the stability window
-of .</figcaption>
+of BaSnF<sub>4</sub>.</figcaption>
 </figure>
 <p>The space group of each material can also be considered. In figure <a
 href="#spacegroup_occurrence" data-reference-type="ref"
@@ -2166,8 +2169,8 @@ group within the pair, this is of interest for intercalation. For
 intercalation, the material should be able to be fluorinated without
 changing its structure. Intercalation electrodes for batteries are
 generally safer and have better cycle life. It is found that the Pnma
-space group, which is also the one that is in, has the most occurrences,
-however itself does not share the same space group with . The Pnma
+space group, which is also the one that BiF<sub>3</sub>is in, has the most occurrences (
+however BiF<sub>3</sub>itself does not share the same space group with Bi). The Pnma
 materials found are: , , and . In figure <a
 href="#fig:pseudointercalation" data-reference-type="ref"
 data-reference="fig:pseudointercalation">1.13</a> the materials with
