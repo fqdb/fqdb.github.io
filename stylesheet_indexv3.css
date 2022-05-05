@@ -6,7 +6,7 @@ body {
 	
 a {
 	text-decoration: none;
-	color: #ff5722;
+	color: #034A75;
 	font-weight: bold;
 }
 
@@ -25,7 +25,7 @@ a {
 }
 #hline {
 	width: 100%;
-	background: #ff5722;
+	background: #034A75;
 	height: 2px;
 }
 p {
@@ -55,13 +55,15 @@ h4 {
 }
 #home_menu > a {
 	text-decoration: none;
-	color: black;
+	color: white;
 	font-weight: normal;
 }
 #home_menu > a > div {
 	font-size: 2em;
-	background: #ff5722; /*'tile color*/
-	padding: 0.3em;
+	background: #034A75; /*'tile color*/
+	padding-left: 1em;
+	padding-right: 1em;
+	padding: 0.5em;
 	margin-left: 0.7em;
 	height: 1em;
 }
@@ -72,10 +74,10 @@ h4 {
 	display: none;
 	position: absolute;
 	margin-left: 15em;
-	margin-top: -12.8em;/* 3.2em per menu item */
+	margin-top: -16em; /* 3.2em per menu item */
 	font-size: 1em;
 	max-width: 100%;
-	background: #ffcdbe;
+	background: #D8F3FF;
 	margin-bottom: 5em;
 	padding-left: 1em;
 	padding-right: 1em;
@@ -84,7 +86,7 @@ h4 {
 .spotlight {
 	width: 20em;
 	display: inline-block;
-	background: #ffcdbe;
+	background: #D8F3FF;
 	vertical-align: top;
 	height: auto;
 	padding: 1em;
@@ -108,13 +110,7 @@ h4 {
 .spotlight:hover {
 	background: #aaa;
 }
-#resume_expand {
-	width: 40em;
-	max-width: 70%;
-	border: 0.5em solid #ffcdbe;
-	background: white;
-	padding: 0.5em;
-}
+
 #resume_expand img {
 	width: 20em;
 	margin-left: 25%;
